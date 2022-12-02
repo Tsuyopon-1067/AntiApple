@@ -1,18 +1,39 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-
-import Top from './Top';
-import About from './about/About';
-import ProsCons from './about/Pros_Cons';
-import Content from './content/Content';
-import Speed from './content/Speed';
+import { NavLink,
+} from 'react-router-dom'
+import {
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbLink,
+} from '@chakra-ui/react'
 
 export default function Navigation() {
     return (
-        <nav>
-            <NavLink exact to='/' className='header-item' activeClassName='active'>Home</NavLink>
-            <NavLink to='/item1' className='header-item' activeClassName='active'>Item1</NavLink>
-            <NavLink to='/item2' className='header-item' activeClassName='active'>Item2</NavLink>
+        <nav className='navMain' style={styles.navMain} >
+            <h1>格安モバイルWebへようこそ！</h1>
+            <Breadcrumb>
+                <BreadcrumbItem>
+                    <BreadcrumbLink as={NavLink} to="/" className='navNormal' activeClassName='navActive'>ホーム</BreadcrumbLink>
+                </BreadcrumbItem>
+                    <BreadcrumbLink as={NavLink} to="/" className='navNormal' activeClassName='navActive'>ホーム</BreadcrumbLink>
+                <BreadcrumbItem>
+                    <BreadcrumbLink as={NavLink} to="/pros_cons className='navNormal' activeClassName='navActive'">格安SIMのメリット・デメリット</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbItem>
+                    <BreadcrumbLink as={NavLink} to="/content className='navNormal' activeClassName='navActive'">コンテンツ一覧</BreadcrumbLink>
+                </BreadcrumbItem>
+            </Breadcrumb>
         </nav>
     )
+}
+
+const styles = {
+    navMain : {
+        height: 150,
+        background: "#c8f",
+    },
+    navLink : {
+        background: "#cef",
+    }
+
 }

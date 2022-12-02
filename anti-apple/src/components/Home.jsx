@@ -22,11 +22,14 @@ import company07 from './content/plan/company07.jsx';
 import company08 from './content/plan/company08.jsx';
 import company09 from './content/plan/company09.jsx';
 import company10 from './content/plan/company10.jsx';
+import Navigation from './Navigation.jsx';
 
 const Home = () => {
     return (
         <BrowserRouter>
             <div>
+                <Navigation />
+                {/*
                 <header style={styles.header}>格安モバイルWeb
                     <ul>
                         <li><Link to="/">ホーム</Link></li>
@@ -35,6 +38,7 @@ const Home = () => {
                         <li><Link to="/content">コンテンツ一覧</Link></li>
                     </ul>
                 </header>
+                */}
 
                 <main style={styles.main}>
                     <Switch>
