@@ -16,7 +16,7 @@ export default function Navigation() {
                     <BreadcrumbLink as={NavLink} to='/' className='navNormal' activeClassName='navActive'>ホーム</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbItem>
-                    <BreadcrumbLink as={NavLink} to='/about' className='navNormal' activeClassName='navActive'>ホーム</BreadcrumbLink>
+                    <BreadcrumbLink as={NavLink} to='/about' className='navNormal' activeClassName='navActive'>格安SIMとは？</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbItem>
                     <BreadcrumbLink as={NavLink} to='/pros_cons' className='navNormal' activeClassName='navActive'>格安SIMのメリット・デメリット</BreadcrumbLink>
