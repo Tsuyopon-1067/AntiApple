@@ -21,27 +21,22 @@ export default function Navigation() {
                 <Breadcrumb className={Styles.navMain} separator='' spacing='0' >
                     <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
                         <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
-                            <p>トップ</p>
-                        </BreadcrumbLink>
-                    </BreadcrumbItem>
-                    <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
-                        <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
-                            <p>格安SIMの概要</p>
+                            <p>ホーム</p>
                         </BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
                         <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/about'>
-                            <p>プラン診断</p>
+                            <p>格安SIMとは？</p>
                         </BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
                         <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/pros_cons'>
-                            <p>シミュレーション</p>
+                            <p>格安SIMのメリット・デメリット</p>
                         </BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
                         <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/content'>
-                            <p>おすすめ端末</p>
+                            <p>コンテンツ一覧</p>
                         </BreadcrumbLink>
                     </BreadcrumbItem>
                 </Breadcrumb>
