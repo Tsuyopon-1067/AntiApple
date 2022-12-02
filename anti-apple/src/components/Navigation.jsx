@@ -13,14 +13,16 @@ export default function Navigation() {
             <h1>格安モバイルWebへようこそ！</h1>
             <Breadcrumb>
                 <BreadcrumbItem>
-                    <BreadcrumbLink as={NavLink} to="/" className='navNormal' activeClassName='navActive'>ホーム</BreadcrumbLink>
-                </BreadcrumbItem>
-                    <BreadcrumbLink as={NavLink} to="/" className='navNormal' activeClassName='navActive'>ホーム</BreadcrumbLink>
-                <BreadcrumbItem>
-                    <BreadcrumbLink as={NavLink} to="/pros_cons className='navNormal' activeClassName='navActive'">格安SIMのメリット・デメリット</BreadcrumbLink>
+                    <BreadcrumbLink as={NavLink} to='/' className='navNormal' activeClassName='navActive'>ホーム</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbItem>
-                    <BreadcrumbLink as={NavLink} to="/content className='navNormal' activeClassName='navActive'">コンテンツ一覧</BreadcrumbLink>
+                    <BreadcrumbLink as={NavLink} to='/about' className='navNormal' activeClassName='navActive'>ホーム</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbItem>
+                    <BreadcrumbLink as={NavLink} to='/pros_cons' className='navNormal' activeClassName='navActive'>格安SIMのメリット・デメリット</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbItem>
+                    <BreadcrumbLink as={NavLink} to='/content' className='navNormal' activeClassName='navActive'>コンテンツ一覧</BreadcrumbLink>
                 </BreadcrumbItem>
             </Breadcrumb>
         </nav>
