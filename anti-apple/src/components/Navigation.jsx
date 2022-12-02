@@ -12,17 +12,17 @@ export default function Navigation() {
         <nav className='navMain' style={styles.navMain} >
             <h1>格安モバイルWebへようこそ！</h1>
             <Breadcrumb>
-                <BreadcrumbItem>
-                    <BreadcrumbLink as={NavLink} to='/' className='navNormal' activeClassName='navActive'>ホーム</BreadcrumbLink>
+                <BreadcrumbItem className='navNormal' activeClassName='navActive'>
+                    <BreadcrumbLink as={NavLink} to='/' >ホーム</BreadcrumbLink>
                 </BreadcrumbItem>
-                <BreadcrumbItem>
-                    <BreadcrumbLink as={NavLink} to='/about' className='navNormal' activeClassName='navActive'>格安SIMとは？</BreadcrumbLink>
+                <BreadcrumbItem className='navNormal' activeClassName='navActive'>
+                    <BreadcrumbLink as={NavLink} to='/about'>格安SIMとは？</BreadcrumbLink>
                 </BreadcrumbItem>
-                <BreadcrumbItem>
-                    <BreadcrumbLink as={NavLink} to='/pros_cons' className='navNormal' activeClassName='navActive'>格安SIMのメリット・デメリット</BreadcrumbLink>
+                <BreadcrumbItem className='navNormal' activeClassName='navActive'>
+                    <BreadcrumbLink as={NavLink} to='/pros_cons'>格安SIMのメリット・デメリット</BreadcrumbLink>
                 </BreadcrumbItem>
-                <BreadcrumbItem>
-                    <BreadcrumbLink as={NavLink} to='/content' className='navNormal' activeClassName='navActive'>コンテンツ一覧</BreadcrumbLink>
+                <BreadcrumbItem className='navNormal' activeClassName='navActive'>
+                    <BreadcrumbLink as={NavLink} to='/content'>コンテンツ一覧</BreadcrumbLink>
                 </BreadcrumbItem>
             </Breadcrumb>
         </nav>
