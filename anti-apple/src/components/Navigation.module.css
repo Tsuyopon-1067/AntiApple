@@ -1,0 +1,44 @@
+.navDiv {
+    padding: 0;
+    margin: 0;
+    background-color: #666;
+    border-bottom: 3px solid #555;
+}
+.navHead {
+    display: flex;
+}
+.navIcon {
+    margin: 5px 10px;
+    width: 48px;
+    display: flex;
+}
+.navTitle {
+    color: #FFF;
+}
+.navMain {
+    padding: 0;
+}
+
+.navNormal {
+    width: 25%;
+    height: 50px;
+    padding: auto 5px;
+    margin: 0;
+    display: flexbox;
+    gap: 0px;
+    transition: .3s;
+}
+.navNormal:hover {
+    background: #43c3ac;
+}
+.navLink {
+    text-align: center;
+    width: 100%;
+}
+.navLink:hover {
+    text-decoration: none;
+}
+.navNormal p {
+    color: white;
+    margin: 5px;
+}

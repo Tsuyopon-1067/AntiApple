@@ -1,41 +1,46 @@
 import React from 'react';
 import { NavLink,
-} from 'react-router-dom'
+} from 'react-router-dom';
 import {
     Breadcrumb,
     BreadcrumbItem,
     BreadcrumbLink,
-} from '@chakra-ui/react'
+    Image,
+} from '@chakra-ui/react';
+import Styles from './Navigation.module.css';
+import Icon from './ika.png';
 
 export default function Navigation() {
     return (
-        <nav className='navMain' style={styles.navMain} >
-            <h1>格安モバイルWebへようこそ！</h1>
-            <Breadcrumb>
-                <BreadcrumbItem className='navNormal' activeClassName='navActive'>
-                    <BreadcrumbLink as={NavLink} to='/' >ホーム</BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbItem className='navNormal' activeClassName='navActive'>
-                    <BreadcrumbLink as={NavLink} to='/about'>格安SIMとは？</BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbItem className='navNormal' activeClassName='navActive'>
-                    <BreadcrumbLink as={NavLink} to='/pros_cons'>格安SIMのメリット・デメリット</BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbItem className='navNormal' activeClassName='navActive'>
-                    <BreadcrumbLink as={NavLink} to='/content'>コンテンツ一覧</BreadcrumbLink>
-                </BreadcrumbItem>
-            </Breadcrumb>
-        </nav>
+        <React.Fragment>
+            <div className={Styles.navDiv}>
+                <div className={Styles.navHead}>
+                    <Image className={Styles.navIcon} src={Icon} />
+                    <h1 className={Styles.navTitle}>格安モバイルWebへようこそ！</h1>
+                </div>
+                <Breadcrumb className={Styles.navMain} separator='' spacing='0' >
+                    <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
+                        <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
+                            <p>ホーム</p>
+                        </BreadcrumbLink>
+                    </BreadcrumbItem>
+                    <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
+                        <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/about'>
+                            <p>格安SIMとは？</p>
+                        </BreadcrumbLink>
+                    </BreadcrumbItem>
+                    <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
+                        <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/pros_cons'>
+                            <p>格安SIMのメリット・デメリット</p>
+                        </BreadcrumbLink>
+                    </BreadcrumbItem>
+                    <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
+                        <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/content'>
+                            <p>コンテンツ一覧</p>
+                        </BreadcrumbLink>
+                    </BreadcrumbItem>
+                </Breadcrumb>
+            </div>
+        </React.Fragment>
     )
-}
-
-const styles = {
-    navMain : {
-        height: 150,
-        background: "#c8f",
-    },
-    navLink : {
-        background: "#cef",
-    }
-
 }
