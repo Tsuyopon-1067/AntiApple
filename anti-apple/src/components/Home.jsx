@@ -40,7 +40,7 @@ const Home = () => {
                     </ul>
                 </header>
                 */}
-                // ここでテスト用カルーセルを配置
+                {/* ここでテスト用カルーセルを配置 */}
                 <Carousel />
 
                 <main style={styles.main}>
