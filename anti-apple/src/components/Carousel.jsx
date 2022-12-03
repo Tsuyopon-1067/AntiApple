@@ -5,6 +5,7 @@ import Image2 from './CarouselImages/2.png';
 import Image3 from './CarouselImages/3.png';
 import Image4 from './CarouselImages/4.png';
 import {
+    Button,
     Image,
 } from '@chakra-ui/react';
 
@@ -19,8 +20,8 @@ export default function Carousel() {
                 <Image src={Image4} />
             </div>
             <div class='btns'>
-                <button class='btn-prev'>s</button>
-                <button class='btn-next'>s</button>
+                <Button class='btn-prev' colorScheme='teal'>Text</Button>
+                <Button class='btn-next' colorScheme='teal'>Text</Button>
             </div>
         </React.Fragment>
     )
