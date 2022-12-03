@@ -42,3 +42,6 @@
     color: white;
     margin: 5px;
 }
+.navNormal:hover a {
+    text-decoration: none;
+}
