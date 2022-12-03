@@ -1,28 +1,40 @@
-import React from 'react';
+import React, { Component } from 'react';
+import {Image1, Image2, Image3, ArrowPrev, ArrowNext} from './CarouselImages.jsx';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import './slick-theme.css';
 import Styles from './Carousel.module.css';
-import Image1 from './CarouselImages/1.png';
-import Image2 from './CarouselImages/2.png';
-import Image3 from './CarouselImages/3.png';
-import Image4 from './CarouselImages/4.png';
-import {
-    Button,
-    Image,
-} from '@chakra-ui/react';
 
-export default function Carousel() {
-
+export default class Carousel extends Component {
+  render() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 800,
+        prevArrow: <button className={Styles.arrowPrev}><ArrowPrev /></button>,
+        nextArrow: <button className={Styles.arrowNext}><ArrowNext /></button>
+    };
     return (
-        <React.Fragment>
-            <div class='carousel'>
-                <Image src={Image1} />
-                <Image src={Image2} />
-                <Image src={Image3} />
-                <Image src={Image4} />
+      <div className={Styles.carouselDiv}>
+        <Slider {...settings}>
+            <div>
+                <Image1 />
             </div>
-            <div class='btns'>
-                <Button class='btn-prev' colorScheme='teal'>Text</Button>
-                <Button class='btn-next' colorScheme='teal'>Text</Button>
+            <div>
+                <Image2 />
             </div>
-        </React.Fragment>
-    )
+            <div>
+                <Image3 />
+            </div>
+        </Slider>
+      </div>
+    );
+  }
 }

@@ -1,2 +1,3 @@
 カルーセル用ライブラリのインストール
-npm install pure-react-carousel
+npm install slick-carousel --save これだけでいけるかもしれない
+npm install react-slick --save

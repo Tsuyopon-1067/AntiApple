@@ -1,0 +1,11 @@
+.carouselDiv {
+    margin: auto;
+    width: 80vw;
+    height: 30.477vw;
+}
+.arrowPrev {
+    height: 9vw;
+}
+.arrowNext {
+    height: 190vw;
+}
