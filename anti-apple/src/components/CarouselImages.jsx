@@ -2,8 +2,8 @@ import React from 'react';
 import Image1png from './CarouselImages/1.png';
 import Image2png from './CarouselImages/2.png';
 import Image3png from './CarouselImages/3.png';
-import ImagePrev from './arrowPrev.png';
-import ImageNext from './arrowNext.png';
+import ImagePrev from './CarouselImages/arrowPrev.png';
+import ImageNext from './CarouselImages/arrowNext.png';
 import {Image} from '@chakra-ui/react';
 
 export const Image1 = () => {
@@ -21,7 +21,7 @@ export const Image3 = () => {
       <Image src={Image3png} />
     );
 };
-export const ArrrowPrev = () => {
+export const ArrowPrev = () => {
     return (
       <Image src={ImagePrev} />
     );

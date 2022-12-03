@@ -1,0 +1,26 @@
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    top: 42%;
+    width: 20px;
+    height: 20px;
+}
+.slick-prev
+{
+    left: -35px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -35px;
+    left: auto;
+}
+.slick-next
+{
+    right: -35px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -35px;
+}
