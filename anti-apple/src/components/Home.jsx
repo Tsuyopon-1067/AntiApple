@@ -23,6 +23,7 @@ import company08 from './content/plan/company08.jsx';
 import company09 from './content/plan/company09.jsx';
 import company10 from './content/plan/company10.jsx';
 import Navigation from './Navigation.jsx';
+import Carousel from './Carousel.jsx';
 
 const Home = () => {
     return (
@@ -39,6 +40,8 @@ const Home = () => {
                     </ul>
                 </header>
                 */}
+                // ここでテスト用カルーセルを配置
+                <Carousel />
 
                 <main style={styles.main}>
                     <Switch>
