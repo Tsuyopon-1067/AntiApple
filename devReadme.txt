@@ -1,0 +1,2 @@
+カルーセル用ライブラリのインストール
+npm install pure-react-carousel
