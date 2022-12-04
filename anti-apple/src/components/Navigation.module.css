@@ -26,7 +26,7 @@
     margin: 0;
     display: flexbox; /* blockだと文字が上下中央にならない */
     gap: 0px; /* 隣との隙間をなくす */
-    transition: .3s;
+    transition: 0.3s;
     position: relative;
 }
 .navNormal:hover {
@@ -47,13 +47,15 @@
     text-decoration: none; /* マウスを上に載せてもテキストに下線がつかないようにする */
 }
 .navNormal ol {
-    display: block;
-    box-shadow: 4px 4px 4px 0px #0005; /* サブメニューの影 */
-    transform: scaleY(0);/* デフォルトでは非表示の状態にしておく．これを1にするとデザイン変更がしやすくなるッピよ */
-    transform-origin: center top;/* 変形を適応する基準をtopにする */
-    transition: all 0.3s;/* アニメーション時間[s] */
+    display: block; /* サブメニューを縦にする */
 }
-.navNormal:hover ol {
+.navNormal .navSubMain {
+    transform: scaleY(0); /* デフォルトでは非表示の状態にしておく．これを1にするとデザイン変更がしやすくなるッピよ */
+    transform-origin: center top; /* 変形を適応する基準をtopにする */
+    transition: all 0.3s; /* アニメーション時間[s] */
+    box-shadow: 4px 4px 4px 0px #0005; /* サブメニューの影 */
+}
+.navNormal:hover .navSubMain {
     transform: scaleY(1); /* これで下に降りてくるアニメーションができる */
 }
 /* サブメニュー全体 */
