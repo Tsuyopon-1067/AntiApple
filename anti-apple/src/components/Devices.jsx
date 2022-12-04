@@ -2,8 +2,8 @@
 const DeviceParameter = class {
     constructor(
         name,
-        img,
         manufacturer,
+        img,
         height,
         width,
         thickness,
@@ -16,8 +16,8 @@ const DeviceParameter = class {
         earphone
         ) {
         this.name = name;
-        this.img = img;
         this.manufacturer = manufacturer;
+        this.img = img;
         this.height = height;
         this.width = width;
         this.thickness= thickness;
@@ -32,8 +32,8 @@ const DeviceParameter = class {
 }
 export const Pixel6a = new DeviceParameter(
     'Pixel6a',
-    'https://lh3.googleusercontent.com/YTjc4mvSUQmALOWyOamuLMiBf4TdFWW2D94yUsnhsQXO9DQ61ZxRV060BvfKD0pn7mFeXTCS1dD_wRfN2GWGqBM-Zm6rdztVsBM=rw-e365-w500',
     'Google',
+    'https://lh3.googleusercontent.com/YTjc4mvSUQmALOWyOamuLMiBf4TdFWW2D94yUsnhsQXO9DQ61ZxRV060BvfKD0pn7mFeXTCS1dD_wRfN2GWGqBM-Zm6rdztVsBM=rw-e365-w500',
     '152.2mm',
     '71.8mm',
     '8.9mm',
