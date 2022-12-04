@@ -24,7 +24,7 @@ export default function Device() {
 
     for(const i in phone){
             ind++;
-            device.push(<h1>おすすめ端末その{ind}</h1>)
+            device.push(<h1 style={styles.device}>おすすめ端末その{ind}</h1>)
 
         for(const j in phone[i]){
             device.push(<p>{spec[j]}: {phone[i][j]}</p>)
@@ -36,4 +36,10 @@ export default function Device() {
             {device}
         </React.Fragment>
     )
+}
+
+const styles = {
+    device: {
+        margin: "1em 0 0.5em",
+    },
 }

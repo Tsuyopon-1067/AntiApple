@@ -45,7 +45,7 @@ const Home = () => {
                 {//<Carousel />
                 }
 
-                <main style={styles.main}>
+                <main>
                     <Switch>
                         <Route exact path="/" component={Top} />
                         <Route path='/about' component={About} />
@@ -91,10 +91,3 @@ const Home = () => {
 }
 
 export default Home;
-
-const styles = {
-    header: {
-        height: 150,
-        background: "#cef",
-    },
-}
