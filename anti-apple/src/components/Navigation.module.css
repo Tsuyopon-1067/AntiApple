@@ -1,4 +1,4 @@
-.navDiv {
+.navDiv { /* ナビゲーション全体 */
     padding: 0;
     margin: 0;
     background-color: #666;
@@ -9,7 +9,7 @@
 }
 .navIcon {
     margin: 5px 10px;
-    width: 48px;
+    width: 48px; /* アイコンのサイズ */
     display: flex;
 }
 .navTitle {
@@ -19,29 +19,67 @@
     padding: 0;
 }
 
-.navNormal {
+.navNormal { /* ナビゲーションバーメニューの1要素について */
     width: 20%;
     height: 50px;
     padding: auto 5px;
     margin: 0;
-    display: flexbox;
-    gap: 0px;
+    display: flexbox; /* blockだと文字が上下中央にならない */
+    gap: 0px; /* 隣との隙間をなくす */
     transition: .3s;
+    position: relative;
 }
 .navNormal:hover {
-    background: #43c3ac;
+    background-color: #43c3ac; /* マウスカーソルを上にしたときの色 */
 }
 .navLink {
-    text-align: center;
+    text-align: center; /* ナビゲーションメニューの文字を左右中央に配置 */
     width: 100%;
 }
 .navLink:hover {
-    text-decoration: none;
+    text-decoration: none; /* マウスを上に載せてもテキストに下線がつかないようにする */
 }
 .navNormal p {
-    color: white;
+    color: white; /* ナビゲーションメニューのフォントカラー */
     margin: 5px;
 }
 .navNormal:hover a {
+    text-decoration: none; /* マウスを上に載せてもテキストに下線がつかないようにする */
+}
+.navNormal ol {
+    display: none; /* 通常時は非表示．これをblockに変更するとデバッグしやすくなるッピよ */
+}
+.navNormal:hover ol {
+    display: block; /* マウスを上に乗せると出現 */
+}
+.navSubMain {
+    width: 100%; /* 格安SIMの概要メニューと同じ幅にする */
+    position: absolute; /* 下のtop・leftの基準を決める */
+    top: 50px; /* ナビゲーションメニューの高さが50だからそれに合わせる．この設定でサブメニューをメナビゲーションメニューの真下に配置できる． */
+    left: 0; /* サブメニューの左右は格安SIMの概要メニューに揃える */
+    z-index: 1; /* 要素の重なりを制御．0だとカルーセルの下に隠れる */
+    box-shadow: 4px 4px 4px #0003;
+}
+.navSub {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-top: 2px solid #FFF;
+    background-color: #2c7d6e;
+}
+.navSub:hover {
+    background-color: #43c3ac;
+}
+
+.navSub a {   /* ※B */
+    margin: 3px;
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+.navSub:hover a {
     text-decoration: none;
 }

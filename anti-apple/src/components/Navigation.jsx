@@ -28,6 +28,28 @@ export default function Navigation() {
                         <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/about' >
                             <p>格安SIMの概要</p>
                         </BreadcrumbLink>
+                        <Breadcrumb className={Styles.navSubMain} separator='' spacing='0' >
+                            <BreadcrumbItem className={Styles.navSub} activeClassName='navActive'>
+                                <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
+                                    <p>格安SIMとは</p>
+                                </BreadcrumbLink>
+                            </BreadcrumbItem>
+                            <BreadcrumbItem className={Styles.navSub} activeClassName='navActive'>
+                                <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
+                                    <p>メリット・デメリット</p>
+                                </BreadcrumbLink>
+                            </BreadcrumbItem>
+                            <BreadcrumbItem className={Styles.navSub} activeClassName='navActive'>
+                                <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
+                                    <p>プラン一覧</p>
+                                </BreadcrumbLink>
+                            </BreadcrumbItem>
+                            <BreadcrumbItem className={Styles.navSub} activeClassName='navActive'>
+                                <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
+                                    <p>速度比較</p>
+                                </BreadcrumbLink>
+                            </BreadcrumbItem>
+                        </Breadcrumb>
                     </BreadcrumbItem>
                     <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
                         <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/content/plan/diag_plans'>
