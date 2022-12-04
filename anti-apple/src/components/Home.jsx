@@ -23,12 +23,13 @@ import company08 from './content/plan/company08.jsx';
 import company09 from './content/plan/company09.jsx';
 import company10 from './content/plan/company10.jsx';
 import Navigation from './Navigation.jsx';
+import Styles from './Home.module.css';
 //import Carousel from './Carousel/Carousel.jsx';
 
 const Home = () => {
     return (
         <BrowserRouter>
-            <div>
+            <div className={Styles.homeMainDiv}>
                 <Navigation />
                 {/*
                 <header style={styles.header}>格安モバイルWeb
@@ -83,7 +84,7 @@ const Home = () => {
                     </Switch>
                 </main>
 
-                <footer style={styles.footer}>©️2022 Appleめっっちゃ嫌いです from 静岡大学情報学部 Webデザイン2022</footer>
+                <footer className={Styles.homeFooter}>©️2022 Appleめっっちゃ嫌いです from 静岡大学情報学部 Webデザイン2022</footer>
             </div>
         </BrowserRouter>
     );
@@ -96,11 +97,4 @@ const styles = {
         height: 150,
         background: "#cef",
     },
-    main: {
-
-    },
-    footer: {
-        height: 100,
-        background: '#cef',
-    }
 }
