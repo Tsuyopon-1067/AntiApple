@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 //Components(Pages)
 import Top from './Top.jsx';
@@ -23,7 +23,7 @@ import company08 from './content/plan/company08.jsx';
 import company09 from './content/plan/company09.jsx';
 import company10 from './content/plan/company10.jsx';
 import Navigation from './Navigation.jsx';
-import Carousel from './Carousel/Carousel.jsx';
+//import Carousel from './Carousel/Carousel.jsx';
 
 const Home = () => {
     return (
@@ -41,7 +41,8 @@ const Home = () => {
                 </header>
                 */}
                 {/* ここでテスト用カルーセルを配置 */}
-                <Carousel />
+                {//<Carousel />
+                }
 
                 <main style={styles.main}>
                     <Switch>
