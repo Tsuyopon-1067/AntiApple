@@ -18,9 +18,6 @@
 .navTitle {
     color: #FFF;
 }
-.navMain {
-    padding: 0;
-}
 
 .navNormal { /* ナビゲーションバーメニューの1要素について */
     width: 20%;
