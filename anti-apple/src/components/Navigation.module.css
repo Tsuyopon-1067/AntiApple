@@ -4,14 +4,17 @@
     background-color: #666;
     border-bottom: 3px solid #555;
 }
+/* ナビゲーションバーのボタンの上部分 */
 .navHead {
     display: flex;
 }
+/* ロゴ */
 .navIcon {
     margin: 5px 10px;
     width: 48px; /* アイコンのサイズ */
     display: flex;
 }
+/* ようこその文 */
 .navTitle {
     color: #FFF;
 }
@@ -54,8 +57,9 @@
     transition: all 0.3s;/* アニメーション時間[s] */
 }
 .navNormal:hover ol {
-    transform: scaleY(1);
+    transform: scaleY(1); /* これで下に降りてくるアニメーションができる */
 }
+/* サブメニュー全体 */
 .navSubMain {
     width: 100%; /* 格安SIMの概要メニューと同じ幅にする */
     position: absolute; /* 下のtop・leftの基準を決める */
@@ -63,6 +67,7 @@
     left: 0; /* サブメニューの左右は格安SIMの概要メニューに揃える */
     z-index: 1; /* 要素の重なりを制御．0だとカルーセルの下に隠れる */
 }
+/* サブメニューの1要素 */
 .navSub {
     margin: 0px;
     padding: 0px;
@@ -72,10 +77,11 @@
     border-top: 2px solid #FFF;
     background-color: #2c7d6e;
 }
+/* サブメニュー要素が選択されたら色を変える */
 .navSub:hover {
     background-color: #43c3ac;
 }
-
+/* サブメニュー要素のテキスト */
 .navSub a {   /* ※B */
     margin: 3px;
     display: flex;
@@ -84,5 +90,5 @@
     text-decoration: none;
 }
 .navSub:hover a {
-    text-decoration: none;
+    text-decoration: none; /* マウスを上に載せてもテキストに下線がつかないようにする */
 }
