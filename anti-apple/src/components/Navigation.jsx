@@ -25,22 +25,22 @@ export default function Navigation() {
                         </BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
-                        <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
+                        <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/about' >
                             <p>格安SIMの概要</p>
                         </BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
-                        <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/about'>
+                        <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/content/plan/diag_plans'>
                             <p>プラン診断</p>
                         </BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
-                        <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/pros_cons'>
+                        <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/content/simulation'>
                             <p>シミュレーション</p>
                         </BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
-                        <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/content'>
+                        <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/content/device/recommend_devices'>
                             <p>おすすめ端末</p>
                         </BreadcrumbLink>
                     </BreadcrumbItem>
