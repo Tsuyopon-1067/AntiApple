@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Image } from '@chakra-ui/react'
 
 //Components(Pages)
 import Top from './Top.jsx';

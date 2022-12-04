@@ -1,45 +1,45 @@
 import React from 'react';
+import {
+    Image
+} from '@chakra-ui/react';
+import Styles from './Device.module.css';
 
-export default function Device() {
-
-    const spec = ["端末名", "メーカー", "CPU", "コネクタ"]
-    const phone= [
-        ["iPhone 14", "Apple", "A15", "Lightning"],
-        ["Pixel 6a", "Google", "Tensor", "USB-C"],
-        ["AQUOS sense7", "SHARP", "Snapdragon 695", "USB-C, イヤホンジャック"],
-        ["Reno7 A", "OPPO", "Snapdragon 695", "USB-C, イヤホンジャック"],
-        ["Pixel 7", "Google", "Tensor G2", "USB-C"],
-        ["iPhone SE", "Apple", "A15", "Lightning"],
-        ["Xperia 5 Ⅲ", "SONY", "Snapdragon 888", "USB-C, イヤホンジャック"],
-    ]
-    //const name = ["iPhone 14", "Pixel 6a", "AQUOS sense7", "Reno7 A"];
-    //const manufac = ["Apple", "Google", "SHARP"];
-    //const cpu = ["A15", "Tensor", "Snapdragon 695"];
-    //const connector = ["Lightning", "USB-C", "USB-C, イヤホンジャック"];
-
-    
-   //const ind = [];
-    const device = [];
-    var ind = 0;
-
-    for(const i in phone){
-            ind++;
-            device.push(<h1 style={styles.device}>おすすめ端末その{ind}</h1>)
-
-        for(const j in phone[i]){
-            device.push(<p>{spec[j]}: {phone[i][j]}</p>)
-        }
-    }
-
+export const Device = (props) => {
     return (
-        <React.Fragment>
-            {device}
-        </React.Fragment>
+        <div className={Styles.flex}>
+            <figure className={Styles.deviceImage}>
+                <Image src={props.img} />
+            </figure>
+            <div class={Styles.description}>
+                <h1>
+                    <p className={Styles.deviceManufacturer}>{props.manufacturer}</p>
+                    &ensp;
+                    <p className={Styles.deviceName}>{props.name}</p>
+                </h1>
+                <p className={`${Styles.category} ${Styles.categoryFirst}`}>サイズと重量</p>
+                    <h3 className={Styles.subCategory}>縦</h3>
+                        <p className={Styles.info}>{props.height}</p>
+                    <h3 className={Styles.subCategory}>横</h3>
+                        <p className={Styles.info}>{props.width}</p>
+                    <h3 className={Styles.subCategory}>厚さ</h3>
+                        <p className={Styles.info}>{props.thickness}</p>
+                    <h3 className={Styles.subCategory}>重量</h3>
+                        <p className={Styles.info}>{props.weight}</p>
+                <p className={Styles.category}>CPU＆GPU</p>
+                    <h3 className={Styles.subCategory}>SoC</h3>
+                        <p className={Styles.info}>{props.soc}</p>
+                    <h3 className={Styles.subCategory}>CPU</h3>
+                        <p className={Styles.info}>{props.cpu}</p>
+                    <h3 className={Styles.subCategory}>GPU</h3>
+                        <p className={Styles.info}>{props.gpu}</p>
+                    <h3 className={Styles.subCategory}>Antutu</h3>
+                        <p className={Styles.info}>{props.antutu}</p>
+                <p className={Styles.category}>端子類</p>
+                    <h3 className={Styles.subCategory}>充電・通信端子</h3>
+                        <p className={Styles.info} >{props.usb}</p>
+                    <h3 className={Styles.subCategory}>イヤホンジャック</h3>
+                        <p className={Styles.info}>{props.earphone}</p>
+            </div>
+        </div>
     )
-}
-
-const styles = {
-    device: {
-        margin: "1em 0 0.5em",
-    },
 }

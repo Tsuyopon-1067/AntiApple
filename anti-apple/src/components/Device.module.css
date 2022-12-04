@@ -1,0 +1,52 @@
+/* 全体 */
+.flex {
+  display: flex; /* 横並び */
+  width: 80%; /* width指定しないと左右中央に配置できない */
+  margin: 0 auto;
+}
+/* 端末画像 */
+.deviceImage {
+  width: 640px; /* 画像サイズ指定 */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+/* 端末情報全体．左にマージンをとっている． */
+.description {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+/* 端末名 */
+.deviceName {
+  font-size: 30px;
+  font-weight: 600; /* フォントの太さ */
+  display: inline; /* 改行禁止．端末名とメーカー名両方に設定する */
+}
+/* メーカー名 */
+.deviceManufacturer {
+  font-size: 30px;
+  font-weight: 600; /* フォントの太さ */
+  display: inline; /* 改行禁止．端末名とメーカー名両方に設定する */
+}
+/* サイズ等のカテゴリ */
+.category {
+  font-size: 18px;
+  text-align: left;
+  margin: 20px 0px 0px 0px;
+}
+.categoryFirst { /* 一番上（サイズと重量）は上に端末・メーカー名がある */
+  margin: 10px 0px 0px 0px;
+}
+/* サイズ->縦のような詳細情報の見出し */
+.subCategory {
+  margin: 2px 0;
+  font-size: 16px;
+  text-align: left;
+}
+/* 詳細情報 */
+.info {
+  font-size: 16px;
+  text-align: left;
+  color: #776;
+}
