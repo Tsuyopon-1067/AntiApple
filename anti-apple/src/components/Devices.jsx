@@ -45,4 +45,3 @@ export const Pixel6a = new DeviceParameter(
     'USB Type-C® 3.1 Gen 1',
     'なし'
 );
-//Google Tensor
