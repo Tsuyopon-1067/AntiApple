@@ -25,27 +25,27 @@ export default function Navigation() {
                         </BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
-                        <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/about' >
+                        <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
                             <p>格安SIMの概要</p>
                         </BreadcrumbLink>
                         <Breadcrumb className={Styles.navSubMain} separator='' spacing='0' >
                             <BreadcrumbItem className={Styles.navSub} activeClassName='navActive'>
-                                <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
+                                <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/about' >
                                     <p>格安SIMとは</p>
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
                             <BreadcrumbItem className={Styles.navSub} activeClassName='navActive'>
-                                <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
+                                <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/pros_cons' >
                                     <p>メリット・デメリット</p>
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
                             <BreadcrumbItem className={Styles.navSub} activeClassName='navActive'>
-                                <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
+                                <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/content/plan/all_company' >
                                     <p>プラン一覧</p>
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
                             <BreadcrumbItem className={Styles.navSub} activeClassName='navActive'>
-                                <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
+                                <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/content/Speed' >
                                     <p>速度比較</p>
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
