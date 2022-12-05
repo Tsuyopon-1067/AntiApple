@@ -96,7 +96,7 @@
 /* サブメニュー要素のフォント設定 */
 .navNormal:hover .navSub p {
     text-align: center;
-    color: #F00;
+    color: rgb(255, 255, 255);
 }
 /* サブメニューにマウスをかざしたときのフォント */
 .navSub:hover p {
