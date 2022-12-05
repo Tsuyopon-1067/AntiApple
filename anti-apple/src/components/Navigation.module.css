@@ -1,8 +1,7 @@
 .navDiv { /* ナビゲーション全体 */
     padding: 0;
     margin: 0 0 10px 0;
-    background-color: rgb(194, 228, 203);
-    /*border-bottom: 3px solid #555;*/
+    background-color: #c2e4cb;
     box-shadow: 0px 0px 3px 3px #000C; /* サブメニューの影 */
 }
 /* ナビゲーションバーのボタンの上部分 */
@@ -11,7 +10,7 @@
 }
 /* ロゴ */
 .navIcon {
-    margin: 5px 10px;
+    margin: 10px 20px;
     width: 48px; /* アイコンのサイズ */
     display: flex;
     border-radius: 50%;
@@ -34,7 +33,7 @@
     position: relative;
 }
 .navNormal:hover {
-    background-color: rgb(95, 191, 121); /* マウスカーソルを上にしたときの色 */
+    background-color: #5cbf79; /* マウスカーソルを上にしたときの色 */
 }
 .navLink {
     text-align: center; /* ナビゲーションメニューの文字を左右中央に配置 */
@@ -80,20 +79,29 @@
     position: relative;
     width: 100%;
     height: 50px;
-    border-top: 2px solid #FFF;
-    background-color: #2c7d6e;
+    border-top: 2px solid #EED; /* ここのボタン間の線 */
+    background-color: #5a8f69;
 }
 /* サブメニュー要素が選択されたら色を変える */
 .navSub:hover {
-    background-color: #43c3ac;
+    background-color: #5cbf79; /* マウスカーソルを上にしたときの色 */
 }
 /* サブメニュー要素のテキスト */
-.navSub p {
-    margin: 3px;
+.navSub p a {
     display: flex;
     text-align: center;
     font-size: 16px;
     text-decoration: none;
+}
+/* サブメニュー要素のフォント設定 */
+.navNormal:hover .navSub p {
+    text-align: center;
+    color: #F00;
+}
+/* サブメニューにマウスをかざしたときのフォント */
+.navSub:hover p {
+    text-align: center;
+    color: #FFF !important; /* !importantは最優先の意味．これをつけないと色指定がうまくいかない */
 }
 .navSub:hover a {
     text-decoration: none; /* マウスを上に載せてもテキストに下線がつかないようにする */
