@@ -50,3 +50,10 @@
   text-align: left;
   color: #776;
 }
+
+/* 備考 */
+.description {
+  margin: 2px 0;
+  font-size: 16px;
+  text-align: left;
+}

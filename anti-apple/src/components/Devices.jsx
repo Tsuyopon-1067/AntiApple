@@ -13,7 +13,8 @@ const DeviceParameter = class {
         gpu,
         antutu,
         usb,
-        earphone
+        earphone,
+        note
         ) {
         this.name = name;
         this.manufacturer = manufacturer;
@@ -28,6 +29,7 @@ const DeviceParameter = class {
         this.antutu= antutu;
         this.usb = usb;
         this.earphone = earphone;
+        this.note = note;
     }
 }
 export const Pixel6a = new DeviceParameter(
@@ -43,5 +45,6 @@ export const Pixel6a = new DeviceParameter(
     '-',
     '約68万点',
     'USB Type-C® 3.1 Gen 1',
-    'なし'
+    'なし',
+    'Googleから発売されたミドルレンジスマホです。'
 );
