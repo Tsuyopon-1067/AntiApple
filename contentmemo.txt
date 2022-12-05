@@ -1,27 +1,16 @@
-取り上げる格安SIM
-ahamo
-povo
-LINEMO
-UQ
-Y!mobile
-OCN
-mineo
-IIJmio
-イオンモバイル
-J:COM
-日本通信
-biglobe
-(楽天?)
-
-取り上げるスマホ
-Pixel 6a
-Pixel 7シリーズ
-iPhone SE
-iPhone 14シリーズ
-iPhone 13 mini
-moto g52j
-AQUOS sense7
-Xiaomi 11T Pro
-Redmi note 11
-OPPO Reno7 A
-
+"export const Pixel6a = new DeviceParameter(
+    'Pixel6a',
+    'Google',
+    'https://lh3.googleusercontent.com/YTjc4mvSUQmALOWyOamuLMiBf4TdFWW2D94yUsnhsQXO9DQ61ZxRV060BvfKD0pn7mFeXTCS1dD_wRfN2GWGqBM-Zm6rdztVsBM=rw-e365-w500',
+    '152.2mm',
+    '71.8mm',
+    '8.9mm',
+    '178g',
+    'GoogleTensor',
+    '-',
+    '-',
+    '約68万点',
+    'USB Type-C® 3.1 Gen 1',
+    '-',
+    'Googleから発売されたミドルレンジスマホです。',
+);"
