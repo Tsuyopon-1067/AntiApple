@@ -1,7 +1,7 @@
 .navDiv { /* ナビゲーション全体 */
     padding: 0;
     margin: 0 0 10px 0;
-    background-color: #666;
+    background-color: rgb(194, 228, 203);
     /*border-bottom: 3px solid #555;*/
     box-shadow: 0px 0px 3px 3px #000C; /* サブメニューの影 */
 }
@@ -14,10 +14,13 @@
     margin: 5px 10px;
     width: 48px; /* アイコンのサイズ */
     display: flex;
+    border-radius: 50%;
+    background-color: #FFF;
+    padding: 3px;
 }
 /* ようこその文 */
 .navTitle {
-    color: #FFF;
+    color: rgb(91, 91, 91);
 }
 
 .navNormal { /* ナビゲーションバーメニューの1要素について */
@@ -31,7 +34,7 @@
     position: relative;
 }
 .navNormal:hover {
-    background-color: #43c3ac; /* マウスカーソルを上にしたときの色 */
+    background-color: rgb(95, 191, 121); /* マウスカーソルを上にしたときの色 */
 }
 .navLink {
     text-align: center; /* ナビゲーションメニューの文字を左右中央に配置 */
@@ -41,17 +44,20 @@
     text-decoration: none; /* マウスを上に載せてもテキストに下線がつかないようにする */
 }
 .navNormal p {
-    color: white; /* ナビゲーションメニューのフォントカラー */
+    color: rgb(91, 91, 91); /* ナビゲーションメニューのフォントカラー */
     margin: 5px;
 }
 .navNormal:hover a {
     text-decoration: none; /* マウスを上に載せてもテキストに下線がつかないようにする */
 }
+.navNormal:hover p {
+    color: rgb(64, 112, 71); /* ナビゲーションメニューのフォントカラー */
+}
 .navNormal ol {
     display: block; /* サブメニューを縦にする */
 }
 .navNormal .navSubMain {
-    transform: scaleY(0); /* デフォルトでは非表示の状態にしておく．これを1にするとデザイン変更がしやすくなるッピよ */
+    transform: scaleY(1); /* デフォルトでは非表示の状態にしておく．これを1にするとデザイン変更がしやすくなるッピよ */
     transform-origin: center top; /* 変形を適応する基準をtopにする */
     transition: all 0.3s; /* アニメーション時間[s] */
     box-shadow: 4px 4px 4px 0px #0005; /* サブメニューの影 */
@@ -82,7 +88,7 @@
     background-color: #43c3ac;
 }
 /* サブメニュー要素のテキスト */
-.navSub a {   /* ※B */
+.navSub p {
     margin: 3px;
     display: flex;
     text-align: center;
@@ -91,4 +97,5 @@
 }
 .navSub:hover a {
     text-decoration: none; /* マウスを上に載せてもテキストに下線がつかないようにする */
+    color: #0AAAFF;
 }

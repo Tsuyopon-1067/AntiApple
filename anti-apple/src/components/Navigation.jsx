@@ -8,7 +8,7 @@ import {
     Image,
 } from '@chakra-ui/react';
 import Styles from './Navigation.module.css';
-import Icon from './ika.png';
+import Icon from './antiApple.png';
 
 export default function Navigation() {
     return (
