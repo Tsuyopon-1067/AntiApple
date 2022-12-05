@@ -39,8 +39,8 @@ export const Device = (props) => {
                         <p className={Styles.info} >{props.usb}</p>
                     <h3 className={Styles.subCategory}>イヤホンジャック</h3>
                         <p className={Styles.info}>{props.earphone}</p>
-                    <h3 className={Styles.category}>備考</h3>
-                        <p className={Styles.description}>{props.note}</p>
+                <p className={Styles.category}>備考</p>
+                    <p className={Styles.description}>{props.note}</p>
             </div>
         </div>
     )
