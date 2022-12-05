@@ -57,7 +57,7 @@
     display: block; /* サブメニューを縦にする */
 }
 .navNormal .navSubMain {
-    transform: scaleY(1); /* デフォルトでは非表示の状態にしておく．これを1にするとデザイン変更がしやすくなるッピよ */
+    transform: scaleY(0); /* デフォルトでは非表示の状態にしておく．これを1にするとデザイン変更がしやすくなるッピよ */
     transform-origin: center top; /* 変形を適応する基準をtopにする */
     transition: all 0.3s; /* アニメーション時間[s] */
     box-shadow: 4px 4px 4px 0px #0005; /* サブメニューの影 */
