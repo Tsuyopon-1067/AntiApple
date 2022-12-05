@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink,
+    Link
 } from 'react-router-dom';
 import {
     Breadcrumb,
@@ -16,7 +17,9 @@ export default function Navigation() {
         <React.Fragment>
             <div className={Styles.navDiv}>
                 <div className={Styles.navHead}>
-                    <Image className={Styles.navIcon} src={Icon} />
+                    <Link to="/">
+                        <Image className={Styles.navIcon} src={Icon} />
+                        </Link>
                     <h1 className={Styles.navTitle}>格安モバイルWebへようこそ！</h1>
                 </div>
                 <Breadcrumb className={Styles.navMain} separator='' spacing='0' >
