@@ -11,6 +11,7 @@ import Styles from './Navigation.module.css';
 import Icon from './antiApple.png';
 
 export default function Navigation() {
+    document.title = "格安モバイルWebへようこそ！";
     return (
         <React.Fragment>
             <div className={Styles.navDiv}>
