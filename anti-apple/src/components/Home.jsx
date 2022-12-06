@@ -24,6 +24,7 @@ import company08 from './content/plan/company08.jsx';
 import company09 from './content/plan/company09.jsx';
 import company10 from './content/plan/company10.jsx';
 import Navigation from './Navigation.jsx';
+import notfound from './notfound.jsx';
 import Styles from './Home.module.css';
 //import Carousel from './Carousel/Carousel.jsx';
 
@@ -76,12 +77,15 @@ const Home = () => {
                                                 <Route path='/content/plan/company08' component={company08} />
                                                 <Route path='/content/plan/company09' component={company09} />
                                                 <Route path='/content/plan/company10' component={company10} />
+                                                <Route path='*' component={notfound} />
                                             </Switch>
                                         )}
                                     />
+                                     <Route path='*' component={notfound} />
                                 </Switch>
                             )}
                         />
+                        <Route path='*' component={notfound} />
                     </Switch>
                 </main>
 
