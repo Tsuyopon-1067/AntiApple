@@ -4,27 +4,27 @@ import { Image } from '@chakra-ui/react'
 
 //Components(Pages)
 import Top from './Top';
-import About from './about/About.jsx';
-import ProsCons from './about/Pros_Cons.jsx';
-import Content from './content/Content.jsx';
-import Simulation from './content/Simulation.jsx';
-import Speed from './content/Speed.jsx';
-import AllCompany from './content/plan/all_company.jsx';
-import DiagPlans from './content/plan/diag_plans.jsx';
-import RecoDevices from './content/device/recommend_devices.jsx';
-import DiagDevices from './content/device/diag_devices.jsx';
-import company01 from './content/plan/company01.jsx';
-import company02 from './content/plan/company02.jsx';
-import company03 from './content/plan/company03.jsx';
-import company04 from './content/plan/company04.jsx';
-import company05 from './content/plan/company05.jsx';
-import company06 from './content/plan/company06.jsx';
-import company07 from './content/plan/company07.jsx';
-import company08 from './content/plan/company08.jsx';
-import company09 from './content/plan/company09.jsx';
-import company10 from './content/plan/company10.jsx';
+import About from './about/About';
+import ProsCons from './about/Pros_Cons';
+import Content from './content/Content';
+import Simulation from './content/Simulation';
+import Speed from './content/Speed';
+import AllCompany from './content/plan/all_company';
+import DiagPlans from './content/plan/diag_plans';
+import RecoDevices from './content/device/recommend_devices';
+import DiagDevices from './content/device/diag_devices';
+import company01 from './content/plan/company01';
+import company02 from './content/plan/company02';
+import company03 from './content/plan/company03';
+import company04 from './content/plan/company04';
+import company05 from './content/plan/company05';
+import company06 from './content/plan/company06';
+import company07 from './content/plan/company07';
+import company08 from './content/plan/company08';
+import company09 from './content/plan/company09';
+import company10 from './content/plan/company10';
 import Navigation from './Navigation';
-import notfound from './notfound.jsx';
+import notfound from './notfound';
 import Styles from './Home.module.css';
 //import Carousel from './Carousel/Carousel.jsx';
 

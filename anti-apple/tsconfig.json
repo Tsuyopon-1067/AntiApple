@@ -5,6 +5,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "jsx": "react"
+    "esModuleInterop": true,
   },
   "files": [
     "./src/ts/main.tsx"

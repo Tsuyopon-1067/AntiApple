@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Image1, Image2, Image3, ArrowPrev, ArrowNext} from './CarouselImages.jsx';
+import {Image1, Image2, Image3, ArrowPrev, ArrowNext} from './CarouselImages';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
