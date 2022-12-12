@@ -1,48 +1,24 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "react-start",
-      "detail": "react-scripts start for debug",
-      "type": "npm",
-      "script": "start",
-      "isBackground": true,
-      "problemMatcher": [
-        {
-          "pattern": [
-            {
-              "regexp": ".",
-              "file": 1,
-              "line": 1,
-              "message": 1
-            }
-          ],
-          "background": {
-            "activeOnStart": true,
-            "beginsPattern": "^Starting.*$",
-            "endsPattern": "^Compiled.*$"
-          }
-        }
-      ],
-      "options": {
-        "env": {
-          "BROWSER": "none"
-        }
-      }
-    },
-    {
-      "label": "terminate-react-start",
-      "command": "${input:terminate}",
-      "type": "shell",
-      "problemMatcher": []
-    }
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"problemMatcher": [],
+			"label": "npm: start",
+			"detail": "react-scripts start"
+		}
   ],
-  "inputs": [
+  "configurations": [
     {
-      "id": "terminate",
-      "type": "command",
-      "command": "workbench.action.tasks.terminate",
-      "args": "react-start"
+      "name": "Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceRoot}/src",
+      "sourceMapPathOverrides": {
+          "webpack:///src/*": "${webRoot}/*"
+      }
     }
   ]
 }
