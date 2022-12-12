@@ -7,6 +7,8 @@ const DeviceParameter = class {
         width: string;
         thickness: string;
         weight: string;
+        displaySize: string;
+        resolution: string;
         soc: string;
         cpu: string;
         gpu: string;
@@ -23,8 +25,8 @@ const DeviceParameter = class {
         thickness: string,
         weight: string,
         soc: string,
-        cpu: string,
-        gpu: string,
+        displaySize: string,
+        resolution: string,
         antutu: string,
         usb: string,
         earphone: string,
@@ -38,8 +40,8 @@ const DeviceParameter = class {
         this.thickness= thickness;
         this.weight = weight;
         this.soc= soc;
-        this.cpu= cpu;
-        this.gpu= gpu;
+        this.displaySize= displaySize;
+        this.resolution= resolution;
         this.antutu= antutu;
         this.usb = usb;
         this.earphone = earphone;
