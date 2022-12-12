@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Image } from '@chakra-ui/react'
 
 //Components(Pages)
-import Top from './Top.jsx';
+import Top from './Top';
 import About from './about/About.jsx';
 import ProsCons from './about/Pros_Cons.jsx';
 import Content from './content/Content.jsx';
@@ -23,7 +23,7 @@ import company07 from './content/plan/company07.jsx';
 import company08 from './content/plan/company08.jsx';
 import company09 from './content/plan/company09.jsx';
 import company10 from './content/plan/company10.jsx';
-import Navigation from './Navigation.jsx';
+import Navigation from './Navigation';
 import notfound from './notfound.jsx';
 import Styles from './Home.module.css';
 //import Carousel from './Carousel/Carousel.jsx';
