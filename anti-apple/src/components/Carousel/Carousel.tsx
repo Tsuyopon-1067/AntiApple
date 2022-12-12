@@ -18,7 +18,6 @@ export default class Carousel extends Component {
         arrows: true,
         autoplay: true,
         autoplaySpeed: 3000,
-        speed: 800,
         prevArrow: <button className={Styles.arrowPrev}><ArrowPrev /></button>,
         nextArrow: <button className={Styles.arrowNext}><ArrowNext /></button>
     };
