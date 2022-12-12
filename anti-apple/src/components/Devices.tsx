@@ -1,20 +1,34 @@
 // ここで端末情報クラスとそれぞれの端末の情報を定義する
 const DeviceParameter = class {
+        name: string;
+        manufacturer: string;
+        img: string;
+        height: string;
+        width: string;
+        thickness: string;
+        weight: string;
+        soc: string;
+        cpu: string;
+        gpu: string;
+        antutu: string;
+        usb: string;
+        earphone: string;
+        note: string;
     constructor(
-        name,
-        manufacturer,
-        img,
-        height,
-        width,
-        thickness,
-        weight,
-        soc,
-        cpu,
-        gpu,
-        antutu,
-        usb,
-        earphone,
-        note
+        name: string,
+        manufacturer: string,
+        img: string,
+        height: string,
+        width: string,
+        thickness: string,
+        weight: string,
+        soc: string,
+        cpu: string,
+        gpu: string,
+        antutu: string,
+        usb: string,
+        earphone: string,
+        note: string
         ) {
         this.name = name;
         this.manufacturer = manufacturer;

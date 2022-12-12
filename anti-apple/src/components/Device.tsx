@@ -10,7 +10,7 @@ export const Device = (props) => {
             <figure className={Styles.deviceImage}>
                 <Image src={props.img} />
             </figure>
-            <div class={Styles.description}>
+            <div className={Styles.description}>
                 <h1>
                     <p className={Styles.deviceManufacturer}>{props.manufacturer}</p>
                     &ensp;
