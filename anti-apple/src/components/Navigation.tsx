@@ -23,49 +23,49 @@ export default function Navigation() {
                     <h1 className={Styles.navTitle}>格安モバイルWebへようこそ！</h1>
                 </div>
                 <Breadcrumb className={Styles.navMain} separator='' spacing='0' >
-                    <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
+                    <BreadcrumbItem className={Styles.navNormal}>
                         <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
                             <p>トップ</p>
                         </BreadcrumbLink>
                     </BreadcrumbItem>
-                    <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
+                    <BreadcrumbItem className={Styles.navNormal}>
                         <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
                             <p>格安SIMの概要</p>
                         </BreadcrumbLink>
                         <Breadcrumb className={Styles.navSubMain} separator='' spacing='0' >
-                            <BreadcrumbItem className={Styles.navSub} activeClassName='navActive'>
+                            <BreadcrumbItem className={Styles.navSub}>
                                 <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/about' >
                                     <p>格安SIMとは</p>
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
-                            <BreadcrumbItem className={Styles.navSub} activeClassName='navActive'>
+                            <BreadcrumbItem className={Styles.navSub}>
                                 <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/pros_cons' >
                                     <p>メリット・デメリット</p>
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
-                            <BreadcrumbItem className={Styles.navSub} activeClassName='navActive'>
+                            <BreadcrumbItem className={Styles.navSub} >
                                 <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/content/plan/all_company' >
                                     <p>プラン一覧</p>
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
-                            <BreadcrumbItem className={Styles.navSub} activeClassName='navActive'>
+                            <BreadcrumbItem className={Styles.navSub} >
                                 <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/content/Speed' >
                                     <p>速度比較</p>
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
                         </Breadcrumb>
                     </BreadcrumbItem>
-                    <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
+                    <BreadcrumbItem className={Styles.navNormal} >
                         <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/content/plan/diag_plans'>
                             <p>プラン診断</p>
                         </BreadcrumbLink>
                     </BreadcrumbItem>
-                    <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
+                    <BreadcrumbItem className={Styles.navNormal} >
                         <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/content/simulation'>
                             <p>シミュレーション</p>
                         </BreadcrumbLink>
                     </BreadcrumbItem>
-                    <BreadcrumbItem className={Styles.navNormal} activeClassName='navActive'>
+                    <BreadcrumbItem className={Styles.navNormal} >
                         <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/content/device/recommend_devices'>
                             <p>おすすめ端末</p>
                         </BreadcrumbLink>
