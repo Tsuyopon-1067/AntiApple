@@ -81,7 +81,7 @@ const Home = () => {
                                             </Switch>
                                         )}
                                     />
-                                     <Route path='*' component={notfound} />
+                                    <Route path='*' component={notfound} />
                                 </Switch>
                             )}
                         />
