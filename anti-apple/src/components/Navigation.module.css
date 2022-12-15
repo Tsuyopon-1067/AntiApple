@@ -4,21 +4,20 @@
     background-color: #c2e4cb;
     box-shadow: 0px 0px 3px 3px #000C; /* サブメニューの影 */
 }
-/* ナビゲーションバーのボタンの上部分 */
-.navHead {
-    display: flex;
-}
 /* ロゴ */
 .navIcon {
     margin: 10px 20px;
     width: 48px; /* アイコンのサイズ */
-    display: flex;
     border-radius: 50%;
     background-color: #FFF;
     padding: 3px;
+    vertical-align: middle;
+    display: inline-block;
 }
 /* ようこその文 */
 .navTitle {
+    display: inline-block;
+    vertical-align: middle;
     color: rgb(91, 91, 91);
 }
 
