@@ -14,11 +14,12 @@
     vertical-align: middle;
     display: inline-block;
 }
-/* ようこその文 */
+/* 格安モバイルWebへようこその文 */
 .navTitle {
     display: inline-block;
     vertical-align: middle;
     color: rgb(91, 91, 91);
+    font-size: 16px;
 }
 
 .navNormal { /* ナビゲーションバーメニューの1要素について */
