@@ -7,7 +7,7 @@ import Top from './Top';
 import About from './about/About';
 import ProsCons from './about/Pros_Cons';
 import Content from './content/Content';
-import Simulation from './content/Simulation';
+import {Simulation} from './content/Simulation';
 import Speed from './content/Speed';
 import AllCompany from './content/plan/all_company';
 import DiagPlans from './content/plan/diag_plans';

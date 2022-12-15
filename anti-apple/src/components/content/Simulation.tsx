@@ -1,12 +1,10 @@
 import React from 'react';
 
-const Simulation = () => {
+export const Simulation = (param) => {
     return (
-        <div>
+        <React.Fragment>
             <h1>プラン料金シミュレーション</h1>
             <p>ここに料金シミュレーションを実装</p>
-        </div>
+        </React.Fragment>
     );
-};
-
-export default Simulation;
+}
