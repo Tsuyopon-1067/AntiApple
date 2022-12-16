@@ -8,3 +8,6 @@ npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 npm install slick-carousel --save これだけでいけるかもしれない
 npm install react-slick --save
 
+レスポンシブデザインのためのライブラリのインストール
+npm install react-responsive
+
