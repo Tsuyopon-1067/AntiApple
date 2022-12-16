@@ -21,7 +21,7 @@ export default function Navigation() {
         <>
         <MediaQuery query="(max-width:700px)">
             <React.Fragment>
-                <h1>モバイル用ヘッダのテストです</h1>
+                <h1>モバイル用ヘッダのテスト 700px以下で見れるはず</h1>
             </React.Fragment>
         </MediaQuery>
 
