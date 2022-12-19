@@ -16,12 +16,12 @@ export class Plan {
     price: number;
     note: string;
     carrierName: string;
-    constructor(planName: string, volume: number, price: number, note: string, carrier: string) {
+    constructor(planName: string, volume: number, price: number, note: string, carrierName: string) {
         this.planName = planName;
         this.volume = volume;
         this.price = price;
         this.note = note;
-        this.carrierName = carrier;
+        this.carrierName = carrierName;
     }
 }
 
