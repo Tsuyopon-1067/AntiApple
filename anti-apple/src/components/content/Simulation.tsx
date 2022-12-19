@@ -1,13 +1,5 @@
 import React, { useState } from 'react';
 import { Plan, Plans } from './Plans';
-import {
-    Slider,
-    SliderTrack,
-    SliderFilledTrack,
-    SliderThumb,
-    SliderMark,
-    Box
-} from '@chakra-ui/react'
 import {SimulationSlider} from './SimulationSlider';
 // 20 50 70 100
 export const Simulation = (param) => {
