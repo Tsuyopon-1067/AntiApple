@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plan, Plans } from './Plan';
+import { Plan, Plans } from './Plans';
 import {
     Slider,
     SliderTrack,
