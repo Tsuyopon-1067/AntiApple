@@ -1,12 +1,90 @@
 // 1社のプランについての情報を表すクラス
-import React from 'react';
-class Plan {
-
+class Carrier {
+    constructor(carrierName: string, volume: Plan[][]) {
+        this.carrierName = carrierName;
+        this.volume = volume;
+    }
+    carrierName: string = "CarrierName";
+    volume: Plan[][];
 }
 
 // ある容量の選択肢の情報を表す
 // 容量・値段を保存するだけ
-class Volume {
+export class Plan {
+    name: string;
     volume: number;
     price: number;
+    constructor(name: string, volume: number, price: number) {
+        this.name = name;
+        this.volume = volume;
+        this.price = price;
+    }
 }
+
+class PlansClass {
+    list: Carrier[] = new Array();
+    // プランを名前選択可能にする
+    ahamo: Carrier;
+    ocn: Carrier;
+    // プランのインデックス選択も可能にする
+    ahamoIndex: number = 0;
+    ocnIndex: number = 1;
+
+    constructor() {
+        // ahamo
+        let ahamoPlan :Plan[][] = this.createArray();
+        ahamoPlan[0] = new Array();
+        ahamoPlan[0].push(new Plan("ahamo20GB", 20, 2970));
+        ahamoPlan[0].push(new Plan("ahamo大盛り", 100, 4950));
+        this.ahamo = new Carrier("ahamo", ahamoPlan);
+
+        // OCN
+        let ocnPlan :Plan[][] = this.createArray();
+        ocnPlan[0] = new Array();
+        ocnPlan[0].push(new Plan("500MB", 0.5, 550));
+        ocnPlan[0].push(new Plan("1GB", 1, 550));
+        ocnPlan[0].push(new Plan("3GB", 3, 770));
+        ocnPlan[0].push(new Plan("6GB", 6, 990));
+        ocnPlan[0].push(new Plan("10GB", 10, 1320));
+        this.ocn = new Carrier("OCNモバイル", ocnPlan);
+
+        this.list[this.ahamoIndex] = this.ahamo;
+        this.list[this.ocnIndex] = this.ocn;
+    }
+
+    // newされた二次元配列を返す 行の数はオプション数の最大値で設定
+    createArray(): Plan[][] {
+        let res: Plan[][] = new Array;
+        for (let i = 0; i < 2; i++) {
+            res[i] = new Array();
+        }
+        return res;
+    }
+
+    // スライダーで選択したプランを返す
+    getSelectedPlan(carrier: number, volume: number, option: number): Plan {
+        if (this.list[carrier].volume.length <= option) {
+            return new Plan("", -1, -1); // オプション指定が不正だと該当プランなしとする
+        }
+        let tmp: Plan[] = this.list[carrier].volume[option]; // 指定キャリア・オプション
+        let idx = -1; // 該当プランのインデックス
+        for (let i = 0; i < tmp.length; i++){
+            // 指定容量以上
+            if (tmp[i].volume >= volume) {
+                idx = i;
+                break;
+            }
+        }
+        if (idx == -1) {
+            return new Plan("", -1, -1); // 該当プランなし
+        }
+        return this.list[carrier].volume[option][idx];
+    }
+
+    // インデックスに対応するキャリア名を返す
+    getCarrierName(idx: number): string {
+        return this.list[idx].carrierName;
+    }
+}
+
+export const Plans = new PlansClass;
