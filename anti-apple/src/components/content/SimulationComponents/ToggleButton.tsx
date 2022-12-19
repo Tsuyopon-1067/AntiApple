@@ -2,14 +2,15 @@
 import React, { useState, ReactNode } from 'react';
 import Styles from './ToggleButton.module.css';
 import CheckIcon from './check.png';
-import { Image } from '@chakra-ui/react'
+import { Image, propNames } from '@chakra-ui/react'
 
-export const ToggleButton = ({ children }: {
-    children?: ReactNode;
-}) => {
+export const ToggleButton = (props, { children }: {
+    children?: ReactNode;}) => {
     const [state, setState] = useState(false); // 押されていたら（暗い色なら）false
     const checkChange = (e) => {
         setState(!state);
+        props.getState(state);
+
     }
     return(
         <React.Fragment>
@@ -18,7 +19,7 @@ export const ToggleButton = ({ children }: {
                 <span className={Styles.span}>
                     <div className={Styles.div}>
                         <Image className={Styles.btnImage} src={CheckIcon} />
-                        {children}
+                        {props.children}
                     </div>
                 </span>
             </label>
