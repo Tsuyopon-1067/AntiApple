@@ -1,0 +1,38 @@
+.lbl {
+    margin-right: 5px; /* ボタン同士の間隔 */
+    cursor : pointer;
+}
+.lbl input {
+    display: none; /* デフォルトのinputを非表示化 */
+}
+.span {
+    padding: 10px 30px;
+    background-color: #5cbf79; /* 通常時の色 */
+    color: #ffffff; /* フォントカラー */
+    border-radius: 8px;
+    font-size: 14px; /* 文字サイズ */
+    -webkit-user-select: none; /* ボタン上の文字選択不可 */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.lbl:hover span {
+    background-color: #c2e4cb; /* 通常時マウスを重ねたときの色 */
+}
+.lbl input:checked+span {
+    background-color: #546459; /* 無効化時の色 */
+}
+.lbl input:hover:checked+span {
+    background-color: #94ad9a; /* 無効化時マウスを重ねたときの色 */
+}
+
+.div {
+    display: inline-block;
+    width: 5em;
+}
+.btnImage {
+    display: inline-block;
+    vertical-align: middle;
+    height: 1em;
+    margin: 3px;
+}
