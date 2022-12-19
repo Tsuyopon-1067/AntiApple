@@ -36,4 +36,12 @@
     vertical-align: middle;
     height: 1em;
     margin: 3px;
+    opacity: 1;
+    transform:rotateX(0deg);
+    transition-duration: 0.5s;
+}
+.lbl input:checked + .span div img {
+    opacity: 0; /* ボタンが押されたらチェックボタンを透明化して消す */
+    transform:rotateX(95deg); /* X軸（鉄棒）方向に奥に倒す */
+    transition-duration: 0.5s; /* アニメーション時間 */
 }
