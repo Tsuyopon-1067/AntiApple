@@ -1,11 +1,11 @@
 // 1社のプランについての情報を表すクラス
 class Carrier {
-    constructor(carrierName: string, volume: Plan[][]) {
+    constructor(carrierName: string, plan: Plan[][]) {
         this.carrierName = carrierName;
-        this.volume = volume;
+        this.plan = plan;
     }
     carrierName: string = "CarrierName";
-    volume: Plan[][];
+    plan: Plan[][];
 }
 
 // ある容量の選択肢の情報を表す
