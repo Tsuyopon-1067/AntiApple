@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Plan, Plans } from './Plans';
-import {SimulationSlider} from './SimulationSlider';
+import { Plan, Plans } from './SimulationComponents/Plans';
+import {SimulationSlider} from './SimulationComponents/SimulationSlider';
 // 20 50 70 100
 export const Simulation = (param) => {
     const[dataVolume, setDataVolume] = useState(5);
