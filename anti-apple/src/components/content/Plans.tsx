@@ -31,6 +31,7 @@ class PlansClass {
     ocnIndex: number = 1;
 
     constructor() {
+        // ここにキャリア情報を書いていく
         // ahamo
         let ahamoPlan :Plan[][] = this.createArray();
         ahamoPlan[0] = new Array();
@@ -40,6 +41,7 @@ class PlansClass {
 
         // OCN
         let ocnPlan :Plan[][] = this.createArray();
+        // OCN:通常プラン
         ocnPlan[0] = new Array();
         ocnPlan[0].push(new Plan("500MB", 0.5, 550));
         ocnPlan[0].push(new Plan("1GB", 1, 550));
