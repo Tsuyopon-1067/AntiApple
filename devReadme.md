@@ -69,20 +69,24 @@ carrier.plan[0][1]はプラン型であることに注意
 あるキャリアの中の1つのプランについての情報（プラン名・値段・容量・説明・キャリア名）を格納
 #### コンストラクタ
 ```
-constructor(planName: string, volume: number, price: number, note: string, carrier: string)
+constructor(planName: string, volume: number, price: number, note: string, carrierName: string)
 ```
 例 OCNのオプションなしプランリストに500MBプラン（0.5GB，550円/月）を追加
 ```
 ocnPlan[0].push(new Plan("500MB", 0.5, 550, "OCNモバイルで一番ケチれるプラン", "OCNモバイル"));
 ```
 #### 変数
-* name: string
-* name: string
+* planName: string
 プラン名（500MB/月コースとかahamo20GBとか）
 * volume: number
 容量[GB]（数値のみ）
 * price: number
 値段[円/月]（数値のみ）
+* note: string
+プランについての説明
+書かないときは空文字「""」
+* carrierName: string
+キャリア名
 #### 使用例
 plan:Planクラスのインスタンス
 ##### 容量を取得する
