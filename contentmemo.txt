@@ -1,17 +1,16 @@
 取り上げる格安SIM
-ahamo
-povo
-LINEMO
-UQ
-Y!mobile
-OCN
-mineo
-IIJmio
-イオンモバイル
-J:COM
-日本通信
-biglobe
-(楽天?)
+00:ahamo
+01:povo
+02:LINEMO
+03:UQ
+04:Y!mobile
+05:OCN
+06:mineo
+07:IIJmio
+08:イオンモバイル
+09:J:COM
+10:日本通信
+11:biglobe
 
 取り上げるスマホ
 Pixel 6a
