@@ -10,11 +10,6 @@ export const ToggleButton = ({ children }: {
     const [state, setState] = useState(false); // 押されていたら（暗い色なら）false
     const checkChange = (e) => {
         setState(!state);
-        if (state) {
-            console.log("true");
-        } else {
-            console.log("false");
-        }
     }
     return(
         <React.Fragment>
