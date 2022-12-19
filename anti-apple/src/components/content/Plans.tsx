@@ -64,23 +64,30 @@ class PlansClass {
     }
 
     // スライダーで選択したプランを返す
-    getSelectedPlan(carrier: number, volume: number, option: number): Plan {
-        if (this.list[carrier].plan.length <= option) {
+    getSelectedPlan(carrierNumberList: number[], volume: number, option: number): Plan {
+        let selectedCarrierPlans: Plan[] = new Array();
+        for (let i = 0; i < carrierNumberList.length; i++) {
+            let k = carrierNumberList[i]; // 指定キャリア番号
+            let selectedCarrier: Carrier = this.list[k];
+            if (option < selectedCarrier.plan.length) {
+                selectedCarrierPlans = selectedCarrierPlans.concat(selectedCarrier.plan[option]);
+            }
+        }
+        if (selectedCarrierPlans.length <= option) {
             return new Plan("", -1, -1); // オプション指定が不正だと該当プランなしとする
         }
-        let tmp: Plan[] = this.list[carrier].plan[option]; // 指定キャリア・オプション
         let idx = -1; // 該当プランのインデックス
-        for (let i = 0; i < tmp.length; i++){
+        for (let i = 0; i < selectedCarrierPlans.length; i++){
             // 指定容量以上
-            if (tmp[i].volume >= volume) {
+            if (selectedCarrierPlans[i].volume >= volume) {
                 idx = i;
                 break;
             }
         }
         if (idx == -1) {
-            return new Plan("", -1, -1); // 該当プランなし
+            return new Plan("", -11, -11); // 該当プランなし
         }
-        return this.list[carrier].plan[option][idx];
+        return selectedCarrierPlans[idx];
     }
 
     // インデックスに対応するキャリア名を返す

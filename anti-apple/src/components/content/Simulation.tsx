@@ -4,7 +4,7 @@ import {SimulationSlider} from './SimulationSlider';
 // 20 50 70 100
 export const Simulation = (param) => {
     const[dataVolume, setDataVolume] = useState(5);
-    let carrier: number = 1;
+    let carrier: number[] = [1];
     let selectedPlan: Plan = Plans.getSelectedPlan(carrier, dataVolume, 0);
     return (
         <React.Fragment>
@@ -13,7 +13,7 @@ export const Simulation = (param) => {
             <SimulationSlider setDataVolume={setDataVolume} />
             <br />
             <p>選択 : {dataVolume}</p>
-            <p>{Plans.getCarrierName(carrier)}:{selectedPlan.name}, {selectedPlan.price}円</p>
+            <p>{selectedPlan.name}, {selectedPlan.price}円</p>
         </React.Fragment>
     );
 }
