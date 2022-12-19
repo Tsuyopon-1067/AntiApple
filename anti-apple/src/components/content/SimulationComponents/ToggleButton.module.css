@@ -6,7 +6,7 @@
     display: none; /* デフォルトのinputを非表示化 */
 }
 .span {
-    padding: 10px 30px;
+    padding: 10px 5px;
     background-color: #5cbf79; /* 通常時の色 */
     color: #ffffff; /* フォントカラー */
     border-radius: 8px;
@@ -28,7 +28,7 @@
 
 .div {
     display: inline-block;
-    width: 5em;
+    width: 10em;
 }
 .btnImage {
     display: inline-block;
