@@ -44,10 +44,10 @@ class PlansClass {
         // OCN:通常プラン
         ocnPlan[0] = new Array();
         ocnPlan[0].push(new Plan("500MB", 0.5, 550));
-        ocnPlan[0].push(new Plan("1GB", 1, 550));
-        ocnPlan[0].push(new Plan("3GB", 3, 770));
-        ocnPlan[0].push(new Plan("6GB", 6, 990));
-        ocnPlan[0].push(new Plan("10GB", 10, 1320));
+        ocnPlan[0].push(new Plan("1GB", 1, 770));
+        ocnPlan[0].push(new Plan("3GB", 3, 990));
+        ocnPlan[0].push(new Plan("6GB", 6, 1320));
+        ocnPlan[0].push(new Plan("10GB", 10, 1760));
         this.ocn = new Carrier("OCNモバイル", ocnPlan);
 
         this.list[this.ahamoIndex] = this.ahamo;
