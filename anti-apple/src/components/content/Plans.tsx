@@ -63,10 +63,10 @@ class PlansClass {
 
     // スライダーで選択したプランを返す
     getSelectedPlan(carrier: number, volume: number, option: number): Plan {
-        if (this.list[carrier].volume.length <= option) {
+        if (this.list[carrier].plan.length <= option) {
             return new Plan("", -1, -1); // オプション指定が不正だと該当プランなしとする
         }
-        let tmp: Plan[] = this.list[carrier].volume[option]; // 指定キャリア・オプション
+        let tmp: Plan[] = this.list[carrier].plan[option]; // 指定キャリア・オプション
         let idx = -1; // 該当プランのインデックス
         for (let i = 0; i < tmp.length; i++){
             // 指定容量以上
@@ -78,7 +78,7 @@ class PlansClass {
         if (idx == -1) {
             return new Plan("", -1, -1); // 該当プランなし
         }
-        return this.list[carrier].volume[option][idx];
+        return this.list[carrier].plan[option][idx];
     }
 
     // インデックスに対応するキャリア名を返す
