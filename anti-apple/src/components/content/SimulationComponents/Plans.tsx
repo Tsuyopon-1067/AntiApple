@@ -16,8 +16,8 @@ export class Plan {
     price: number;
     note: string;
     carrierName: string;
-    constructor(name: string, volume: number, price: number, note: string, carrier: string) {
-        this.planName = name;
+    constructor(planName: string, volume: number, price: number, note: string, carrier: string) {
+        this.planName = planName;
         this.volume = volume;
         this.price = price;
         this.note = note;
