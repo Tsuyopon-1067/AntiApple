@@ -29,6 +29,7 @@
 .div {
     display: inline-block;
     width: 10em;
+    height: 3em;
 }
 .btnImage {
     display: inline-block;
