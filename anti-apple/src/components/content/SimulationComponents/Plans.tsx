@@ -197,7 +197,6 @@ class PlansClass {
                 // より安いやつが見つかった
                 if (selectedCarrierPlans[i].price <= res.price) {
                     res = selectedCarrierPlans[i];
-                    console.log(res.price);
                 }
             }
         }
