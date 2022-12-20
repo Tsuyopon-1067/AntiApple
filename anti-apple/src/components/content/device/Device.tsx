@@ -12,9 +12,9 @@ export const Device = (props) => {
             </figure>
             <div className={Styles.description}>
                 <h1>
-                    <p className={Styles.deviceManufacturer}>{props.manufacturer}</p>
+                    <span className={Styles.deviceManufacturer}>{props.manufacturer}</span>
                     &ensp;
-                    <p className={Styles.deviceName}>{props.name}</p>
+                    <span className={Styles.deviceName}>{props.name}</span>
                 </h1>
                 <p className={`${Styles.category} ${Styles.categoryFirst}`}>サイズと重量</p>
                     <h3 className={Styles.subCategory}>縦</h3>
