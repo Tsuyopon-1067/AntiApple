@@ -1,5 +1,4 @@
 // キャリア選択ボタン
-import { effect } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import  { ToggleButton } from './ToggleButton';
 
