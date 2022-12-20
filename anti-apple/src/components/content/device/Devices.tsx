@@ -153,3 +153,20 @@ export const AQUOSsense7 = new DeviceParameter(
     '',
     'SHARP https://jp.sharp/products/aquos-sense7/d/',
 );
+export const motog52j = new DeviceParameter(
+    'moto g52j',
+    'motorola',
+    'https://store.motorola.co.jp/client_info/MOTOROLA/itemimage/MOTO_G52J_5G/Shironeri_FRONT.png',
+    '171.0mm',
+    '76.8mm',
+    '9.1mm',
+    '206g',
+    '6.8',
+    '2460x1080',
+    'Qualcomm® Snapdragon™ 695 5G',
+    '約38万点',
+    'USB-Type C (USB 2.0)',
+    '3.5 mm',
+    '',
+    'motorola https://store.motorola.co.jp/item/MOTO_G52J_5G.html',
+);
