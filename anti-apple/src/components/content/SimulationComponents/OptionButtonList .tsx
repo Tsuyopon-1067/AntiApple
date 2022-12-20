@@ -1,4 +1,4 @@
-// キャリア選択ボタン
+// オプション選択ボタン
 import React, { useEffect, useState } from 'react';
 import  { ToggleButton } from './ToggleButton';
 
