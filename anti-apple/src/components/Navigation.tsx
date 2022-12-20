@@ -37,7 +37,7 @@ export default function Navigation() {
             <div className={Styles.navDivMobile}>
                 <div className={Styles.grid}>
                     <div className={Styles.hamburgerDiv}>
-                        <IconButton className={Styles.hamburgerBtn} icon={<Image className={Styles.hamburger} src={HamburgerIcon} />} 
+                        <IconButton icon={<Image className={Styles.hamburger} src={HamburgerIcon} />} 
                             variant="customicon" 
                             onClick={onOpen} 
                             aria-label={'navIcon'} />

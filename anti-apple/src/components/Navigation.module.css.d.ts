@@ -1,7 +1,6 @@
 export const className: string;
 export const navDivMobile: string;
 export const navIconMobile: string;
-export const hamburgerBtn: string;
 export const hamburger: string;
 export const grid: string;
 export const iconBtnDiv: string;

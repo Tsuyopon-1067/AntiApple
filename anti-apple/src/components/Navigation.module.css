@@ -121,14 +121,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
+    margin: 0 8px; /* ハンバーガーメニューボタンの左右余白 */
 }
-.hamburgerDiv {
+.hamburgerDiv { /* ハンバーガーメニューボタン用の領域 */
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     grid-column: 1;
 }
-.iconBtnDiv {
+.iconBtnDiv { /* サイトアイコン用の領域 */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -140,9 +142,6 @@
     border-radius: 50%;
     background-color: #FFF;
     padding: 3px;
-}
-.hamburgerBtn {
-    margin: auto 0; /* 上下中央にする */
 }
 .hamburger {
     width: 42px;
