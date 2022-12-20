@@ -3,19 +3,24 @@
   display: flex; /* 横並び */
   width: 80%; /* width指定しないと左右中央に配置できない */
   margin: 0 auto;
+  justify-content: center;
 }
-/* 端末画像 */
-.deviceImage {
-  width: 640px; /* 画像サイズ指定 */
+/* 端末画像+出典 */
+.figre {
   margin: 0;
   padding: 0;
   overflow: hidden;
   position: relative;
 }
-/* 端末情報全体．左にマージンをとっている． */
+/* 端末画像 */
+.img {
+  width: 580px; /* 画像サイズ指定 */
+}
+/* 端末情報（テキスト）全体．左にマージンをとっている． */
 .description {
   margin: 0 0 0 20px;
   padding: 0;
+  width: 400px;
 }
 /* 端末名 */
 .deviceName {

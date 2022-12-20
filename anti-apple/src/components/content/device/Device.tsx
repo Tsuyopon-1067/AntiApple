@@ -7,8 +7,8 @@ import Styles from './Device.module.css';
 export const Device = (props) => {
     return (
         <div className={Styles.flex}>
-            <figure className={Styles.deviceImage}>
-                <Image src={props.img} />
+            <figure className={Styles.figure}>
+                <Image className={Styles.img} src={props.img} />
                 <p className={Styles.source}>出典：{props.source}</p>
             </figure>
             <div className={Styles.description}>
