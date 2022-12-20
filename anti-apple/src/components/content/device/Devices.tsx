@@ -16,6 +16,7 @@ const DeviceParameter = class {
         usb: string;
         earphone: string;
         note: string;
+        source: string;
     constructor(
         name: string,
         manufacturer: string,
@@ -30,7 +31,8 @@ const DeviceParameter = class {
         antutu: string,
         usb: string,
         earphone: string,
-        note: string
+        note: string,
+        source: string
         ) {
         this.name = name;
         this.manufacturer = manufacturer;
@@ -46,6 +48,7 @@ const DeviceParameter = class {
         this.usb = usb;
         this.earphone = earphone;
         this.note = note;
+        this.source = source;
     }
 }
 export const Pixel6a = new DeviceParameter(
@@ -62,7 +65,8 @@ export const Pixel6a = new DeviceParameter(
     '約68万点',
     'USB Type-C® 3.1 Gen 1',
     'なし',
-    'Googleから発売されたミドルレンジスマホです。'
+    'Googleから発売されたミドルレンジスマホです。',
+    ""
 );
 export const Xiaomi11TPro = new DeviceParameter(
     'Xiaomi 11T Pro',
@@ -79,6 +83,7 @@ export const Xiaomi11TPro = new DeviceParameter(
     'USB Type-C 2.0',
     '-',
     '',
+    ""
 );
 export const Redminote11 = new DeviceParameter(
     'Redmi note 11',
@@ -95,6 +100,7 @@ export const Redminote11 = new DeviceParameter(
     'USB Type-C 2.0',
     '3.5 mm',
     '',
+    ""
 );
 export const iPhoneSE = new DeviceParameter(
     'iPhone SE(2022)',
@@ -111,4 +117,5 @@ export const iPhoneSE = new DeviceParameter(
     'Lightningコネクタ',
     '-',
     '',
+    ""
 )
