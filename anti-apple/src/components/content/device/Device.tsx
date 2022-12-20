@@ -9,7 +9,7 @@ export const Device = (props) => {
         <div className={Styles.flex}>
             <figure className={Styles.deviceImage}>
                 <Image src={props.img} />
-                <p>{props.source}</p>
+                <p className={Styles.source}>出典：{props.source}</p>
             </figure>
             <div className={Styles.description}>
                 <h1>

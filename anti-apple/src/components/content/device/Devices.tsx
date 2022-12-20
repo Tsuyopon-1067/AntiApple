@@ -59,14 +59,14 @@ export const Pixel6a = new DeviceParameter(
     '71.8mm',
     '8.9mm',
     '178g',
+    '6.1',
+    '1080x2400',
     'GoogleTensor',
-    '-',
-    '-',
     '約68万点',
     'USB Type-C® 3.1 Gen 1',
     'なし',
     'Googleから発売されたミドルレンジスマホです。',
-    ""
+    'Googleストア https://store.google.com/jp/product/pixel_6a_specs?hl=ja',
 );
 export const Xiaomi11TPro = new DeviceParameter(
     'Xiaomi 11T Pro',
