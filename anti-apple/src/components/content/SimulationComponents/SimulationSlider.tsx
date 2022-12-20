@@ -8,7 +8,9 @@ import {
     SliderMark,
     Box
 } from '@chakra-ui/react'
+import Styles from './SimulationSlider.module.css';
 // 20 50 70 100
+
 export const SimulationSlider = (props) => {
     const [dataVolume,setDataVolume] = useState(5);
     props.setDataVolume(dataVolume);
@@ -16,11 +18,11 @@ export const SimulationSlider = (props) => {
     return (
         <React.Fragment>
             <Slider defaultValue={5} min={0} max={volumes.length-1} step={1} onChangeEnd={(val) => setDataVolume(volumes[val])}>
-                <SliderTrack bg='red.100'>
-                    <SliderFilledTrack bg='tomato' />
+                <SliderTrack bg="#c2e4cb">
+                    <SliderFilledTrack bg="#5cbf79" />
                 </SliderTrack>
-                <SliderThumb boxSize={6}>
-                    <Box color='tomato' />
+                <SliderThumb boxSize={3}>
+                    <Box className={Styles.thumb} bg="#fcfcfc" w='100%' p={3} color='white' />
                 </SliderThumb>
                 {(() => {
                     // ここでスライダーのラベルを追加する

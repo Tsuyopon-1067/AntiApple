@@ -1,0 +1,7 @@
+.thumb {
+    border-radius: 100%;
+    -webkit-filter:drop-shadow(4px 5px 7px rgba(0, 0, 0, 0.35));
+    -moz-filter:drop-shadow(4px 5px 7px rgba(0, 0, 0, 0.35));
+    -ms-filter:drop-shadow(4px 5px 7px rgba(0, 0, 0, 0.35));
+    filter:drop-shadow(4px 5px 7px rgba(0, 0, 0, 0.35));
+}
