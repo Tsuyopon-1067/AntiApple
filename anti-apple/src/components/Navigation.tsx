@@ -9,17 +9,22 @@ import {
     Image,
     useDisclosure,
     Button,
+    IconButton,
     Drawer,
     DrawerOverlay,
     DrawerContent,
     DrawerHeader,
     DrawerBody,
+    Box 
 } from '@chakra-ui/react';
 
 import MediaQuery from 'react-responsive';
 
 import Styles from './Navigation.module.css';
 import Icon from './antiApple.png';
+import HamburgerIcon from './hamburger.png';
+import CloseIcon from './batu.png';
+
 
 export default function Navigation() {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -30,17 +35,30 @@ export default function Navigation() {
         <>
         <MediaQuery query="(max-width:700px)">
             <div className={Styles.navDivMobile}>
-                <Button onClick={onOpen}>≡</Button>
-                <Link to="/">
-                    <Image className={Styles.navIconMobile} src={Icon} />
-                </Link>
+                <div className={Styles.grid}>
+                    <div className={Styles.hamburgerDiv}>
+                        <IconButton className={Styles.hamburgerBtn} icon={<Image className={Styles.hamburger} src={HamburgerIcon} />} 
+                            variant="customicon" 
+                            onClick={onOpen} 
+                            aria-label={'navIcon'} />
+                    </div>
+                    <div className={Styles.iconBtnDiv}>
+                        <Link to="/">
+                            <Image className={Styles.navIconMobile} src={Icon} />
+                        </Link>
+                    </div>
+                </div>
                 {//<h1 className={Styles.navTitle}>モバイル用ヘッダのテスト 700px以下で見れるはず</h1>
                 }
                 <Drawer placement='left' onClose={onClose} isOpen={isOpen}>
                     <DrawerOverlay />
                     <DrawerContent>
                     <DrawerHeader borderBottomWidth='1px'>
-                    <Button onClick={onClose}>X</Button>
+                    
+                    <IconButton icon={<Image className={Styles.hamburger} src={CloseIcon} />} 
+                        variant="customicon" 
+                        onClick={onClose} 
+                        aria-label={'navIcon'} />
                     Basic Drawer
                     </DrawerHeader>
                     <DrawerBody>
