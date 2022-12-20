@@ -68,7 +68,7 @@ export const Pixel6a = new DeviceParameter(
     'Googleから発売されたミドルレンジスマホです。',
     'Googleストア https://store.google.com/jp/product/pixel_6a_specs?hl=ja',
 );
-export const Xiaomi11TPro = new DeviceParameter(
+export const Xiaomi 11T Pro = new DeviceParameter(
     'Xiaomi 11T Pro',
     '',
     'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1634543081.67579045.png',
@@ -76,16 +76,16 @@ export const Xiaomi11TPro = new DeviceParameter(
     '76.9mm',
     '8.8mm',
     '204g',
+    '6.67',
+    '2400x1080',
     'Qualcomm® Snapdragon™ 888',
-    'Kryo 680',
-    'Qualcomm® Adreno™ 660 GPU',
     '約78万点',
     'USB Type-C 2.0',
-    '-',
+    'なし',
     '',
-    ""
+    'Xiaomiオンラインストア https://www.mi.com/jp/product/xiaomi-11t-pro/specs?skupanel=1',
 );
-export const Redminote11 = new DeviceParameter(
+export const Redmi note 11 = new DeviceParameter(
     'Redmi note 11',
     '',
     'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1646103046.16183466.png',
@@ -93,14 +93,14 @@ export const Redminote11 = new DeviceParameter(
     '73.87mm',
     '8.09mm',
     '179g',
+    '6.43',
+    '2400x1080',
     'Qualcomm® Snapdragon™ 680',
-    'Kryo 265',
-    'Qualcomm® Adreno™ 610 GPU',
     '約24万点',
     'USB Type-C 2.0',
     '3.5 mm',
     '',
-    ""
+    'Xiaomiオンラインストア https://www.mi.com/jp/product/redmi-note-11/specs?skupanel=1',
 );
 export const iPhoneSE = new DeviceParameter(
     'iPhone SE(2022)',
