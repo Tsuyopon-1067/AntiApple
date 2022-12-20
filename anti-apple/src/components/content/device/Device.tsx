@@ -28,7 +28,7 @@ export const Device = (props) => {
                         <p className={Styles.info}>{props.weight}</p>
                 <p className={Styles.category}>ディスプレイ</p>
                     <h3 className={Styles.subCategory}>画面サイズ</h3>
-                        <p className={Styles.info}>{props.displaySize}</p>
+                        <p className={Styles.info}>{props.displaySize}インチ</p>
                     <h3 className={Styles.subCategory}>解像度</h3>
                         <p className={Styles.info}>{props.resolution}</p>
                 <p className={Styles.category}>CPU＆GPU</p>
