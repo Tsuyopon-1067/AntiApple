@@ -19,7 +19,7 @@
     display: inline-block;
     vertical-align: middle;
     color: rgb(91, 91, 91);
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .navNormal { /* ナビゲーションバーメニューの1要素について */
@@ -106,4 +106,24 @@
 .navSub:hover a {
     text-decoration: none; /* マウスを上に載せてもテキストに下線がつかないようにする */
     color: #0AAAFF;
+}
+
+/* ここからはモバイル向け実装用 */
+.navDivMobile { /* ナビゲーション全体 */
+    padding: 0;
+    margin: 0 0 10px 0;
+    background-color: #c2e4cb;
+    box-shadow: 0px 0px 3px 3px #000C; /* サブメニューの影 */
+    text-align: center;
+}
+
+.navIconMobile {
+    margin: 10px 20px;
+    width: 48px; /* アイコンのサイズ */
+    border-radius: 50%;
+    background-color: #FFF;
+    padding: 3px;
+    vertical-align: middle;
+    display: inline-block;
+
 }
