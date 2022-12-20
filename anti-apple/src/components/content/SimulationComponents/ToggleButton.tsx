@@ -6,7 +6,7 @@ import { Image, propNames } from '@chakra-ui/react'
 
 export const ToggleButton = (props, { children }: {
     children?: ReactNode;}) => {
-    const [state, setState] = useState(false); // 押されていたら（暗い色なら）false
+    const [state, setState] = useState(props.defaultState); // 押されていたら（暗い色なら）false
     const checkChange = (e) => {
         setState(!state);
         props.getState(state);

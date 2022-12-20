@@ -35,18 +35,18 @@ export const CarrierButtonList = (props) => {
 
     return(
         <React.Fragment>
-            <ToggleButton getState={setIsChecked0}>ahamo</ToggleButton>
-            <ToggleButton getState={setIsChecked1}>povo</ToggleButton>
-            <ToggleButton getState={setIsChecked2}>LINEMO</ToggleButton>
-            <ToggleButton getState={setIsChecked3}>UQ</ToggleButton>
-            <ToggleButton getState={setIsChecked4}>Y!mobile</ToggleButton>
-            <ToggleButton getState={setIsChecked5}>OCN</ToggleButton>
-            <ToggleButton getState={setIsChecked6}>mineo</ToggleButton>
-            <ToggleButton getState={setIsChecked7}>IIJmio</ToggleButton>
-            <ToggleButton getState={setIsChecked8}>イオンモバイル</ToggleButton>
-            <ToggleButton getState={setIsChecked9}>J:COM</ToggleButton>
-            <ToggleButton getState={setIsChecked10}>日本通信</ToggleButton>
-            <ToggleButton getState={setIsChecked11}>biglobe</ToggleButton>
+            <ToggleButton getState={setIsChecked0} defaultState={false} >ahamo</ToggleButton>
+            <ToggleButton getState={setIsChecked1} defaultState={false} >povo</ToggleButton>
+            <ToggleButton getState={setIsChecked2} defaultState={false} >LINEMO</ToggleButton>
+            <ToggleButton getState={setIsChecked3} defaultState={false} >UQ</ToggleButton>
+            <ToggleButton getState={setIsChecked4} defaultState={false} >Y!mobile</ToggleButton>
+            <ToggleButton getState={setIsChecked5} defaultState={false} >OCN</ToggleButton>
+            <ToggleButton getState={setIsChecked6} defaultState={false} >mineo</ToggleButton>
+            <ToggleButton getState={setIsChecked7} defaultState={false} >IIJmio</ToggleButton>
+            <ToggleButton getState={setIsChecked8} defaultState={false} >イオンモバイル</ToggleButton>
+            <ToggleButton getState={setIsChecked9} defaultState={false} >J:COM</ToggleButton>
+            <ToggleButton getState={setIsChecked10} defaultState={false} >日本通信</ToggleButton>
+            <ToggleButton getState={setIsChecked11} defaultState={false} >biglobe</ToggleButton>
         </React.Fragment>
     );
 }
