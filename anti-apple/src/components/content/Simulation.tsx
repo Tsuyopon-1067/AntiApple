@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Plan, Plans } from './SimulationComponents/Plans';
 import {SimulationSlider} from './SimulationComponents/SimulationSlider';
-import {ToggleButtonList} from './SimulationComponents/ToggleButtonList';
+import {CarrierButtonList} from './SimulationComponents/CarrierButtonList';
 // 20 50 70 100
 export const Simulation = (param) => {
     const[dataVolume, setDataVolume] = useState(5);
@@ -11,7 +11,7 @@ export const Simulation = (param) => {
         <React.Fragment>
             <h1>プラン料金シミュレーション</h1>
             <p>ここに料金シミュレーションを実装</p>
-            <ToggleButtonList getCarrier={setCarrier} />
+            <CarrierButtonList getCarrier={setCarrier} />
             <SimulationSlider setDataVolume={setDataVolume} />
             <br />
             <p>選択 : {dataVolume}</p>

@@ -1,9 +1,9 @@
-// トグルボタン1つ
+// キャリア選択ボタン
 import { effect } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import  { ToggleButton } from './ToggleButton';
 
-export const ToggleButtonList = (props) => {
+export const CarrierButtonList = (props) => {
     const [isChecked0, setIsChecked0] = useState(true);
     const [isChecked1, setIsChecked1] = useState(true);
     const [isChecked2, setIsChecked2] = useState(true);
