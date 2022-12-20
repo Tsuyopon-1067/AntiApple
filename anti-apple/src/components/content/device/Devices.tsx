@@ -68,7 +68,7 @@ export const Pixel6a = new DeviceParameter(
     'Googleから発売されたミドルレンジスマホです。',
     'Googleストア https://store.google.com/jp/product/pixel_6a_specs?hl=ja',
 );
-export const Xiaomi 11T Pro = new DeviceParameter(
+export const Xiaomi11TPro = new DeviceParameter(
     'Xiaomi 11T Pro',
     '',
     'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1634543081.67579045.png',
@@ -85,7 +85,7 @@ export const Xiaomi 11T Pro = new DeviceParameter(
     '',
     'Xiaomiオンラインストア https://www.mi.com/jp/product/xiaomi-11t-pro/specs?skupanel=1',
 );
-export const Redmi note 11 = new DeviceParameter(
+export const Redminote11 = new DeviceParameter(
     'Redmi note 11',
     '',
     'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1646103046.16183466.png',
