@@ -136,3 +136,20 @@ export const iPhone14 = new DeviceParameter(
     '',
     'Apple https://www.apple.com/jp/iphone/',
 );
+export const AQUOSsense7 = new DeviceParameter(
+    'AQUOS sense7',
+    '',
+    'https://jp.sharp/k-tai/lineup/compare/images/color_sense7_copper.png',
+    '152mm',
+    '70mm',
+    '8.0mm',
+    '158g',
+    '6.1',
+    '1080x2432',
+    'Snapdragon® 695 5G',
+    '	約40万点',
+    'USB Type-C',
+    '3.5mm',
+    '',
+    'SHARP https://jp.sharp/products/aquos-sense7/d/',
+);
