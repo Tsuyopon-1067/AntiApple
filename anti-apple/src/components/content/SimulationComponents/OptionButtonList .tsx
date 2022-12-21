@@ -11,7 +11,7 @@ export const OptionButtonList = (props) => {
         let res: number = 0;
         if (isChecked0) { res += 1 }
         if (isChecked1) { res += 2 }
-        if (isChecked2) { res += 4 }
+        // if (isChecked2) { res += 4 }
         props.getCarrier(res);
     }, [isChecked0, isChecked1, isChecked2]);
 
