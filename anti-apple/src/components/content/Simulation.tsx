@@ -7,8 +7,8 @@ import {OptionButtonList} from './SimulationComponents/OptionButtonList ';
 export const Simulation = (param) => {
     const[dataVolume, setDataVolume] = useState(5);
     const[carrier, setCarrier] = useState([1]);
-    const[option, setOption] = useState([1]);
-    let selectedPlan: Plan = Plans.getSelectedPlan(carrier, dataVolume, 0);
+    const[option, setOption] = useState(0);
+    let selectedPlan: Plan = Plans.getSelectedPlan(carrier, dataVolume, option);
     return (
         <React.Fragment>
             <h1>プラン料金シミュレーション</h1>

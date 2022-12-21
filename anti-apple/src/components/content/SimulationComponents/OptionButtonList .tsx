@@ -8,11 +8,11 @@ export const OptionButtonList = (props) => {
     const [isChecked2, setIsChecked2] = useState(false);
 
     useEffect(() => {
-        let lst: number[] = new Array();
-        if (!isChecked0) { lst.push(0) }
-        if (!isChecked1) { lst.push(1) }
-        if (!isChecked2) { lst.push(2) }
-        props.getCarrier(lst);
+        let res: number = 0;
+        if (isChecked0) { res += 1 }
+        if (isChecked1) { res += 2 }
+        if (isChecked2) { res += 4 }
+        props.getCarrier(res);
     }, [isChecked0, isChecked1, isChecked2]);
 
     return(
