@@ -12,3 +12,21 @@
     text-align: center;
     bottom: 0;
 }
+
+@media screen and (max-width:700px){
+    .homeMainDiv {
+        display: flex; /* フッターが最下端に張り付くようする設定 */
+        flex-flow: column;
+        height: 100vh;
+    }
+    .homeFooter { /* marginを設定しても効かない */
+        width: 100%; /* 横幅いっぱいにする */
+        height: 70;
+        font-size: 60%;
+        padding: 30px 0;
+        margin-top: auto; /* フッターが最下端に張り付くようにする設定 */
+        background: #cef;
+        text-align: center;
+        bottom: 0;
+    }
+}

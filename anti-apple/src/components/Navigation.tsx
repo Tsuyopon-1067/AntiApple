@@ -68,7 +68,7 @@ export default function Navigation() {
                     </DrawerHeader>
                     <DrawerBody>
                         <h2>
-                            <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/'>
+                            <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/' onClick={onClose}>
                                 トップ
                             </Box>    
                         </h2>                        
@@ -84,22 +84,22 @@ export default function Navigation() {
                                 </h2>
                                 <AccordionPanel pb={4}>
                                     <h3>
-                                        <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/about'>
+                                        <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/about' onClick={onClose}>
                                             格安SIMとは
                                         </Box>    
                                     </h3> 
                                     <h3>
-                                        <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/pros_cons'>
+                                        <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/pros_cons' onClick={onClose}>
                                             メリット・デメリット
                                         </Box>    
                                     </h3> 
                                     <h3>
-                                        <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/content/plan/all_company'>
+                                        <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/content/plan/all_company' onClick={onClose}>
                                             プラン一覧
                                         </Box>    
                                     </h3> 
                                     <h3>
-                                        <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/content/speed'>
+                                        <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/content/speed' onClick={onClose}>
                                             速度比較
                                         </Box>    
                                     </h3> 
@@ -107,17 +107,17 @@ export default function Navigation() {
                             </AccordionItem>
                         </Accordion>
                         <h2>
-                            <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/content/plan/diag_plans'>
+                            <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/content/plan/diag_plans' onClick={onClose}>
                                 プラン診断
                             </Box>    
                         </h2> 
                         <h2>
-                            <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/content/simulation'>
+                            <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/content/simulation' onClick={onClose}>
                                 シミュレーション
                             </Box>    
                         </h2> 
                         <h2>
-                            <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/content/device/recommend_devices'>
+                            <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/content/device/recommend_devices' onClick={onClose}>
                                 おすすめ端末
                             </Box>    
                         </h2> 
