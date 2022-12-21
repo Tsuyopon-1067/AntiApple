@@ -15,7 +15,12 @@ import {
     DrawerContent,
     DrawerHeader,
     DrawerBody,
-    Box 
+    Accordion,
+    AccordionItem,
+    AccordionButton,
+    AccordionPanel,
+    AccordionIcon,
+    Box,  
 } from '@chakra-ui/react';
 
 import MediaQuery from 'react-responsive';
@@ -59,58 +64,63 @@ export default function Navigation() {
                         variant="customicon" 
                         onClick={onClose} 
                         aria-label={'navIcon'} />
-                    Basic Drawer
+                    メニュー
                     </DrawerHeader>
                     <DrawerBody>
-                    <Breadcrumb separator='' spacing='0' >
-                        <BreadcrumbItem>
-                            <BreadcrumbLink as={NavLink} to='/' >
-                                <p>トップ</p>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem >
-                            <BreadcrumbLink as={NavLink} to='/' >
-                                <p>格安SIMの概要</p>
-                            </BreadcrumbLink>
-                            <Breadcrumb separator='' spacing='0' >
-                                <BreadcrumbItem>
-                                    <BreadcrumbLink as={NavLink} to='/about' >
-                                        <p>格安SIMとは</p>
-                                    </BreadcrumbLink>
-                                </BreadcrumbItem>
-                                <BreadcrumbItem>
-                                    <BreadcrumbLink as={NavLink} to='/pros_cons' >
-                                        <p>メリット・デメリット</p>
-                                    </BreadcrumbLink>
-                                </BreadcrumbItem>
-                                <BreadcrumbItem>
-                                    <BreadcrumbLink as={NavLink} to='/content/plan/all_company' >
-                                        <p>プラン一覧</p>
-                                    </BreadcrumbLink>
-                                </BreadcrumbItem>
-                                <BreadcrumbItem>
-                                    <BreadcrumbLink as={NavLink} to='/content/Speed' >
-                                        <p>速度比較</p>
-                                    </BreadcrumbLink>
-                                </BreadcrumbItem>
-                            </Breadcrumb>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem>
-                            <BreadcrumbLink as={NavLink} to='/content/plan/diag_plans'>
-                                <p>プラン診断</p>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem>
-                            <BreadcrumbLink as={NavLink} to='/content/simulation'>
-                                <p>シミュレーション</p>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem>
-                            <BreadcrumbLink as={NavLink} to='/content/device/recommend_devices'>
-                                <p>おすすめ端末</p>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                    </Breadcrumb>
+                        <h2>
+                            <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/'>
+                                トップ
+                            </Box>    
+                        </h2>                        
+                        <Accordion>
+                            <AccordionItem>
+                                <h2>
+                                <AccordionButton>
+                                    <Box as="span" flex='1' textAlign='center'>
+                                    格安SIMの概要
+                                    </Box>
+                                    <AccordionIcon />
+                                </AccordionButton>
+                                </h2>
+                                <AccordionPanel pb={4}>
+                                    <h3>
+                                        <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/about'>
+                                            格安SIMとは
+                                        </Box>    
+                                    </h3> 
+                                    <h3>
+                                        <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/pros_cons'>
+                                            メリット・デメリット
+                                        </Box>    
+                                    </h3> 
+                                    <h3>
+                                        <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/content/plan/all_company'>
+                                            プラン一覧
+                                        </Box>    
+                                    </h3> 
+                                    <h3>
+                                        <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/content/speed'>
+                                            速度比較
+                                        </Box>    
+                                    </h3> 
+                                </AccordionPanel>
+                            </AccordionItem>
+                        </Accordion>
+                        <h2>
+                            <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/content/plan/diag_plans'>
+                                プラン診断
+                            </Box>    
+                        </h2> 
+                        <h2>
+                            <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/content/simulation'>
+                                シミュレーション
+                            </Box>    
+                        </h2> 
+                        <h2>
+                            <Box flex='1' pb={4} textAlign='center' as={NavLink} to='/content/device/recommend_devices'>
+                                おすすめ端末
+                            </Box>    
+                        </h2> 
                     </DrawerBody>
                     </DrawerContent>
                 </Drawer>
@@ -133,7 +143,7 @@ export default function Navigation() {
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem className={Styles.navNormal}>
-                            <BreadcrumbLink className={Styles.navLink} as={NavLink} to='/' >
+                            <BreadcrumbLink className={Styles.navLink}>
                                 <p>格安SIMの概要</p>
                             </BreadcrumbLink>
                             <Breadcrumb className={Styles.navSubMain} separator='' spacing='0' >
