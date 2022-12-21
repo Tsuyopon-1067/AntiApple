@@ -1,4 +1,4 @@
-// オプション選択ボタン
+// オプション選択ボタン ボタン状態に対応するoption番号を返す
 import React, { useEffect, useState } from 'react';
 import  { ToggleButton } from './ToggleButton';
 
