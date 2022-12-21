@@ -17,8 +17,8 @@ export const OptionButtonList = (props) => {
 
     return(
         <React.Fragment>
-            <ToggleButton getState={setIsChecked0} defaultState={true} >無制限通話</ToggleButton>
-            <ToggleButton getState={setIsChecked1} defaultState={true} >通話（時間制限あり）</ToggleButton>
+            <ToggleButton getState={setIsChecked0} defaultState={true} >通話（時間制限あり）</ToggleButton>
+            <ToggleButton getState={setIsChecked1} defaultState={true} >無制限通話</ToggleButton>
             <ToggleButton getState={setIsChecked2} defaultState={true} >なにか</ToggleButton>
         </React.Fragment>
     );
