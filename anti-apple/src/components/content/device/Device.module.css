@@ -1,7 +1,7 @@
 /* 全体 */
 .flex {
   display: flex; /* 横並び */
-  width: 80%; /* width指定しないと左右中央に配置できない */
+  width: 100%; /* width指定しないと左右中央に配置できない */
   margin: 0 auto;
   justify-content: center;
 }
