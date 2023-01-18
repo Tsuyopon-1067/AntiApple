@@ -1,10 +1,20 @@
 import React from 'react';
+import GenerateArticle from './generateArticle';
 
 const company01 = () => {
     return (
         <div>
-            <h1>会社1</h1>
-            <p>最高の格安SIM</p>
+            <GenerateArticle 
+                name="ahamo"
+                img="https://cache.cil.ahamo.com/assets/images/common/logo.svg"
+                abstract="ドコモのやつ"
+                gb="20GB, 100GB"
+                value="あいうえお"
+                option="あいおうえ"
+                speed="はやい"
+                recommended="あいうえお"
+                reference="あいうえお"
+            />
         </div>
     );
 };

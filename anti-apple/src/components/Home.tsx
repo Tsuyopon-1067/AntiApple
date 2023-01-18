@@ -10,7 +10,6 @@ import Content from './content/Content';
 import {Simulation} from './content/Simulation';
 import Speed from './content/Speed';
 import AllCompany from './content/plan/all_company';
-import DiagPlans from './content/plan/diag_plans';
 import RecoDevices from './content/device/recommend_devices';
 import DiagDevices from './content/device/diag_devices';
 import company01 from './content/plan/company01';
@@ -23,6 +22,8 @@ import company07 from './content/plan/company07';
 import company08 from './content/plan/company08';
 import company09 from './content/plan/company09';
 import company10 from './content/plan/company10';
+import company11 from './content/plan/company11';
+import company12 from './content/plan/company12';
 import Navigation from './Navigation';
 import notfound from './notfound';
 import Styles from './Home.module.css';
@@ -59,7 +60,6 @@ const Home = () => {
                                     <Route exact path='/content' component={Content} />
                                     <Route path='/content/simulation' component={Simulation} />
                                     <Route path='/content/speed' component={Speed} />
-                                    <Route path='/content/plan/diag_plans' component={DiagPlans} />
                                     <Route path='/content/device/recommend_devices' component={RecoDevices} />
                                     <Route path='/content/device/diag_devices' component={DiagDevices} />
                                     <Route
@@ -77,6 +77,8 @@ const Home = () => {
                                                 <Route path='/content/plan/company08' component={company08} />
                                                 <Route path='/content/plan/company09' component={company09} />
                                                 <Route path='/content/plan/company10' component={company10} />
+                                                <Route path='/content/plan/company11' component={company11} />
+                                                <Route path='/content/plan/company12' component={company12} />
                                                 <Route path='*' component={notfound} />
                                             </Switch>
                                         )}
