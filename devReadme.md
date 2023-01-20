@@ -23,6 +23,11 @@ npm install react-slick --save
 npm install react-responsive
 ```
 
+### 　React-Iconsのインストール
+```
+npm install react-icons --save
+```
+
 # クラスとかの説明
 ## Plans.tsx
 ### Carrier

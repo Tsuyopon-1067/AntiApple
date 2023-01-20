@@ -1,26 +1,46 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import GenerateCard from "../../Card";
 
 const AllCompany = () => {
-    return (
-        <div>
-            <h1>各社プラン一覧</h1>
-            <ul>
-                <li><Link to="/content/plan/company01">ahamo</Link></li>
-                <li><Link to="/content/plan/company02">povo</Link></li>
-                <li><Link to="/content/plan/company03">LINEMO</Link></li>
-                <li><Link to="/content/plan/company04">UQ mobile</Link></li>
-                <li><Link to="/content/plan/company05">Y!mobile</Link></li>
-                <li><Link to="/content/plan/company06">OCNモバイルONE</Link></li>
-                <li><Link to="/content/plan/company07">mineo</Link></li>
-                <li><Link to="/content/plan/company08">IIJmio</Link></li>
-                <li><Link to="/content/plan/company09">イオンモバイル</Link></li>
-                <li><Link to="/content/plan/company10">J:COMモバイル</Link></li>
-                <li><Link to="/content/plan/company11">日本通信SIM</Link></li>
-                <li><Link to="/content/plan/company12">BIGLOBEモバイル</Link></li>
-            </ul>
-        </div>
-    );
+  return (
+    <React.Fragment>
+    <div>
+      <h1>各社プラン一覧</h1>
+      <GenerateCard 
+        cardtitle={[
+            "ahamo",
+            "povo",
+            "LINEMO",
+            "UQ!mobile",
+            "Y!mobile",
+            "OCNモバイルONE",
+            "mineo",
+            "IIJmio",
+            "イオンモバイル",
+            "J:COMモバイル",
+            "日本通信SIM",
+            "BIGLOBEモバイル",
+        ]} 
+        carddetail={[]} 
+        cardlink={[
+            "/content/plan/company01",
+            "/content/plan/company02",
+            "/content/plan/company03",
+            "/content/plan/company04",
+            "/content/plan/company05",
+            "/content/plan/company06",
+            "/content/plan/company07",
+            "/content/plan/company08",
+            "/content/plan/company09",
+            "/content/plan/company10",
+            "/content/plan/company11",
+            "/content/plan/company12",
+        ]} 
+      />
+    </div>
+    </React.Fragment>
+  );
 };
 
 export default AllCompany;

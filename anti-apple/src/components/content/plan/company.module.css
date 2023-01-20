@@ -1,0 +1,43 @@
+/*スマホ向け*/
+@media screen and (max-width: 700px) {
+  /* 全体 */
+  .flex {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+  }
+  .title{
+    border-bottom: 3px solid #000;
+  }
+  .img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /* 表 */
+  .table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/*PC向け*/
+@media screen and (min-width: 701px) {
+  /* 全体 */
+  .flex {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+  }
+  .title{
+    border-bottom: 3px solid #000;
+  }
+  .img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /* 表 */
+  .table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
