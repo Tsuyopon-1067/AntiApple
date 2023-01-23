@@ -51,7 +51,7 @@ const GenerateCard = (props) => {
 
       <MediaQuery query="(min-width:801px)">
         <div className={Styles.main}>
-          <SimpleGrid className = {Styles.grid} spacing="24px">{carddata}</SimpleGrid>
+          <SimpleGrid columns={2} className = {Styles.grid} spacing="24px">{carddata}</SimpleGrid>
         </div>
       </MediaQuery>
     </>
