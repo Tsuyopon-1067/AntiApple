@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import './slick-theme.css';
 
 import Styles from './Carousel.module.css';
+import { ClassNames } from '@emotion/react';
 
 export default class Carousel extends Component {
   render() {
@@ -24,13 +25,13 @@ export default class Carousel extends Component {
     return (
       <div className={Styles.carouselDiv}>
         <Slider {...settings}>
-            <div>
+            <div className={Styles.carouselImg}>
                 <Image1 />
             </div>
-            <div>
+            <div className={Styles.carouselImg}>
                 <Image2 />
             </div>
-            <div>
+            <div className={Styles.carouselImg}>
                 <Image3 />
             </div>
         </Slider>
