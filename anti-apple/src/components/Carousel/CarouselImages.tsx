@@ -1,6 +1,6 @@
 import React from 'react';
 import Image1png from './1.png';
-import Image2png from './2.png';
+import Image2png from './2.jpg';
 import Image3png from './3.png';
 import ImagePrev from './arrowPrev.png';
 import ImageNext from './arrowNext.png';
