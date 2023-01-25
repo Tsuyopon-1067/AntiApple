@@ -20,7 +20,7 @@ const Content = () => {
             "./content/simulation",
             "./content/speed",
             "./content/plan/all_company",
-            "./content/plan/recommend_devices",
+            "./content/device/recommend_devices",
             "./content/device/diag_devices"
           ]}
         />
