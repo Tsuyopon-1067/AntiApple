@@ -124,17 +124,6 @@ export default function Navigation() {
                           flex="1"
                           textAlign="center"
                           as={NavLink}
-                          to="/content/plan/all_company"
-                          onClick={onClose}
-                        >
-                          プラン一覧
-                        </Box>
-                      </h3>
-                      <h3>
-                        <Box
-                          flex="1"
-                          textAlign="center"
-                          as={NavLink}
                           to="/content/speed"
                           onClick={onClose}
                         >
@@ -151,10 +140,10 @@ export default function Navigation() {
                           flex="1"
                           textAlign="center"
                           as={NavLink}
-                          to="/content/plan/diag_plans"
+                          to="/content/plan/all_company"
                           onClick={onClose}
                         >
-                          プラン診断
+                          プラン一覧
                         </Box>
                       </AccordionButton>
                     </h2>
@@ -262,9 +251,9 @@ export default function Navigation() {
                 <BreadcrumbLink
                   className={Styles.navLink}
                   as={NavLink}
-                  to="/content/plan/diag_plans"
+                  to="/content/plan/all_company"
                 >
-                  <p>プラン診断</p>
+                  <p>プラン一覧</p>
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbItem className={Styles.navNormal}>

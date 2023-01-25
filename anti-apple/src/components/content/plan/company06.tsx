@@ -6,7 +6,7 @@ const company06 = () => {
     <div>
       <GenerateArticle
         name="OCNモバイルONE"
-        img="https://www.linemo.jp/assets/images/common/logo.svg"
+        img="https://service.ocn.ne.jp/mobile/img/logo_mobileone.png"
         abstract="OCNモバイルONEは、ドコモのグループ会社である「NTTコミュニケーションズ」が提供している格安プランです。通信速度は高速ではありませんが必要十分です。特筆すべきは新規契約・他社乗り換えに対する破格の端末セールが頻繁に行われていることです。最初にOCNモバイルONEで端末を安く買い、その後により高速な回線が使える他社格安プランに乗り換えるという使い方がおすすめです。以前は他社プラン使用時よりも電池消費量が多くなる問題がありましたが、現在は解消されています。"
         gbtable={["500MB", "1GB", "3GB", "6GB", "10GB"]}
         valuetable={[550, 770, 990, 1320, 1760]}
