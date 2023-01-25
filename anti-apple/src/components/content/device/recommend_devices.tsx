@@ -1,6 +1,6 @@
 import React from "react";
 import MediaQuery from "react-responsive";
-import { Stack } from "@chakra-ui/react";
+import { Heading, Stack } from "@chakra-ui/react";
 
 import { Device } from "./Device"; // デバイスコンポーネント
 import {
@@ -14,14 +14,17 @@ import {
 } from "./Devices"; // 端末情報定義（端末追加のときはこっちをいじる）．波括弧内に端末を追加する．
 import Sidebar from "../../Sidebar";
 
+import Styles from "./Device.module.css";
+
 const RecoDevices = () => {
   return (
     <>
       <MediaQuery query="(max-width:900px)">
         <React.Fragment>
           <div>
-            <h1>おすすめ端末</h1>
-            <p>おすすめ端末1~10</p>
+            <Heading className={Styles.title} size="xl">
+              おすすめ端末
+            </Heading>
             {/* ここでテスト用デバイス画面を配置 */}
             <Device {...Pixel6a} />
             <Device {...AQUOSsense7} />
@@ -36,19 +39,22 @@ const RecoDevices = () => {
 
       <MediaQuery query="(min-width:901px)">
         <React.Fragment>
-          <Stack direction="row">
+          <Stack direction="row" spacing="0">
             <Sidebar />
-            <div>
-              <h1>おすすめ端末</h1>
-              <p>おすすめ端末1~10</p>
-              {/* ここでテスト用デバイス画面を配置 */}
-              <Device {...Pixel6a} />
-              <Device {...AQUOSsense7} />
-              <Device {...motog52j} />
-              <Device {...Xiaomi11TPro} />
-              <Device {...Redminote11} />
-              <Device {...iPhoneSE} />
-              <Device {...iPhone14} />
+            <div className={Styles.main}>
+              <div className={Styles.article}>
+                <Heading className={Styles.title} size="xl">
+                  おすすめ端末
+                </Heading>
+                {/* ここでテスト用デバイス画面を配置 */}
+                <Device {...Pixel6a} />
+                <Device {...AQUOSsense7} />
+                <Device {...motog52j} />
+                <Device {...Xiaomi11TPro} />
+                <Device {...Redminote11} />
+                <Device {...iPhoneSE} />
+                <Device {...iPhone14} />
+              </div>
             </div>
           </Stack>
         </React.Fragment>

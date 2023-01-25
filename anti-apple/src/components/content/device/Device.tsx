@@ -34,7 +34,7 @@ export const Device = (props) => {
         <p className={Styles.info}>{props.displaySize}インチ</p>
         <h3 className={Styles.subCategory}>解像度</h3>
         <p className={Styles.info}>{props.resolution}</p>
-        <p className={Styles.category}>CPU＆GPU</p>
+        <p className={Styles.category}>CPU&GPU</p>
         <h3 className={Styles.subCategory}>SoC</h3>
         <p className={Styles.info}>{props.soc}</p>
         <h3 className={Styles.subCategory}>Antutu</h3>
@@ -44,6 +44,11 @@ export const Device = (props) => {
         <p className={Styles.info}>{props.usb}</p>
         <h3 className={Styles.subCategory}>イヤホンジャック</h3>
         <p className={Styles.info}>{props.earphone}</p>
+        <p className={Styles.category}>価格と販路</p>
+        <h3 className={Styles.subCategory}>価格</h3>
+        <p className={Styles.info}>{props.price}</p>
+        <h3 className={Styles.subCategory}>販路</h3>
+        <p className={Styles.info}>{props.market}</p>
         <p className={Styles.category}>備考</p>
         <p className={Styles.description}>{props.note}</p>
       </div>

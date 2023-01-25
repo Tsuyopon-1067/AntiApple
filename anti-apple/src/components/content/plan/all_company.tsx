@@ -12,7 +12,7 @@ const AllCompany = () => {
             "ahamo",
             "povo",
             "LINEMO",
-            "UQ!mobile",
+            "UQ mobile",
             "Y!mobile",
             "OCNモバイルONE",
             "mineo",

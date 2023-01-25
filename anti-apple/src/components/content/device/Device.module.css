@@ -1,70 +1,135 @@
-/* 全体 */
-.flex {
-  display: flex; /* 横並び */
-  width: 100%; /* width指定しないと左右中央に配置できない */
-  margin: 0 auto;
-  justify-content: center;
-}
-/* 端末画像+出典 */
-.figre {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: relative;
-}
-/* 端末画像 */
-.img {
-  width: 580px; /* 画像サイズ指定 */
-}
-/* 端末情報（テキスト）全体．左にマージンをとっている． */
-.description {
-  margin: 0 0 0 20px;
-  padding: 0;
-  width: 400px;
-}
-/* 端末名 */
-.deviceName {
-  font-size: 30px;
-  font-weight: 600; /* フォントの太さ */
-  display: inline; /* 改行禁止．端末名とメーカー名両方に設定する */
-}
-/* メーカー名 */
-.deviceManufacturer {
-  font-size: 30px;
-  font-weight: 600; /* フォントの太さ */
-  display: inline; /* 改行禁止．端末名とメーカー名両方に設定する */
-}
-/* サイズ等のカテゴリ */
-.category {
-  font-size: 18px;
-  text-align: left;
-  margin: 20px 0px 0px 0px;
-}
-.categoryFirst { /* 一番上（サイズと重量）は上に端末・メーカー名がある */
-  margin: 10px 0px 0px 0px;
-}
-/* サイズ->縦のような詳細情報の見出し */
-.subCategory {
-  margin: 2px 0;
-  font-size: 16px;
-  text-align: left;
-}
-/* 詳細情報 */
-.info {
-  font-size: 16px;
-  text-align: left;
-  color: #776;
+.main {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
 }
 
-/* 備考 */
-.description {
-  margin: 2px 0;
-  font-size: 16px;
-  text-align: left;
+.article {
+    text-align: left;
+    width: 90%;
+    box-sizing: border-box;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
 }
+
+
+/* 全体 */
+
+.flex {
+    box-sizing: border-box;
+    display: flex;
+    /* 横並び */
+    width: 100%;
+    /* width指定しないと左右中央に配置できない */
+    margin-bottom: 40px;
+}
+
+.title {
+    box-sizing: border-box;
+    border-bottom: 5px solid #c2e4cb;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+
+/* 端末画像+出典 */
+
+.figre {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* 端末画像 */
+
+.img {
+    width: 35vw;
+    /* 画像サイズ指定 */
+}
+
+
+/* 端末情報（テキスト）全体．左にマージンをとっている． */
+
+.description {
+    margin: 0 0 0 20px;
+    padding: 0;
+    width: 400px;
+}
+
+
+/* 端末名 */
+
+.deviceName {
+    font-size: 30px;
+    font-weight: 600;
+    /* フォントの太さ */
+    display: inline;
+    /* 改行禁止．端末名とメーカー名両方に設定する */
+}
+
+
+/* メーカー名 */
+
+.deviceManufacturer {
+    font-size: 30px;
+    font-weight: 600;
+    /* フォントの太さ */
+    display: inline;
+    /* 改行禁止．端末名とメーカー名両方に設定する */
+}
+
+
+/* サイズ等のカテゴリ */
+
+.category {
+    font-size: 18px;
+    text-align: left;
+    margin: 20px 0px 0px 0px;
+}
+
+.categoryFirst {
+    /* 一番上（サイズと重量）は上に端末・メーカー名がある */
+    margin: 10px 0px 0px 0px;
+}
+
+
+/* サイズ->縦のような詳細情報の見出し */
+
+.subCategory {
+    margin: 2px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+
+/* 詳細情報 */
+
+.info {
+    font-size: 16px;
+    text-align: left;
+    color: #776;
+}
+
+
+/* 備考 */
+
+.description {
+    margin: 2px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+
 /* 出典 */
+
 .source {
-  margin: 8px 0;
-  font-size: 12px;
-  text-align: center;
+    margin: 8px 0;
+    font-size: 12px;
+    text-align: center;
 }

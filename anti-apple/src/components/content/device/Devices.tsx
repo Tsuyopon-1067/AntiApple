@@ -10,11 +10,11 @@ const DeviceParameter = class {
         displaySize: string;
         resolution: string;
         soc: string;
-        cpu: string;
-        gpu: string;
         antutu: string;
         usb: string;
-        earphone: string;
+        earphone: string;       
+        price: string;       
+        market: string;       
         note: string;
         source: string;
     constructor(
@@ -25,12 +25,14 @@ const DeviceParameter = class {
         width: string,
         thickness: string,
         weight: string,
-        soc: string,
         displaySize: string,
         resolution: string,
+        soc: string,
         antutu: string,
         usb: string,
         earphone: string,
+        price: string,       
+        market: string, 
         note: string,
         source: string
         ) {
@@ -41,18 +43,20 @@ const DeviceParameter = class {
         this.width = width;
         this.thickness= thickness;
         this.weight = weight;
-        this.soc= soc;
         this.displaySize= displaySize;
         this.resolution= resolution;
+        this.soc= soc;
         this.antutu= antutu;
         this.usb = usb;
         this.earphone = earphone;
+        this.price = price;
+        this.market = market;
         this.note = note;
         this.source = source;
     }
 }
 export const Pixel6a = new DeviceParameter(
-    'Pixel6a',
+    'Pixel 6a',
     'Google',
     'https://lh3.googleusercontent.com/YTjc4mvSUQmALOWyOamuLMiBf4TdFWW2D94yUsnhsQXO9DQ61ZxRV060BvfKD0pn7mFeXTCS1dD_wRfN2GWGqBM-Zm6rdztVsBM=rw-e365-w500',
     '152.2mm',
@@ -65,6 +69,8 @@ export const Pixel6a = new DeviceParameter(
     '約68万点',
     'USB Type-C® 3.1 Gen 1',
     'なし',
+    '',
+    '',
     'Googleから発売されたミドルレンジスマホです。',
     'Googleストア https://store.google.com/jp/product/pixel_6a_specs?hl=ja',
 );
@@ -83,6 +89,8 @@ export const Xiaomi11TPro = new DeviceParameter(
     'USB Type-C 2.0',
     'なし',
     '',
+    '',
+    '',
     'Xiaomiオンラインストア https://www.mi.com/jp/product/xiaomi-11t-pro/specs?skupanel=1',
 );
 export const Redminote11 = new DeviceParameter(
@@ -100,10 +108,12 @@ export const Redminote11 = new DeviceParameter(
     'USB Type-C 2.0',
     '3.5 mm',
     '',
+    '',
+    '',
     'Xiaomiオンラインストア https://www.mi.com/jp/product/redmi-note-11/specs?skupanel=1',
 );
 export const iPhoneSE = new DeviceParameter(
-    'iPhone SE(2022)',
+    'iPhone SE(第3世代)',
     'Apple',
     'https://www.apple.com/v/iphone/home/bk/images/overview/compare/compare_iphone_se__d5blqx1pgymq_large_2x.jpg',
     '138.4mm',
@@ -117,10 +127,12 @@ export const iPhoneSE = new DeviceParameter(
     'Lightningコネクタ',
     'なし',
     '',
+    '',
+    '',
     'Apple https://www.apple.com/jp/iphone/',
 );
 export const iPhone14 = new DeviceParameter(
-    'iPhone14',
+    'iPhone 14',
     'Apple',
     'https://www.apple.com/v/iphone/home/bk/images/overview/compare/compare_iphone_14__ct4sjk962pea_large_2x.jpg',
     '146.7mm',
@@ -133,6 +145,8 @@ export const iPhone14 = new DeviceParameter(
     '約78万点',
     'Lightningコネクタ',
     'なし',
+    '',
+    '',
     '',
     'Apple https://www.apple.com/jp/iphone/',
 );
@@ -151,6 +165,8 @@ export const AQUOSsense7 = new DeviceParameter(
     'USB Type-C',
     '3.5mm',
     '',
+    '',
+    '',
     'SHARP https://jp.sharp/products/aquos-sense7/d/',
 );
 export const motog52j = new DeviceParameter(
@@ -167,6 +183,8 @@ export const motog52j = new DeviceParameter(
     '約38万点',
     'USB-Type C (USB 2.0)',
     '3.5 mm',
+    '',
+    '',
     '',
     'motorola https://store.motorola.co.jp/item/MOTO_G52J_5G.html',
 );

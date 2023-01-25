@@ -50,9 +50,9 @@ const GenerateArticle = (props) => {
           <div className={Styles.flex}>
             <Heading className={Styles.title}>{props.name}</Heading>
             <img className={Styles.img} src={props.img} alt="image"/>
-            <Heading size="sm">概要</Heading>
+            <Heading size="sm" className={Styles.heading}>概要</Heading>
             <p>{props.abstract}</p>
-            <Heading>プラン</Heading>
+            <Heading size="sm" className={Styles.heading}>プラン</Heading>
             <TableContainer className={Styles.table}>
               <Table variant="simple">
                 <TableCaption>月額、料金は税込です</TableCaption>
@@ -67,7 +67,7 @@ const GenerateArticle = (props) => {
               </Table>
             </TableContainer>
             <p>{props.value}</p>
-            <Heading>オプション</Heading>
+            <Heading size="sm" className={Styles.heading}>オプション</Heading>
             <TableContainer className={Styles.table}>
               <Table variant="simple">
                 <TableCaption>月額、料金は税込です</TableCaption>
@@ -82,11 +82,11 @@ const GenerateArticle = (props) => {
               </Table>
             </TableContainer>
             <p>{props.option}</p>
-            <Heading>通信速度</Heading>
+            <Heading size="sm" className={Styles.heading}>通信速度</Heading>
             <p>{props.speed}</p>
-            <Heading>まとめ・どんな人におすすめ？</Heading>
+            <Heading size="sm" className={Styles.heading}>まとめ・どんな人におすすめ？</Heading>
             <p>{props.recommended}</p>
-            <Heading>参考文献</Heading>
+            <Heading size="sm" className={Styles.heading}>参考文献</Heading>
             <p>{props.reference}</p>
           </div>
         </div>
