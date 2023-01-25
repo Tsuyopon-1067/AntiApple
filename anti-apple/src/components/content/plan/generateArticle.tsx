@@ -50,9 +50,9 @@ const GenerateArticle = (props) => {
           <div className={Styles.flex}>
             <Heading className={Styles.title}>{props.name}</Heading>
             <img className={Styles.img} src={props.img} alt="image"/>
-            <h2>概要</h2>
+            <Heading size="sm">概要</Heading>
             <p>{props.abstract}</p>
-            <h2>プラン</h2>
+            <Heading>プラン</Heading>
             <TableContainer className={Styles.table}>
               <Table variant="simple">
                 <TableCaption>月額、料金は税込です</TableCaption>
@@ -67,7 +67,7 @@ const GenerateArticle = (props) => {
               </Table>
             </TableContainer>
             <p>{props.value}</p>
-            <h2>オプション</h2>
+            <Heading>オプション</Heading>
             <TableContainer className={Styles.table}>
               <Table variant="simple">
                 <TableCaption>月額、料金は税込です</TableCaption>
@@ -82,11 +82,11 @@ const GenerateArticle = (props) => {
               </Table>
             </TableContainer>
             <p>{props.option}</p>
-            <h2>通信速度</h2>
+            <Heading>通信速度</Heading>
             <p>{props.speed}</p>
-            <h2>まとめ・どんな人におすすめ？</h2>
+            <Heading>まとめ・どんな人におすすめ？</Heading>
             <p>{props.recommended}</p>
-            <h2>参考文献</h2>
+            <Heading>参考文献</Heading>
             <p>{props.reference}</p>
           </div>
         </div>
@@ -101,11 +101,11 @@ const GenerateArticle = (props) => {
               <Sidebar/>
               <div className={Styles.flex}>
                 <div className={Styles.article}>
-                  <Heading className={Styles.title}>{props.name}</Heading>
+                  <Heading size="xl" className={Styles.title}>{props.name}</Heading>
                   <img className={Styles.img} src={props.img} alt="image"/>
-                  <h2>概要</h2>
+                  <Heading className = {Styles.heading} size="lg">概要</Heading>
                   <p>{props.abstract}</p>
-                  <h2>プラン</h2>
+                  <Heading className = {Styles.heading} size="lg">プラン</Heading>
                   <TableContainer className={Styles.table}>
                     <Table variant="simple">
                       <TableCaption>月額、料金は税込です</TableCaption>
@@ -120,7 +120,7 @@ const GenerateArticle = (props) => {
                     </Table>
                   </TableContainer>
                   <p>{props.value}</p>
-                  <h2>オプション</h2>
+                  <Heading className = {Styles.heading} size="lg">オプション</Heading>
                   <TableContainer className={Styles.table}>
                     <Table variant="simple">
                       <TableCaption>月額、料金は税込です</TableCaption>
@@ -135,11 +135,11 @@ const GenerateArticle = (props) => {
                     </Table>
                   </TableContainer>
                   <p>{props.option}</p>
-                  <h2>通信速度</h2>
+                  <Heading className = {Styles.heading} size="lg">通信速度</Heading>
                   <p>{props.speed}</p>
-                  <h2>まとめ・どんな人におすすめ？</h2>
+                  <Heading className = {Styles.heading} size="lg">まとめ・どんな人におすすめ？</Heading>
                   <p>{props.recommended}</p>
-                  <h2>参考文献</h2>
+                  <Heading className = {Styles.heading} size="lg">参考文献</Heading>
                   <p>{props.reference}</p>
                 </div>
               </div>

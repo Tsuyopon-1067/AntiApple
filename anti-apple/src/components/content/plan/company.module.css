@@ -38,14 +38,20 @@
     box-sizing: border-box;
     margin-left: 5%;
     margin-right: 5%;
-    
+    margin-bottom: 30px;   
   }
+  .heading{
+    margin-top: 30px;
+    margin-bottom: 30px
+  }
+
   .title {
     border-bottom: 3px solid #000;
     box-sizing: border-box;
+    margin-top: 40px;
   }
   .img {
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     box-sizing: border-box;
   }
