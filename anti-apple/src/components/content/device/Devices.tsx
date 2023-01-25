@@ -71,7 +71,7 @@ export const Pixel6a = new DeviceParameter(
     'なし',
     '',
     '',
-    'Googleから発売されたミドルレンジスマホです。',
+    'Googleから発売されたミドルレンジスマホです。ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ',
     'Googleストア https://store.google.com/jp/product/pixel_6a_specs?hl=ja',
 );
 export const Xiaomi11TPro = new DeviceParameter(

@@ -16,13 +16,20 @@
 }
 
 
+/* 記事部分 */
+
+.container {
+    margin-bottom: 40px;
+}
+
+
 /* 全体 */
 
 .flex {
     box-sizing: border-box;
     display: flex;
     /* 横並び */
-    width: 100%;
+    width: 100vw;
     /* width指定しないと左右中央に配置できない */
     margin-bottom: 40px;
 }
@@ -36,9 +43,16 @@
 }
 
 
+/* 文字列 */
+
+p {
+    color: #776;
+}
+
+
 /* 端末画像+出典 */
 
-.figre {
+.figure {
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -49,17 +63,17 @@
 /* 端末画像 */
 
 .img {
-    width: 35vw;
+    width: 400px;
     /* 画像サイズ指定 */
 }
 
 
-/* 端末情報（テキスト）全体．左にマージンをとっている． */
+/* 端末情報（テキスト）全体． */
 
 .description {
-    margin: 0 0 0 20px;
-    padding: 0;
-    width: 400px;
+    box-sizing: border-box;
+    padding: 0px;
+    width: 100%;
 }
 
 
@@ -129,7 +143,9 @@
 /* 出典 */
 
 .source {
+    overflow-wrap: break-word;
     margin: 8px 0;
     font-size: 12px;
     text-align: center;
+    width: 400px;
 }
