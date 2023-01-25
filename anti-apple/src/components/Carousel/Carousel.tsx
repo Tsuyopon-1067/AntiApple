@@ -25,13 +25,13 @@ export default class Carousel extends Component {
     return (
       <div className={Styles.carouselDiv}>
         <Slider {...settings}>
-            <div className={Styles.carouselImg}>
+            <div >
                 <Image1 />
             </div>
-            <div className={Styles.carouselImg}>
+            <div>
                 <Image2 />
             </div>
-            <div className={Styles.carouselImg}>
+            <div>
                 <Image3 />
             </div>
         </Slider>
