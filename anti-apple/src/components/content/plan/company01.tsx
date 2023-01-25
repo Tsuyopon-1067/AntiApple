@@ -4,19 +4,28 @@ import GenerateArticle from './generateArticle';
 const company01 = () => {
     return (
         <div>
-            <GenerateArticle 
-                name="ahamo"
-                img="https://cache.cil.ahamo.com/assets/images/common/logo.svg"
-                abstract="ドコモのやつ"
-                gb="20GB, 100GB"
-                value="あいうえお"
-                option="あいおうえ"
-                speed="はやい"
-                recommended="あいうえお"
-                reference="あいうえお"
-            />
+          <GenerateArticle
+            name="ahamo"
+            img="画像のURL"
+            abstract="概要"
+            gbtable={[]}
+            valuetable={[]}
+            valueremarktable={[
+            ]}
+            value=""
+            optiontable={[
+            ]}
+            optionvaluetable={[]}
+            optionremarktable={[
+              
+            ]}
+            option=""
+            speed=""
+            recommended=""
+            reference=""
+          />
         </div>
-    );
-};
+      );
+    };
 
 export default company01;

@@ -1,12 +1,31 @@
 import React from 'react';
+import GenerateArticle from './generateArticle';
 
 const company04 = () => {
     return (
         <div>
-            <h1>UQ mobile</h1>
-            <p>最高の格安SIM</p>
+          <GenerateArticle
+            name="UQ mobile"
+            img="画像のURL"
+            abstract="概要"
+            gbtable={[]}
+            valuetable={[]}
+            valueremarktable={[
+            ]}
+            value=""
+            optiontable={[
+            ]}
+            optionvaluetable={[]}
+            optionremarktable={[
+              
+            ]}
+            option=""
+            speed=""
+            recommended=""
+            reference=""
+          />
         </div>
-    );
-};
+      );
+    };
 
 export default company04;

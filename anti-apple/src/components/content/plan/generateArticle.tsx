@@ -44,6 +44,7 @@ const GenerateArticle = (props) => {
   return (
     <>
       <MediaQuery query="(max-width: 900px)">
+        <React.Fragment>
         <div>
           <div className={Styles.flex}>
             <Heading className={Styles.title}>{props.name}</Heading>
@@ -88,13 +89,15 @@ const GenerateArticle = (props) => {
             <p>{props.reference}</p>
           </div>
         </div>
+        </React.Fragment>
       </MediaQuery>
 
       <MediaQuery query="(min-width: 901px)">
+        <React.Fragment>
         <div>
           <Stack direction='row'>
 
-              <Sidebar />
+              <Sidebar/>
               <div className={Styles.flex}>
                 <div className={Styles.article}>
                   <Heading className={Styles.title}>{props.name}</Heading>
@@ -141,6 +144,7 @@ const GenerateArticle = (props) => {
               </div>
           </Stack>
         </div>
+      </React.Fragment>
       </MediaQuery>
     </>
   );
