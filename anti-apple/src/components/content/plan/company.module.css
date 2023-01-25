@@ -23,28 +23,36 @@
 /*PC向け*/
 @media screen and (min-width: 901px) {
   /* 全体 */
-  .main {
+  .flex {
     box-sizing: border-box;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
   }
 
   .article {
-    width: 100%;
-    margin-left: 3%;
-    margin-right: 3%;
+    position: left;
     text-align: left;
+    width: 90%;
     box-sizing: border-box;
-    width: 100vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    
   }
   .title {
     border-bottom: 3px solid #000;
+    box-sizing: border-box;
   }
   .img {
     margin-top: 10px;
     margin-bottom: 10px;
+    box-sizing: border-box;
   }
   /* 表 */
   .table {
     margin-top: 10px;
     margin-bottom: 10px;
+    box-sizing: border-box;
   }
 }

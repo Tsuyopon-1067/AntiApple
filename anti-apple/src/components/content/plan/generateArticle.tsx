@@ -5,6 +5,7 @@ import Sidebar from "../../Sidebar";
 import Styles from "./company.module.css";
 
 import {
+  Box,
   Stack,
   Grid,
   GridItem,
@@ -48,7 +49,7 @@ const GenerateArticle = (props) => {
         <div>
           <div className={Styles.flex}>
             <Heading className={Styles.title}>{props.name}</Heading>
-            <img className={Styles.img} src={props.img} />
+            <img className={Styles.img} src={props.img} alt="image"/>
             <h2>概要</h2>
             <p>{props.abstract}</p>
             <h2>プラン</h2>
@@ -95,13 +96,13 @@ const GenerateArticle = (props) => {
       <MediaQuery query="(min-width: 901px)">
         <React.Fragment>
         <div>
-          <Stack direction='row'>
+          <Stack direction='row' spacing="0">
 
               <Sidebar/>
               <div className={Styles.flex}>
                 <div className={Styles.article}>
                   <Heading className={Styles.title}>{props.name}</Heading>
-                  <img className={Styles.img} src={props.img} />
+                  <img className={Styles.img} src={props.img} alt="image"/>
                   <h2>概要</h2>
                   <p>{props.abstract}</p>
                   <h2>プラン</h2>
