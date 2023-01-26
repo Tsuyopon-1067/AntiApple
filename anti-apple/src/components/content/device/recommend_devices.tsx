@@ -165,4 +165,3 @@ export const RecoDevices = () => {
 };
 
 export default RecoDevices;
-
