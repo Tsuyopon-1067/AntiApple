@@ -28,6 +28,7 @@ const DeviceParameter = class {
   market: string;
   note: string;
   source: string;
+  index: number;
   constructor(
     name: string,
     manufacturer: string,
@@ -45,7 +46,8 @@ const DeviceParameter = class {
     price: number,
     market: string,
     note: string,
-    source: string
+    source: string,
+    index: number
   ) {
     this.name = name;
     this.manufacturer = manufacturer;
@@ -64,6 +66,7 @@ const DeviceParameter = class {
     this.market = market;
     this.note = note;
     this.source = source;
+    this.index = index;
   }
 };
 export const Pixel6a = new DeviceParameter(
@@ -83,7 +86,8 @@ export const Pixel6a = new DeviceParameter(
   53900,
   "Googleストア",
   "Googleから発売されたミドルレンジスマホです。他社ミドルレンジに比べ独自チップにより処理性能が高く、ゲームプレイなどにも使いやすい性能があります。カメラ性能も高く、写真をよく撮る方におすすめです。ワイヤレス充電がない点など、細かい部分ではコストカットが見られるため気になる方は上位モデルのPixel 7/7 Proを選ぶのがおすすめです。",
-  "Googleストア https://store.google.com/jp/product/pixel_6a_specs?hl=ja"
+  "Googleストア https://store.google.com/jp/product/pixel_6a_specs?hl=ja",
+  1
 );
 export const Pixel7 = new DeviceParameter(
   "Pixel 7",
@@ -102,7 +106,8 @@ export const Pixel7 = new DeviceParameter(
   82500,
   "Googleストア",
   "Googleから発売されたミドルレンジスマホです。他社ミドルレンジに比べ独自チップにより処理性能が高く、ゲームプレイなどにも使いやすい性能があります。カメラ性能も高く、写真をよく撮る方におすすめです。ワイヤレス充電がない点など、細かい部分ではコストカットが見られるため気になる方は上位モデルのPixel 7/7 Proを選ぶのがおすすめです。",
-  "Googleストア https://store.google.com/jp/product/pixel_7_specs?hl=ja"
+  "Googleストア https://store.google.com/jp/product/pixel_7_specs?hl=ja",
+  3
 );
 export const Pixel7Pro = new DeviceParameter(
   "Pixel 7 Pro",
@@ -121,7 +126,8 @@ export const Pixel7Pro = new DeviceParameter(
   124300,
   "Googleストア",
   "Googleから発売されたミドルレンジスマホです。他社ミドルレンジに比べ独自チップにより処理性能が高く、ゲームプレイなどにも使いやすい性能があります。カメラ性能も高く、写真をよく撮る方におすすめです。ワイヤレス充電がない点など、細かい部分ではコストカットが見られるため気になる方は上位モデルのPixel 7/7 Proを選ぶのがおすすめです。",
-  "Googleストア https://store.google.com/jp/product/pixel_7_pro_specs?hl=ja"
+  "Googleストア https://store.google.com/jp/product/pixel_7_pro_specs?hl=ja",
+  5
 );
 
 export const Xiaomi12TPro = new DeviceParameter(
@@ -141,7 +147,8 @@ export const Xiaomi12TPro = new DeviceParameter(
   109800,
   "",
   "iPhoneの最廉価グレードです。現在販売されているiPhoneの中では唯一Touch IDが使用可能で、指紋認証にこだわる方におすすめの端末です。ベンチマークスコアも高く長く余裕を持って使える性能があります。ただし画面比率が16:9と縦に小さく、サイズも4.7インチと小さいうえバッテリー容量も小さいためゲームをプレイしたり動画を見たりする機会が多い方には価格が多少高くなっても他のiPhoneがおすすめです。",
-  "Xiaomiオンラインストア https://www.mi.com/jp/product/xiaomi-12t-pro/?skupanel=1"
+  "Xiaomiオンラインストア https://www.mi.com/jp/product/xiaomi-12t-pro/?skupanel=1",
+  6
 );
 export const Redminote11 = new DeviceParameter(
   "Redmi note 11",
@@ -160,7 +167,8 @@ export const Redminote11 = new DeviceParameter(
   24800,
   "",
   "iPhoneの最廉価グレードです。現在販売されているiPhoneの中では唯一Touch IDが使用可能で、指紋認証にこだわる方におすすめの端末です。ベンチマークスコアも高く長く余裕を持って使える性能があります。ただし画面比率が16:9と縦に小さく、サイズも4.7インチと小さいうえバッテリー容量も小さいためゲームをプレイしたり動画を見たりする機会が多い方には価格が多少高くなっても他のiPhoneがおすすめです。",
-  "Xiaomiオンラインストア https://www.mi.com/jp/product/redmi-note-11/specs?skupanel=1"
+  "Xiaomiオンラインストア https://www.mi.com/jp/product/redmi-note-11/specs?skupanel=1",
+  7
 );
 export const iPhoneSE = new DeviceParameter(
   "iPhone SE(第3世代)",
@@ -179,7 +187,8 @@ export const iPhoneSE = new DeviceParameter(
   62800,
   "Appleストア, 一部の格安SIM事業者",
   "iPhoneの最廉価グレードです。現在販売されているiPhoneの中では唯一Touch IDが使用可能で、指紋認証にこだわる方におすすめの端末です。ベンチマークスコアも高く長く余裕を持って使える性能があります。ただし画面比率が16:9と縦に小さく、サイズも4.7インチと小さいうえバッテリー容量も小さいためゲームをプレイしたり動画を見たりする機会が多い方には価格が多少高くなっても他のiPhoneがおすすめです。",
-  "Apple https://www.apple.com/jp/iphone/"
+  "Apple https://www.apple.com/jp/iphone/",
+  8
 );
 export const iPhone14Pro = new DeviceParameter(
   "iPhone 14 Pro",
@@ -198,7 +207,8 @@ export const iPhone14Pro = new DeviceParameter(
   149800,
   "Appleストア",
   "iPhoneの上位モデルです。これさえ買えば確実に失敗しない、といえる一台で、特に筐体の高級感やディスプレイの性能などはどれをとっても満足すること間違いなしです。値段は非常に高いですが、その分スペックも高く長く安心して使えます。難点はステンレス筐体を採用しているためサイズの割に重量が重いことと動画撮影以外のカメラ性能はPixel 7 ProなどのAndroidハイエンドのほうが優れている点です。",
-  "Apple https://www.apple.com/jp/iphone/"
+  "Apple https://www.apple.com/jp/iphone/",
+  10
 );
 export const AQUOSsense7 = new DeviceParameter(
   "AQUOS sense7",
@@ -217,7 +227,8 @@ export const AQUOSsense7 = new DeviceParameter(
   47520,
   "",
   "iPhoneの最廉価グレードです。現在販売されているiPhoneの中では唯一Touch IDが使用可能で、指紋認証にこだわる方におすすめの端末です。ベンチマークスコアも高く長く余裕を持って使える性能があります。ただし画面比率が16:9と縦に小さく、サイズも4.7インチと小さいうえバッテリー容量も小さいためゲームをプレイしたり動画を見たりする機会が多い方には価格が多少高くなっても他のiPhoneがおすすめです。",
-  "SHARP https://jp.sharp/products/aquos-sense7/d/"
+  "SHARP https://jp.sharp/products/aquos-sense7/d/",
+  2
 );
 export const motog52j = new DeviceParameter(
   "moto g52j",
@@ -236,7 +247,8 @@ export const motog52j = new DeviceParameter(
   39800,
   "",
   "iPhoneの最廉価グレードです。現在販売されているiPhoneの中では唯一Touch IDが使用可能で、指紋認証にこだわる方におすすめの端末です。ベンチマークスコアも高く長く余裕を持って使える性能があります。ただし画面比率が16:9と縦に小さく、サイズも4.7インチと小さいうえバッテリー容量も小さいためゲームをプレイしたり動画を見たりする機会が多い方には価格が多少高くなっても他のiPhoneがおすすめです。",
-  "motorola https://store.motorola.co.jp/item/MOTO_G52J_5G.html"
+  "motorola https://store.motorola.co.jp/item/MOTO_G52J_5G.html",
+  4
 );
 export const iPhone13mini = new DeviceParameter(
   "iPhone 13 mini",
@@ -255,5 +267,6 @@ export const iPhone13mini = new DeviceParameter(
   92800,
   "Appleストア, mineo",
   "iPhoneの最廉価グレードです。現在販売されているiPhoneの中では唯一Touch IDが使用可能で、指紋認証にこだわる方におすすめの端末です。ベンチマークスコアも高く長く余裕を持って使える性能があります。ただし画面比率が16:9と縦に小さく、サイズも4.7インチと小さいうえバッテリー容量も小さいためゲームをプレイしたり動画を見たりする機会が多い方には価格が多少高くなっても他のiPhoneがおすすめです。",
-  "Apple https://www.apple.com/jp/iphone/"
+  "Apple https://www.apple.com/jp/iphone/",
+  9
 );
