@@ -18,14 +18,14 @@ export const Device = (props) => {
       <MediaQuery query="(max-width: 900px)">
         <Container>
           <VStack marginBottom="20px" spacing="8">
-            <Box w="300px">
+            <Stack w="300px">
               <VStack>
                 <figure>
                   <Image w="90%" src={props.img} />
                   <figcaption>出典：{props.source}</figcaption>
                 </figure>
               </VStack>
-            </Box>
+            </Stack>
             <Box marginBottom="30px" width="90%">
               <Stack spacing="6">
                 <Heading size="lg">
@@ -46,7 +46,7 @@ export const Device = (props) => {
                 <Heading size="sm">画面サイズ</Heading>
                 <p>{props.displaySize}インチ</p>
                 <Heading size="sm">解像度</Heading>
-                <p>{props.resolution}</p>
+                <p>{props.resolution}px</p>
                 <Heading size="md">CPU&GPU</Heading>
                 <Heading size="sm">SoC</Heading>
                 <p>{props.soc}</p>
@@ -71,14 +71,12 @@ export const Device = (props) => {
       </MediaQuery>
 
       <MediaQuery query="(min-width: 901px)">
-        <Container className={Styles.container}>
-          <Stack direction="row" spacing="8">
+        <Box className={Styles.container}>
+          <Stack direction="row" spacing="16">
             <Box w="300px">
-              <Stack>
-                <figure>
-                  <Image src={props.img} />
-                  <figcaption>出典：{props.source}</figcaption>
-                </figure>
+              <Stack spacing="0">
+                  <Image className={Styles.image} src={props.img} />
+                  <Text className={Styles.figcaption}>出典：{props.source}</Text>
               </Stack>
             </Box>
             <Box>
@@ -101,7 +99,7 @@ export const Device = (props) => {
                 <Heading size="sm">画面サイズ</Heading>
                 <p>{props.displaySize}インチ</p>
                 <Heading size="sm">解像度</Heading>
-                <p>{props.resolution}</p>
+                <p>{props.resolution}px</p>
                 <Heading size="md">CPU&GPU</Heading>
                 <Heading size="sm">SoC</Heading>
                 <p>{props.soc}</p>
@@ -122,7 +120,7 @@ export const Device = (props) => {
               </Stack>
             </Box>
           </Stack>
-        </Container>
+        </Box>
       </MediaQuery>
     </>
   );

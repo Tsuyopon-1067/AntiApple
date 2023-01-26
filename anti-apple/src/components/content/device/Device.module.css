@@ -21,7 +21,7 @@
     figcaption {
         margin-top: 10px;
         color: #776;
-        font-size: 12px;
+        font-size: 5px;
     }
     /* 文字列 */
     p {
@@ -72,22 +72,18 @@
     .container {
         margin-bottom: 40px;
     }
-    figcaption {
+    .figcaption {
         margin-top: 10px;
         color: #776;
         font-size: 12px;
+        width: 300px
     }
     /* 文字列 */
     p {
         color: #776;
     }
     /* 端末画像+出典 */
-    .figure {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        position: relative;
-    }
+
     /* 全体 */
     .flex {
         box-sizing: border-box;
