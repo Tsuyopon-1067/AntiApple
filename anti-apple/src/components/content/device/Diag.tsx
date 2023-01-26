@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Stack,
@@ -12,6 +12,8 @@ import {
 } from "@chakra-ui/react";
 import Styles from "./Device.module.css";
 import MediaQuery from "react-responsive";
+
+import {Device} from './Device';
 
 import {
   Pixel6a,
@@ -27,7 +29,7 @@ import {
 } from "./Devices";
 
 export const Diag = () => {
-  const DeviceData: any[] = [
+  let DeviceData: DeviceType[] = [
     Pixel6a,
     Xiaomi12TPro,
     Redminote11,
@@ -40,6 +42,10 @@ export const Diag = () => {
     Pixel7Pro,
   ];
 
+  const [best, setBest] = useState(DeviceData[1].name);
+  let [second, setSecond] = useState("にばんめ");
+  let [third, setThird] = useState("さんばんめ");
+
   let priceData: number[] = [];
   let powerData: number[] = [];
   let sizeData: number[] = [];
@@ -51,62 +57,128 @@ export const Diag = () => {
     sizeData.push(DeviceData[i].displaySize);
   }
 
-  function sortPrice() {
-    priceData.sort(function (sm, lg) {
-      if (sm < lg) {
-        return -1;
-      } else if (sm > lg) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
-  }
-  function sortSizeBig() {
-    priceData.sort(function (sm, lg) {
-      if (sm < lg) {
-        return 1;
-      } else if (sm > lg) {
-        return -1;
-      } else {
-        return 0;
-      }
-    });
-  }
-  function sortSizeSmall() {
-    priceData.sort(function (sm, lg) {
-      if (sm < lg) {
-        return -1;
-      } else if (sm > lg) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
-  }
-  function sortPower() {
-    powerData.sort(function (sm, lg) {
-      if (sm < lg) {
-        return -1;
-      } else if (sm > lg) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
+  let Name = "";
+
+  type DeviceType = {
+    name: string;
+    manufacturer: string;
+    img: string;
+    height: string;
+    width: string;
+    thickness: string;
+    weight: string;
+    displaySize: number;
+    resolution: string;
+    soc: string;
+    antutu: number;
+    usb: string;
+    earphone: string;
+    price: number;
+    market: string;
+    note: string;
+    source: string;  
   }
 
-  console.log(priceData);
-  console.log(powerData);
-  console.log(sizeData);
+  function sortPrice() {
+    DeviceData.sort(function (sm: DeviceType, lg: DeviceType) {
+      if (sm.price < lg.price) {
+        return -1;
+      } else if (sm.price > lg.price) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+
+    setBest(DeviceData[0].name)
+    setSecond(DeviceData[1].name)
+    setThird(DeviceData[2].name)
+
+
+    for(let i = 0; i < DeviceData.length; i++){
+      console.log(DeviceData[i].price);
+      }
+  }
+
+  function sortSizeBig() {
+    DeviceData.sort(function (sm: DeviceType, lg: DeviceType) {
+      if (sm.displaySize < lg.displaySize) {
+        return 1;
+      } else if (sm.displaySize > lg.displaySize) {
+        return -1;
+      } else {
+        return 0;
+      }
+    });
+
+    setBest(DeviceData[0].name)
+    setSecond(DeviceData[1].name)
+    setThird(DeviceData[2].name)
+
+
+    for(let i = 0; i < DeviceData.length; i++){
+      console.log(DeviceData[i].displaySize);
+      }
+  }
+
+  function sortSizeSmall() {
+    DeviceData.sort(function (sm: DeviceType, lg: DeviceType) {
+      if (sm.displaySize < lg.displaySize) {
+        return -1;
+      } else if (sm.displaySize > lg.displaySize) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+
+    setBest(DeviceData[0].name)
+    setSecond(DeviceData[1].name)
+    setThird(DeviceData[2].name)
+
+
+    for(let i = 0; i < DeviceData.length; i++){
+      console.log(DeviceData[i].displaySize);
+      }
+  }
+
+  function sortPower() {
+    DeviceData.sort(function (sm: DeviceType, lg: DeviceType) {
+      if (sm.antutu < lg.antutu) {
+        return 1;
+      } else if (sm.antutu > lg.antutu) {
+        return -1;
+      } else {
+        return 0;
+      }
+    });
+
+    setBest(DeviceData[0].name)
+    setSecond(DeviceData[1].name)
+    setThird(DeviceData[2].name)
+
+  }
+
 
   return (
     <>
       <React.Fragment>
         <Container>
           <div>
-            <Button>診断する</Button>
-            <p>{DeviceData[index].name}</p>
+            <Stack>
+              <HStack>
+                <Button onClick={sortPrice}>値段</Button>
+                <Button onClick={sortSizeBig}>サイズ（大きい順）</Button>
+                <Button onClick={sortSizeSmall}>サイズ（小さい順）</Button>
+                <Button onClick={sortPower}>性能</Button>
+              </HStack>
+              <Heading>おすすめ端末その1</Heading>
+              <Heading>{best}</Heading>
+              <Heading>おすすめ端末その2</Heading>
+              <Heading>{second}</Heading>
+              <Heading>おすすめ端末その3</Heading>
+              <Heading>{third}</Heading>
+            </Stack>
           </div>
         </Container>
       </React.Fragment>
