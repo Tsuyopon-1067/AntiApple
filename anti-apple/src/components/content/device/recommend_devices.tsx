@@ -13,6 +13,7 @@ import {
 import Styles from "./Device.module.css";
 import MediaQuery from "react-responsive";
 import {Device} from './Device';
+import Sidebar from "../../Sidebar";
 
 import {
   Pixel6a,
@@ -91,32 +92,74 @@ export const RecoDevices = () => {
 
   return (
     <>
-      <React.Fragment>
-        <Container>
-          <div>
-            <Stack>
-              <HStack>
-                <Button onClick={sortRecommended}>総合</Button>
-                <Button onClick={sortPrice}>値段</Button>
-                <Button onClick={sortSizeBig}>サイズ（大きい順）</Button>
-                <Button onClick={sortSizeSmall}>サイズ（小さい順）</Button>
-                <Button onClick={sortPower}>性能</Button>
-              </HStack>
-              {(() => {
-                  // ここで端末情報を追加する
-                  // ごちゃごちゃしてるけどfor文で回してるだけ
-                  const items: React.ReactNode[] = [];
-                  for (let i: number = 0; i < 10; i++) {
-                    items.push(<Heading>おすすめ端末その{i+1}</Heading>);
-                    items.push(<Device {...DeviceData[i]} />);
-                  }
-                  return <React.Fragment>{items}</React.Fragment>;
-                // for文埋め込みここまで
-            })()}
-            </Stack>
+      <MediaQuery query="(max-width:900px)">
+        <React.Fragment>
+          <div className={Styles.main}>
+            <div className={Styles.article}>
+              <Container>
+                <div>
+                  <Stack>
+                    <HStack>
+                      <Button onClick={sortRecommended}>総合</Button>
+                      <Button onClick={sortPrice}>値段</Button>
+                      <Button onClick={sortSizeBig}>サイズ（大きい順）</Button>
+                      <Button onClick={sortSizeSmall}>サイズ（小さい順）</Button>
+                      <Button onClick={sortPower}>性能</Button>
+                    </HStack>
+                    {(() => {
+                        // ここで端末情報を追加する
+                        // ごちゃごちゃしてるけどfor文で回してるだけ
+                        const items: React.ReactNode[] = [];
+                        for (let i: number = 0; i < 10; i++) {
+                          items.push(<Heading>おすすめ端末その{i+1}</Heading>);
+                          items.push(<Device {...DeviceData[i]} />);
+                        }
+                        return <React.Fragment>{items}</React.Fragment>;
+                      // for文埋め込みここまで
+                  })()}
+                  </Stack>
+                </div>
+              </Container>
+            </div>
           </div>
-        </Container>
-      </React.Fragment>
+        </React.Fragment>
+      </MediaQuery>
+
+      <MediaQuery query="(min-width:901px)">
+        <React.Fragment>
+          <Stack direction="row" spacing="0">
+            <Sidebar />
+            <div className={Styles.main}>
+              <div className={Styles.article}>
+                <Container>
+                  <div>
+                    <Stack>
+                      <HStack>
+                        <Button onClick={sortRecommended}>総合</Button>
+                        <Button onClick={sortPrice}>値段</Button>
+                        <Button onClick={sortSizeBig}>サイズ（大きい順）</Button>
+                        <Button onClick={sortSizeSmall}>サイズ（小さい順）</Button>
+                        <Button onClick={sortPower}>性能</Button>
+                      </HStack>
+                      {(() => {
+                          // ここで端末情報を追加する
+                          // ごちゃごちゃしてるけどfor文で回してるだけ
+                          const items: React.ReactNode[] = [];
+                          for (let i: number = 0; i < 10; i++) {
+                            items.push(<Heading>おすすめ端末その{i+1}</Heading>);
+                            items.push(<Device {...DeviceData[i]} />);
+                          }
+                          return <React.Fragment>{items}</React.Fragment>;
+                        // for文埋め込みここまで
+                    })()}
+                    </Stack>
+                  </div>
+                </Container>
+              </div>
+            </div>
+          </Stack>
+        </React.Fragment>
+      </MediaQuery>
     </>
   );
 };
