@@ -17,7 +17,7 @@ export const Device = (props) => {
     <>
       <MediaQuery query="(max-width: 900px)">
         <Container>
-          <VStack spacing="8">
+          <VStack marginBottom="20px" spacing="8">
             <Box w="300px">
               <VStack>
                 <figure>
