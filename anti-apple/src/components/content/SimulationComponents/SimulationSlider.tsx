@@ -27,7 +27,7 @@ export const SimulationSlider = (props) => {
                 {(() => {
                     // ここでスライダーのラベルを追加する
                     // ごちゃごちゃしてるけどfor文で回してるだけ
-                    const items: React.ReactNode = [];
+                    const items: React.ReactNode[] = [];
                     for (let i: number = 0; i < volumes.length; i++) {
                         items.push(<SliderLabel index={i} volume={volumes[i]} />);
                     }
