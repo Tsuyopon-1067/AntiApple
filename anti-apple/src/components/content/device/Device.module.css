@@ -1,5 +1,6 @@
 @media screen and (max-width: 900px) {
     .main {
+        display: inline-block;
         box-sizing: border-box;
         width: 100%;
         margin-left: 10px;
@@ -54,6 +55,7 @@
 
 @media screen and (min-width: 901px) {
     .main {
+        display: inline-block;
         box-sizing: border-box;
         width: 100%;
         margin-left: 10px;
