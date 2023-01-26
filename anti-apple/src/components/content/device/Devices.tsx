@@ -7,13 +7,13 @@ const DeviceParameter = class {
         width: string;
         thickness: string;
         weight: string;
-        displaySize: string;
+        displaySize: number;
         resolution: string;
         soc: string;
-        antutu: string;
+        antutu: number;
         usb: string;
         earphone: string;       
-        price: string;       
+        price: number;       
         market: string;       
         note: string;
         source: string;
@@ -25,13 +25,13 @@ const DeviceParameter = class {
         width: string,
         thickness: string,
         weight: string,
-        displaySize: string,
+        displaySize: number,
         resolution: string,
         soc: string,
-        antutu: string,
+        antutu: number,
         usb: string,
         earphone: string,
-        price: string,       
+        price: number,       
         market: string, 
         note: string,
         source: string
@@ -63,15 +63,15 @@ export const Pixel6a = new DeviceParameter(
     '71.8mm',
     '8.9mm',
     '178g',
-    '6.1',
+    6.1,
     '1080x2400',
     'Google Tensor',
-    '約68万点',
+    68,
     'USB Type-C® 3.1 Gen 1',
     'なし',
-    '',
-    '',
-    'Googleから発売されたミドルレンジスマホです。ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ',
+    53900,
+    'Googleストア',
+    'Googleから発売されたミドルレンジスマホです。他社ミドルレンジに比べ独自チップにより処理性能が高く、ゲームプレイなどにも使いやすい性能があります。カメラ性能も高く、写真をよく撮る方におすすめです。ワイヤレス充電がない点など、細かい部分ではコストカットが見られるため気になる方は上位モデルのPixel 7/7 Proを選ぶのがおすすめです。',
     'Googleストア https://store.google.com/jp/product/pixel_6a_specs?hl=ja',
 );
 export const Xiaomi11TPro = new DeviceParameter(
@@ -82,13 +82,13 @@ export const Xiaomi11TPro = new DeviceParameter(
     '76.9mm',
     '8.8mm',
     '204g',
-    '6.67',
+    6.67,
     '2400x1080',
     'Qualcomm® Snapdragon™ 888',
-    '約78万点',
+    78,
     'USB Type-C 2.0',
     'なし',
-    '',
+    64800,
     '',
     '',
     'Xiaomiオンラインストア https://www.mi.com/jp/product/xiaomi-11t-pro/specs?skupanel=1',
@@ -101,10 +101,10 @@ export const Redminote11 = new DeviceParameter(
     '73.87mm',
     '8.09mm',
     '179g',
-    '6.43',
+    6.43,
     '2400x1080',
     'Qualcomm® Snapdragon™ 680',
-    '約24万点',
+    24,
     'USB Type-C 2.0',
     '3.5 mm',
     '',
@@ -120,18 +120,18 @@ export const iPhoneSE = new DeviceParameter(
     '67.3mm',
     '7.3mm',
     '144g',
-    '4.7',
+    4.7,
     '1334x750',
     'Apple A15',
-    '約83万点',
+    83,
     'Lightningコネクタ',
     'なし',
-    '',
-    '',
-    '',
+    62800,
+    'Appleストア, 一部の格安SIM事業者',
+    'iPhoneの最廉価グレードです。現在販売されているiPhoneの中では唯一Touch IDが使用可能で、指紋認証にこだわる方におすすめの端末です。ベンチマークスコアも高く長く余裕を持って使える性能があります。ただし画面比率が16:9と縦に小さく、サイズも4.7インチと小さいうえバッテリー容量も小さいためゲームをプレイしたり動画を見たりする機会が多い方には他のiPhoneがおすすめです。',
     'Apple https://www.apple.com/jp/iphone/',
 );
-export const iPhone14 = new DeviceParameter(
+export const iPhone14Pro= new DeviceParameter(
     'iPhone 14',
     'Apple',
     'https://www.apple.com/v/iphone/home/bk/images/overview/compare/compare_iphone_14__ct4sjk962pea_large_2x.jpg',

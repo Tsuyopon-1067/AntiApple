@@ -8,7 +8,7 @@ import {
   Xiaomi11TPro,
   Redminote11,
   iPhoneSE,
-  iPhone14,
+  iPhone14Pro,
   AQUOSsense7,
   motog52j,
 } from "./Devices"; // 端末情報定義（端末追加のときはこっちをいじる）．波括弧内に端末を追加する．
@@ -33,7 +33,7 @@ const RecoDevices = () => {
             <Device {...Xiaomi11TPro} />
             <Device {...Redminote11} />
             <Device {...iPhoneSE} />
-            <Device {...iPhone14} />
+            <Device {...iPhone14Pro} />
             </div>
           </div>
         </React.Fragment>
@@ -55,7 +55,7 @@ const RecoDevices = () => {
                 <Device {...Xiaomi11TPro} />
                 <Device {...Redminote11} />
                 <Device {...iPhoneSE} />
-                <Device {...iPhone14} />
+                <Device {...iPhone14Pro} />
               </div>
             </div>
           </Stack>

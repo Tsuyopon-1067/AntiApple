@@ -50,8 +50,8 @@ export const Device = (props) => {
                 <Heading size="md">CPU&GPU</Heading>
                 <Heading size="sm">SoC</Heading>
                 <p>{props.soc}</p>
-                <Heading size="sm">Antutu</Heading>
-                <p>{props.antutu}</p>
+                <Heading size="sm">Antutuベンチマークスコア</Heading>
+                <p>約{props.antutu}万点</p>
                 <Heading size="md">端子類</Heading>
                 <Heading size="sm">充電・通信端子</Heading>
                 <p>{props.usb}</p>
@@ -59,7 +59,7 @@ export const Device = (props) => {
                 <p>{props.earphone}</p>
                 <Heading size="md">価格と販路</Heading>
                 <Heading size="sm">価格</Heading>
-                <p>{props.price}</p>
+                <p>{props.price}円</p>
                 <Heading size="sm">販路</Heading>
                 <p>{props.market}</p>
                 <Heading size="sm">備考</Heading>
@@ -105,8 +105,8 @@ export const Device = (props) => {
                 <Heading size="md">CPU&GPU</Heading>
                 <Heading size="sm">SoC</Heading>
                 <p>{props.soc}</p>
-                <Heading size="sm">Antutu</Heading>
-                <p>{props.antutu}</p>
+                <Heading size="sm">Antutuベンチマークスコア</Heading>
+                <p>約{props.antutu}万点</p>
                 <Heading size="md">端子類</Heading>
                 <Heading size="sm">充電・通信端子</Heading>
                 <p>{props.usb}</p>
@@ -114,7 +114,7 @@ export const Device = (props) => {
                 <p>{props.earphone}</p>
                 <Heading size="md">価格と販路</Heading>
                 <Heading size="sm">価格</Heading>
-                <p>{props.price}</p>
+                <p>{props.price}円</p>
                 <Heading size="sm">販路</Heading>
                 <p>{props.market}</p>
                 <Heading size="sm">備考</Heading>
