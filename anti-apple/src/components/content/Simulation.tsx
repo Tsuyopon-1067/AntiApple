@@ -3,6 +3,8 @@ import { Plan, Plans } from './SimulationComponents/Plans';
 import {SimulationSlider} from './SimulationComponents/SimulationSlider';
 import {CarrierButtonList} from './SimulationComponents/CarrierButtonList';
 import {OptionButtonList} from './SimulationComponents/OptionButtonList ';
+import styles from './Simulation.module.css';
+
 // 20 50 70 100
 export const Simulation = (param) => {
     const[dataVolume, setDataVolume] = useState(5);
@@ -11,15 +13,16 @@ export const Simulation = (param) => {
     let selectedPlan: Plan = Plans.getSelectedPlan(carrier, dataVolume, option);
     return (
         <React.Fragment>
-            <h1>プラン料金シミュレーション</h1>
-            <p>ここに料金シミュレーションを実装</p>
+            <h1 >プラン料金シミュレーション</h1>
             <p>
                 <CarrierButtonList getCarrier={setCarrier} />
             </p>
             <p>
                 <OptionButtonList getCarrier={setOption} />
             </p>
-            <SimulationSlider setDataVolume={setDataVolume} />
+            <div className={styles.slider}>
+                <SimulationSlider setDataVolume={setDataVolume} />
+            </div>
             <br />
             <p>選択 : {dataVolume}</p>
             <p>{selectedPlan.carrierName}, {selectedPlan.planName}, {selectedPlan.price}円</p>
