@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import MediaQuery from "react-responsive";
 
-import { Device } from "./Device"; // デバイスコンポーネント
+import { Diag } from "./Diag"; // デバイスコンポーネント
 import {
   Pixel6a,
   Xiaomi12TPro,
@@ -24,10 +24,10 @@ import {
   Pixel7,
   Pixel7Pro,
 } from "./Devices"; // 端末情報定義（端末追加のときはこっちをいじる）．波括弧内に端末を追加する．
+
 import Sidebar from "../../Sidebar";
 
 import Styles from "./Device.module.css";
-  
 
 const DiagDevices = () => {
   return (
@@ -40,16 +40,7 @@ const DiagDevices = () => {
               おすすめ端末診断
             </Heading>
             {/* ここでテスト用デバイス画面を配置 */}
-            <Device {...Pixel6a} />
-            <Device {...AQUOSsense7} />
-            <Device {...Pixel7} />
-            <Device {...motog52j} />
-            <Device {...Pixel7Pro} />
-            <Device {...Xiaomi12TPro} />
-            <Device {...Redminote11} />
-            <Device {...iPhoneSE} />
-            <Device {...iPhone13mini} />
-            <Device {...iPhone14Pro} />
+            <Diag/>
             </div>
           </div>
         </React.Fragment>
@@ -65,16 +56,7 @@ const DiagDevices = () => {
                   おすすめ端末診断
                 </Heading>
                 {/* ここでテスト用デバイス画面を配置 */}
-                <Device {...Pixel6a} />
-                <Device {...AQUOSsense7} />
-                <Device {...Pixel7} />
-                <Device {...motog52j} />
-                <Device {...Pixel7Pro} />
-                <Device {...Xiaomi12TPro} />
-                <Device {...Redminote11} />
-                <Device {...iPhoneSE} />
-                <Device {...iPhone13mini} />
-                <Device {...iPhone14Pro} />
+                <Diag/>
               </div>
             </div>
           </Stack>
