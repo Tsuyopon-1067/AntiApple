@@ -20,6 +20,7 @@
     .img {
         margin-top: 10px;
         margin-bottom: 10px;
+        width: 200px;
     }
     /* 表 */
     .table {
@@ -61,6 +62,7 @@
     .img {
         margin-top: 30px;
         margin-bottom: 10px;
+        height: 40px;
         box-sizing: border-box;
     }
     /* 表 */
