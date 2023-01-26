@@ -99,24 +99,26 @@ export const RecoDevices = () => {
               <Container>
                 <div>
                   <Stack>
-                    <HStack>
-                      <Button onClick={sortRecommended}>総合</Button>
-                      <Button onClick={sortPrice}>値段</Button>
-                      <Button onClick={sortSizeBig}>サイズ（大きい順）</Button>
-                      <Button onClick={sortSizeSmall}>サイズ（小さい順）</Button>
-                      <Button onClick={sortPower}>性能</Button>
-                    </HStack>
+                    <VStack marginBlock="40px">
+                      <Button w = "90%" onClick={sortRecommended}>総合</Button>
+                      <Button w = "90%" onClick={sortPrice}>値段</Button>
+                      <Button w = "90%" onClick={sortSizeBig}>サイズ（大きい順）</Button>
+                      <Button w = "90%" onClick={sortSizeSmall}>サイズ（小さい順）</Button>
+                      <Button w = "90%" onClick={sortPower}>性能</Button>
+                    </VStack>
+                    <Stack>
                     {(() => {
                         // ここで端末情報を追加する
                         // ごちゃごちゃしてるけどfor文で回してるだけ
                         const items: React.ReactNode[] = [];
                         for (let i: number = 0; i < 10; i++) {
-                          items.push(<Heading>おすすめ端末その{i+1}</Heading>);
+                          items.push(<Heading className={Styles.title}>おすすめ端末その{i+1}</Heading>);
                           items.push(<Device {...DeviceData[i]} />);
                         }
                         return <React.Fragment>{items}</React.Fragment>;
                       // for文埋め込みここまで
                   })()}
+                  </Stack>
                   </Stack>
                 </div>
               </Container>
@@ -133,20 +135,20 @@ export const RecoDevices = () => {
               <div className={Styles.article}>
                 <Container>
                   <div>
-                    <Stack>
-                      <HStack>
-                        <Button onClick={sortRecommended}>総合</Button>
-                        <Button onClick={sortPrice}>値段</Button>
-                        <Button onClick={sortSizeBig}>サイズ（大きい順）</Button>
-                        <Button onClick={sortSizeSmall}>サイズ（小さい順）</Button>
-                        <Button onClick={sortPower}>性能</Button>
+                    <Stack spacing="10">
+                      <HStack marginBlock="40px">
+                        <Button w = "20%" onClick={sortRecommended}>総合</Button>
+                        <Button w = "20%" onClick={sortPrice}>値段</Button>
+                        <Button w = "20%" onClick={sortSizeBig}>サイズ（大きい順）</Button>
+                        <Button w = "20%" onClick={sortSizeSmall}>サイズ（小さい順）</Button>
+                        <Button w = "20%" onClick={sortPower}>性能</Button>
                       </HStack>
                       {(() => {
                           // ここで端末情報を追加する
                           // ごちゃごちゃしてるけどfor文で回してるだけ
                           const items: React.ReactNode[] = [];
                           for (let i: number = 0; i < 10; i++) {
-                            items.push(<Heading>おすすめ端末その{i+1}</Heading>);
+                            items.push(<Heading marginBlock="40px" className={Styles.title}>おすすめ端末その{i+1}</Heading>);
                             items.push(<Device {...DeviceData[i]} />);
                           }
                           return <React.Fragment>{items}</React.Fragment>;

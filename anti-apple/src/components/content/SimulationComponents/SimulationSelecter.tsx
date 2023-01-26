@@ -12,38 +12,35 @@ import {
 import Styles from './SimulationSlider.module.css';
 // 20 50 70 100
 
-export const SimulationSlider = (props) => {
+export const SimulationSelecter = (props) => {
     const [dataVolume,setDataVolume] = useState(5);
     props.setDataVolume(dataVolume);
     //const volumes: number[] = [ 0.5, 1, 0, 0, 0, 5, 0, 0, 0, 0, 10, 0, 0, 0, 0, 15, 0, 0, 0, 0, 20, 50, 70, 100];
     const volumes: number[] = [ 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 50, 70, 100];
+
+    //setDataVolume(volumes[Number(val)])
+
     return (
         <React.Fragment>
-            <Slider defaultValue={5} min={0} max={volumes.length-1} step={1} onChangeEnd={(val) => setDataVolume(volumes[val])}>
-                <SliderTrack bg="#c2e4cb">
-                    <SliderFilledTrack bg="#5cbf79" />
-                </SliderTrack>
-                <SliderThumb boxSize={3}>
-                    <Box className={Styles.thumb} bg="#fcfcfc" w='100%' p={3} color='white' />
-                </SliderThumb>
+            <Select defaultValue={5} onChange={(val) => console.log(val)}>
                 {(() => {
                     // ここでスライダーのラベルを追加する
                     // ごちゃごちゃしてるけどfor文で回してるだけ
                     const items: React.ReactNode[] = [];
                     for (let i: number = 0; i < volumes.length; i++) {
-                        items.push(<SliderLabel index={i} volume={volumes[i]} />);
+                        items.push(<option value={String(volumes[i])} >{volumes[i] + "GB"}</option>);
+                        console.log(dataVolume)
                     }
-                    items.push(<SliderLabel index={volumes.length} volume={-1} />);
 
                     return <React.Fragment>{items}</React.Fragment>;
                     // for文埋め込みここまで
                 })()}
-            </Slider>
+            </Select>
         </React.Fragment>
     );
 }
 
-const SliderLabel : React.FC<{ index: number; volume: number; }> = (props) => {
+/*const SliderLabel : React.FC<{ index: number; volume: number; }> = (props) => {
     const labelStyles = {
         mt: '5',
         ml: '-2.5',
@@ -64,6 +61,6 @@ const SliderLabel : React.FC<{ index: number; volume: number; }> = (props) => {
         return <div className={Styles.mb}><SliderMark value={props.index} {...labelStyles}>{volumeText}</SliderMark></div>
     }
     return (
-        <SliderMark value={props.index} {...labelStyles}>{volumeText}</SliderMark>
+        <></>
     );
-}
+}*/

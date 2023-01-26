@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import GenerateCard from "../Card";
+import {Stack} from "@chakra-ui/react";
 
 const Content = () => {
   return (
     <React.Fragment>
+      <Stack>
       <div>
         <h1>コンテンツ一覧</h1>
         <GenerateCard
@@ -13,7 +15,6 @@ const Content = () => {
             "速度比較",
             "各社プラン一覧",
             "おすすめ端末",
-            "おすすめ端末診断"
           ]}
           carddetail={["", "", "", "", ""]}
           cardlink={[
@@ -21,10 +22,10 @@ const Content = () => {
             "./content/speed",
             "./content/plan/all_company",
             "./content/device/recommend_devices",
-            "./content/device/diag_devices"
           ]}
         />
       </div>
+      </Stack>
     </React.Fragment>
   );
 };
