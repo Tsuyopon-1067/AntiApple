@@ -1,105 +1,159 @@
-.main {
-    box-sizing: border-box;
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-    overflow: hidden;
+@media screen and (max-width: 900px) {
+    .main {
+        box-sizing: border-box;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        overflow: hidden;
+    }
+    .article {
+        text-align: left;
+        width: 90%;
+        box-sizing: border-box;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 30px;
+    }
+    /* 記事部分 */
+    .container {
+        margin-bottom: 40px;
+    }
+    figcaption {
+        margin-top: 10px;
+        color: #776;
+        font-size: 12px;
+    }
+    /* 文字列 */
+    p {
+        color: #776;
+    }
+    /* 端末画像+出典 */
+    .figure {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    /* 全体 */
+    .flex {
+        box-sizing: border-box;
+        display: flex;
+        /* 横並び */
+        width: 100vw;
+        /* width指定しないと左右中央に配置できない */
+        margin-bottom: 40px;
+    }
+    .title {
+        box-sizing: border-box;
+        border-bottom: 5px solid #c2e4cb;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: left;
+    }
 }
 
-.article {
-    text-align: left;
-    width: 90%;
-    box-sizing: border-box;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 30px;
+@media screen and (min-width: 901px) {
+    .main {
+        box-sizing: border-box;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        overflow: hidden;
+    }
+    .article {
+        text-align: left;
+        width: 90%;
+        box-sizing: border-box;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 30px;
+    }
+    /* 記事部分 */
+    .container {
+        margin-bottom: 40px;
+    }
+    figcaption {
+        margin-top: 10px;
+        color: #776;
+        font-size: 12px;
+    }
+    /* 文字列 */
+    p {
+        color: #776;
+    }
+    /* 端末画像+出典 */
+    .figure {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    /* 全体 */
+    .flex {
+        box-sizing: border-box;
+        display: flex;
+        /* 横並び */
+        width: 100vw;
+        /* width指定しないと左右中央に配置できない */
+        margin-bottom: 40px;
+    }
+    .title {
+        box-sizing: border-box;
+        border-bottom: 5px solid #c2e4cb;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: left;
+    }
 }
 
 
-/* 記事部分 */
+/*
 
-.container {
-    margin-bottom: 40px;
-}
-
-
-/* 全体 */
-
-.flex {
-    box-sizing: border-box;
-    display: flex;
-    /* 横並び */
-    width: 100vw;
-    /* width指定しないと左右中央に配置できない */
-    margin-bottom: 40px;
-}
-
-.title {
-    box-sizing: border-box;
-    border-bottom: 5px solid #c2e4cb;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    text-align: left;
-}
-
-
-/* 文字列 */
-
-p {
-    color: #776;
-}
-
-
-/* 端末画像+出典 */
-
-.figure {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-}
-
-
-/* 端末画像 */
+/* 端末画像 
 
 .img {
     width: 400px;
-    /* 画像サイズ指定 */
+    /* 画像サイズ指定 
 }
+*/
 
 
-/* 端末情報（テキスト）全体． */
-
+/* 端末情報（テキスト）全体． 
 .description {
     box-sizing: border-box;
     padding: 0px;
     width: 100%;
 }
 
+*/
 
-/* 端末名 */
+
+/* 端末名 
 
 .deviceName {
     font-size: 30px;
     font-weight: 600;
-    /* フォントの太さ */
+    /* フォントの太さ 
     display: inline;
-    /* 改行禁止．端末名とメーカー名両方に設定する */
+    /* 改行禁止．端末名とメーカー名両方に設定する
 }
 
+*/
 
-/* メーカー名 */
+
+/* メーカー名 
 
 .deviceManufacturer {
     font-size: 30px;
     font-weight: 600;
-    /* フォントの太さ */
+    /* フォントの太さ 
     display: inline;
-    /* 改行禁止．端末名とメーカー名両方に設定する */
-}
+    /* 改行禁止．端末名とメーカー名両方に設定する 
+
+*/
 
 
-/* サイズ等のカテゴリ */
+/* サイズ等のカテゴリ 
 
 .category {
     font-size: 18px;
@@ -108,12 +162,14 @@ p {
 }
 
 .categoryFirst {
-    /* 一番上（サイズと重量）は上に端末・メーカー名がある */
+    一番上（サイズと重量）は上に端末・メーカー名がある
     margin: 10px 0px 0px 0px;
 }
 
+*/
 
-/* サイズ->縦のような詳細情報の見出し */
+
+/* サイズ->縦のような詳細情報の見出し
 
 .subCategory {
     margin: 2px 0;
@@ -121,8 +177,10 @@ p {
     text-align: left;
 }
 
+ */
 
-/* 詳細情報 */
+
+/* 詳細情報 
 
 .info {
     font-size: 16px;
@@ -130,8 +188,10 @@ p {
     color: #776;
 }
 
+*/
 
-/* 備考 */
+
+/* 備考
 
 .description {
     margin: 2px 0;
@@ -139,8 +199,10 @@ p {
     text-align: left;
 }
 
+ */
 
-/* 出典 */
+
+/* 出典
 
 .source {
     overflow-wrap: break-word;
@@ -149,3 +211,5 @@ p {
     text-align: center;
     width: 400px;
 }
+
+ */

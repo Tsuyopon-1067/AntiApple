@@ -17,17 +17,17 @@ export const Device = (props) => {
     <>
       <MediaQuery query="(max-width: 900px)">
         <Container>
-          <Stack direction="row" spacing="8">
+          <VStack spacing="8">
             <Box w="300px">
-              <Stack>
+              <VStack>
                 <figure>
-                  <Image src={props.img} />
+                  <Image w="90%" src={props.img} />
                   <figcaption>出典：{props.source}</figcaption>
                 </figure>
-              </Stack>
+              </VStack>
             </Box>
-            <Box>
-              <Stack>
+            <Box marginBottom="30px" width="90%">
+              <Stack spacing="6">
                 <Heading size="lg">
                   <span>{props.manufacturer}</span>
                   &ensp;
@@ -66,7 +66,7 @@ export const Device = (props) => {
                 <Text>{props.note}</Text>
               </Stack>
             </Box>
-          </Stack>
+          </VStack>
         </Container>
       </MediaQuery>
 

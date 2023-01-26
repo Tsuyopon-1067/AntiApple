@@ -65,7 +65,7 @@ export const Pixel6a = new DeviceParameter(
     '178g',
     '6.1',
     '1080x2400',
-    'GoogleTensor',
+    'Google Tensor',
     '約68万点',
     'USB Type-C® 3.1 Gen 1',
     'なし',

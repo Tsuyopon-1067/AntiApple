@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import {
+  Heading,
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
@@ -192,7 +193,7 @@ export default function Navigation() {
               <Link to="/">
                 <Image className={Styles.navIcon} src={Icon} />
               </Link>
-              <h1 className={Styles.navTitle}>格安モバイルWebへようこそ！</h1>
+              <Heading size = "md" className={Styles.navTitle}>格安モバイルWeb</Heading>
             </div>
             <Breadcrumb className={Styles.navMain} separator="" spacing="0">
               <BreadcrumbItem className={Styles.navNormal}>

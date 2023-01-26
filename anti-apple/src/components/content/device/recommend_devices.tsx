@@ -21,7 +21,8 @@ const RecoDevices = () => {
     <>
       <MediaQuery query="(max-width:900px)">
         <React.Fragment>
-          <div>
+          <div className={Styles.main}>
+            <div className={Styles.article}>
             <Heading className={Styles.title} size="xl">
               おすすめ端末
             </Heading>
@@ -33,6 +34,7 @@ const RecoDevices = () => {
             <Device {...Redminote11} />
             <Device {...iPhoneSE} />
             <Device {...iPhone14} />
+            </div>
           </div>
         </React.Fragment>
       </MediaQuery>
