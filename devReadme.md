@@ -28,6 +28,9 @@ npm install react-responsive
 npm install react-icons --save
 ```
 
+### カルーセル
+シミュレーション→格安SIMとは→メリット・デメリットと遷移　画像にリンクを埋め込む
+
 # クラスとかの説明
 ## Plans.tsx
 ### Carrier
