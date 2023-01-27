@@ -32,15 +32,15 @@ export const RecoDevices = () => {
   const[DeviceData, setDeviceData] = useState<DeviceType[]>(
   [
       Pixel6a,
-      Xiaomi12TPro,
-      Redminote11,
-      iPhoneSE,
-      iPhone14Pro,
-      AQUOSsense7,
-      motog52j,
-      iPhone13mini,
       Pixel7,
+      AQUOSsense7,
+      iPhone14Pro,
+      motog52j,
       Pixel7Pro,
+      Xiaomi12TPro,
+      iPhone13mini,
+      iPhoneSE,
+      Redminote11,
     ]
   );
 
