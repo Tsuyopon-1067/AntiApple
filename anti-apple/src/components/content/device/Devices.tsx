@@ -13,7 +13,7 @@ import Redninote11Img from "./pic/Redminote11.jpg";
 const DeviceParameter = class {
   name: string;
   manufacturer: string;
-  img: string;
+  img: any;
   height: string;
   width: string;
   thickness: string;
@@ -32,7 +32,7 @@ const DeviceParameter = class {
   constructor(
     name: string,
     manufacturer: string,
-    img: string,
+    img: any,
     height: string,
     width: string,
     thickness: string,
