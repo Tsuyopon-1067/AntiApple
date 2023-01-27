@@ -47,7 +47,7 @@ export const RecoDevices = () => {
   type DeviceType = {
     name: string;
     manufacturer: string;
-    img: any;
+    img: string;
     height: string;
     width: string;
     thickness: string;
