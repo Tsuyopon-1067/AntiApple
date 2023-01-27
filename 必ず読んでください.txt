@@ -1,0 +1,29 @@
+このサイトを閲覧する方法
+
+1. Node.jsをインストール
+    1-1. https://nodejs.org/ja/download/ にアクセスして、Windows Installer(.msi)の64bitをダウンロード
+    1-2. ダウンロードしたファイルを開き、画面の指示に従ってインストール
+
+2. ZIPを解凍
+
+3. 解凍したZIPのディレクトリに移動
+コマンドプロンプトを開き、cd と打ち込んで解凍したフォルダをドラッグアンドドロップして、エンターキーを押す
+
+4. 各種ライブラリのインストール
+npm install react-router-dom@v5
+
+npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+
+npm install slick-carousel --save
+
+npm install react-slick --save
+
+npm install react-responsive
+
+npm install react-icons --save
+
+上記のコマンドを一行ずつコマンドプロンプトに打ち込んでエンターを押す
+
+5. 閲覧
+コマンドプロンプトに npm start と入力する
+ブラウザで localhost:3000 にアクセスする
