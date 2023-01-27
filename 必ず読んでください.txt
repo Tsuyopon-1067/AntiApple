@@ -10,6 +10,8 @@
 コマンドプロンプトを開き、cd と打ち込んで解凍したフォルダをドラッグアンドドロップして、エンターキーを押す
 
 4. 各種ライブラリのインストール
+コマンドプロンプトにcd anti-apple と入力してエンターを押す
+
 npm install react-router-dom@v5
 
 npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
@@ -25,5 +27,5 @@ npm install react-icons --save
 上記のコマンドを一行ずつコマンドプロンプトに打ち込んでエンターを押す
 
 5. 閲覧
-コマンドプロンプトに npm start と入力する
+npm start と入力してエンターを押す
 ブラウザで localhost:3000 にアクセスする
