@@ -8,7 +8,11 @@
     "esModuleInterop": true,
   },
   "files": [
-    "./src/ts/main.tsx"
+    "./src/index.tsx"
+  ],
+  "include": [
+    "env.d.ts",
+    "src/**/*"
   ]
 }
 
