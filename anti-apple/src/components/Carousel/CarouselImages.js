@@ -11,16 +11,20 @@ var _3_png_1 = __importDefault(require("./3.png"));
 var arrowPrev_png_1 = __importDefault(require("./arrowPrev.png"));
 var arrowNext_png_1 = __importDefault(require("./arrowNext.png"));
 var react_2 = require("@chakra-ui/react");
+var react_router_dom_1 = require("react-router-dom");
 var Image1 = function () {
-    return react_1.default.createElement(react_2.Image, { borderRadius: "15px", src: _1_png_1.default });
+    return react_1.default.createElement(react_router_dom_1.Link, { to: "/content/simulation" },
+        react_1.default.createElement(react_2.Image, { borderRadius: "15px", src: _1_png_1.default }));
 };
 exports.Image1 = Image1;
 var Image2 = function () {
-    return react_1.default.createElement(react_2.Image, { borderRadius: "15px", src: _2_png_1.default });
+    return react_1.default.createElement(react_router_dom_1.Link, { to: "/about" },
+        react_1.default.createElement(react_2.Image, { borderRadius: "15px", src: _2_png_1.default }));
 };
 exports.Image2 = Image2;
 var Image3 = function () {
-    return react_1.default.createElement(react_2.Image, { borderRadius: "15px", src: _3_png_1.default });
+    return react_1.default.createElement(react_router_dom_1.Link, { to: "pros_cons" },
+        react_1.default.createElement(react_2.Image, { borderRadius: "15px", src: _3_png_1.default }));
 };
 exports.Image3 = Image3;
 var ArrowPrev = function () {
