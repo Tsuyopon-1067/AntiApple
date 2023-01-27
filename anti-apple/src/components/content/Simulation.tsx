@@ -4,6 +4,9 @@ import { SimulationSlider } from "./SimulationComponents/SimulationSlider";
 import { SimulationSelecter } from "./SimulationComponents/SimulationSelecter";
 import { CarrierButtonList } from "./SimulationComponents/CarrierButtonList";
 import { OptionButtonList } from "./SimulationComponents/OptionButtonList ";
+
+import { Stack, HStack, VStack, Heading } from "@chakra-ui/react";
+
 import styles from "./Simulation.module.css";
 import MediaQuery from "react-responsive";
 
@@ -46,11 +49,13 @@ export const Simulation = (param) => {
             <SimulationSlider setDataVolume={setDataVolume} />
           </div>
           <br />
-          <p>選択 : {dataVolume}</p>
-          <p>
-            {selectedPlan.carrierName}, {selectedPlan.planName},{" "}
-            {selectedPlan.price}円
-          </p>
+          <p>選択 : {dataVolume}GB</p>
+          <Stack marginBlock="20px">
+            <Heading size="lg">あなたに最適なプランは…</Heading>
+            <Heading size="md">プラン: {selectedPlan.carrierName}</Heading>
+            <Heading size="md">容量: {selectedPlan.planName}{" "}</Heading>
+            <Heading size="md">月額: {selectedPlan.price}円</Heading>
+          </Stack>
         </MediaQuery>
       </>
     </React.Fragment>

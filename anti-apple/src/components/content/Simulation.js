@@ -33,6 +33,7 @@ var SimulationSlider_1 = require("./SimulationComponents/SimulationSlider");
 var SimulationSelecter_1 = require("./SimulationComponents/SimulationSelecter");
 var CarrierButtonList_1 = require("./SimulationComponents/CarrierButtonList");
 var OptionButtonList_1 = require("./SimulationComponents/OptionButtonList ");
+var react_2 = require("@chakra-ui/react");
 var Simulation_module_css_1 = __importDefault(require("./Simulation.module.css"));
 var react_responsive_1 = __importDefault(require("react-responsive"));
 // 20 50 70 100
@@ -74,14 +75,20 @@ var Simulation = function (param) {
                 react_1.default.createElement("br", null),
                 react_1.default.createElement("p", null,
                     "\u9078\u629E : ",
-                    dataVolume),
-                react_1.default.createElement("p", null,
-                    selectedPlan.carrierName,
-                    ", ",
-                    selectedPlan.planName,
-                    ",",
-                    " ",
-                    selectedPlan.price,
-                    "\u5186")))));
+                    dataVolume,
+                    "GB"),
+                react_1.default.createElement(react_2.Stack, { marginBlock: "20px" },
+                    react_1.default.createElement(react_2.Heading, { size: "lg" }, "\u3042\u306A\u305F\u306B\u6700\u9069\u306A\u30D7\u30E9\u30F3\u306F\u2026"),
+                    react_1.default.createElement(react_2.Heading, { size: "md" },
+                        "\u30D7\u30E9\u30F3: ",
+                        selectedPlan.carrierName),
+                    react_1.default.createElement(react_2.Heading, { size: "md" },
+                        "\u5BB9\u91CF: ",
+                        selectedPlan.planName,
+                        " "),
+                    react_1.default.createElement(react_2.Heading, { size: "md" },
+                        "\u6708\u984D: ",
+                        selectedPlan.price,
+                        "\u5186"))))));
 };
 exports.Simulation = Simulation;
