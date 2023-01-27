@@ -1,13 +1,13 @@
-import pixel6aImg from "./pic/pixel6a.jpg";
-import pixel7Img from "./pic/pixel7.jpg";
-import pixel7proImg from "./pic/pixel7pro.jpg";
-import sense7Img from "./pic/sense7.jpg";
-import motog52jImg from "./pic/motog52j.jpg";
-import iphone13miniImg from "./pic/iphone13mini.jpg";
-import iphone14ProImg from "./pic/iphone14Pro.jpg";
-import iphoneSEImg from "./pic/iphoneSE.jpg";
-import Xiaomi12TProImg from "./pic/Xiaomi12TPro.jpg";
-import Redninote11Img from "./pic/Redminote11.jpg";
+import pixel6aImg from "/pic/pixel6a.jpg";
+import pixel7Img from "/pic/pixel7.jpg";
+import pixel7proImg from "/pic/pixel7pro.jpg";
+import sense7Img from "/pic/sense7.jpg";
+import motog52jImg from "/pic/motog52j.jpg";
+import iphone13miniImg from "/pic/iphone13mini.jpg";
+import iphone14ProImg from "/pic/iphone14Pro.jpg";
+import iphoneSEImg from "/pic/iphoneSE.jpg";
+import Xiaomi12TProImg from "/pic/Xiaomi12TPro.jpg";
+import Redninote11Img from "/pic/Redminote11.jpg";
 
 // ここで端末情報クラスとそれぞれの端末の情報を定義する
 const DeviceParameter = class {
@@ -72,7 +72,7 @@ const DeviceParameter = class {
 export const Pixel6a = new DeviceParameter(
   "Pixel 6a",
   "Google",
-  pixel6aImg,
+  "/pic/pixel6a.jpg",
   "152.2mm",
   "71.8mm",
   "8.9mm",
@@ -92,7 +92,7 @@ export const Pixel6a = new DeviceParameter(
 export const Pixel7 = new DeviceParameter(
   "Pixel 7",
   "Google",
-  pixel7Img,
+  "/pic/pixel7.jpg",
   "155.6mm",
   "73.2mm",
   "8.97m",
@@ -112,7 +112,7 @@ export const Pixel7 = new DeviceParameter(
 export const Pixel7Pro = new DeviceParameter(
   "Pixel 7 Pro",
   "Google",
-  pixel7proImg,
+  "/pic/pixel7pro.jpg",
   "162.9mm",
   "76.6mm",
   "8.9mm",
@@ -133,7 +133,7 @@ export const Pixel7Pro = new DeviceParameter(
 export const Xiaomi12TPro = new DeviceParameter(
   "Xiaomi 12T Pro",
   "Xiaomi",
-  Xiaomi12TProImg,
+  "/pic/Xiaomi12TPro.jpg",
   "163mm",
   "76mm",
   "8.8mm",
@@ -153,7 +153,7 @@ export const Xiaomi12TPro = new DeviceParameter(
 export const Redminote11 = new DeviceParameter(
   "Redmi note 11",
   "Xiaomi",
-  Redninote11Img,
+  "/pic/Redminote11.jpg",
   "159.87mm",
   "73.87mm",
   "8.09mm",
@@ -173,7 +173,7 @@ export const Redminote11 = new DeviceParameter(
 export const iPhoneSE = new DeviceParameter(
   "iPhone SE(第3世代)",
   "Apple",
-  iphoneSEImg,
+  "/pic/iphoneSE.jpg",
   "138.4mm",
   "67.3mm",
   "7.3mm",
@@ -193,7 +193,7 @@ export const iPhoneSE = new DeviceParameter(
 export const iPhone14Pro = new DeviceParameter(
   "iPhone 14 Pro",
   "Apple",
-  iphone14ProImg,
+  "/pic/iphone14Pro.jpg",
   "147.5mm",
   "71.5mm",
   "7.85mm",
@@ -213,7 +213,7 @@ export const iPhone14Pro = new DeviceParameter(
 export const AQUOSsense7 = new DeviceParameter(
   "AQUOS sense7",
   "SHARP",
-  sense7Img,
+  "/pic/sense7.jpg",
   "152mm",
   "70mm",
   "8.0mm",
@@ -233,7 +233,7 @@ export const AQUOSsense7 = new DeviceParameter(
 export const motog52j = new DeviceParameter(
   "moto g52j",
   "motorola",
-  motog52jImg,
+  "/pic/motog52j.jpg",
   "171.0mm",
   "76.8mm",
   "9.1mm",
@@ -253,7 +253,7 @@ export const motog52j = new DeviceParameter(
 export const iPhone13mini = new DeviceParameter(
   "iPhone 13 mini",
   "Apple",
-  iphone13miniImg,
+  "/pic/iphone13mini.jpg",
   "131.5mm",
   "64.2mm",
   "7.65mm",
