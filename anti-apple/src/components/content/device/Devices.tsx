@@ -1,13 +1,13 @@
-import pixel6aImg from "./pic/pixel6a.PNG";
-import pixel7Img from "./pic/pixel7.PNG";
-import pixel7proImg from "./pic/pixel7pro.PNG";
-import sense7Img from "./pic/sense7.PNG";
-import motog52jImg from "./pic/motog52j.PNG";
-import iphone13miniImg from "./pic/iphone13mini.PNG";
-import iphone14ProImg from "./pic/iphone14Pro.PNG";
-import iphoneSEImg from "./pic/iphoneSE.PNG";
-import Xiaomi12TProImg from "./pic/Xiaomi12TPro.PNG";
-import Redninote11Img from "./pic/Redminote11.PNG";
+import pixel6aImg from "./pic/pixel6a.jpg";
+import pixel7Img from "./pic/pixel7.jpg";
+import pixel7proImg from "./pic/pixel7pro.jpg";
+import sense7Img from "./pic/sense7.jpg";
+import motog52jImg from "./pic/motog52j.jpg";
+import iphone13miniImg from "./pic/iphone13mini.jpg";
+import iphone14ProImg from "./pic/iphone14Pro.jpg";
+import iphoneSEImg from "./pic/iphoneSE.jpg";
+import Xiaomi12TProImg from "./pic/Xiaomi12TPro.jpg";
+import Redninote11Img from "./pic/Redminote11.jpg";
 
 // ここで端末情報クラスとそれぞれの端末の情報を定義する
 const DeviceParameter = class {
