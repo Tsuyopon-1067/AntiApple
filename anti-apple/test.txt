@@ -1,3 +1,2 @@
 create build directory.
-index.js
 vercel 
