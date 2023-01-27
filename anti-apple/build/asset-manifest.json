@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "./static/css/main.97a701ec.css",
+    "main.js": "./static/js/main.94cc257c.js",
+    "static/media/1.png": "./static/media/1.cd6cf0be31c5b6473b46.png",
+    "static/media/404pagenotfound.png": "./static/media/404pagenotfound.0b641e01e013965268d1.png",
+    "static/media/2.png": "./static/media/2.967e80b799c590ca9530.png",
+    "static/media/Redminote11.png": "./static/media/Redminote11.392161a71f1a2de43c17.png",
+    "static/media/iphoneSE.png": "./static/media/iphoneSE.6057d402a89cde8ba1cd.png",
+    "static/media/Xiaomi12TPro.png": "./static/media/Xiaomi12TPro.355df46f9854f64ba03d.png",
+    "static/media/iphone13mini.png": "./static/media/iphone13mini.4725fb1feefd3f7437c4.png",
+    "static/media/antiApple.png": "./static/media/antiApple.6d45f9e8dc31ea52192e.png",
+    "static/media/motog52j.png": "./static/media/motog52j.15f7c0f1ebd84bae10ca.png",
+    "static/media/pixel7pro.png": "./static/media/pixel7pro.89660b7ca4b349fd8720.png",
+    "static/media/pixel7.png": "./static/media/pixel7.7ebadd9a1b92115af70c.png",
+    "static/media/iphone14Pro.png": "./static/media/iphone14Pro.64c9eab9b3851c629ac0.png",
+    "static/media/sense7.png": "./static/media/sense7.db3ad79ffab6167c0ea7.png",
+    "static/media/pixel6a.png": "./static/media/pixel6a.371d1ca18579b825f051.png",
+    "static/media/3.png": "./static/media/3.f3ce78f0c535a6bba3cc.png",
+    "static/media/slick.svg": "./static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "./index.html",
+    "main.97a701ec.css.map": "./static/css/main.97a701ec.css.map",
+    "main.94cc257c.js.map": "./static/js/main.94cc257c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97a701ec.css",
+    "static/js/main.94cc257c.js"
+  ]
+}
