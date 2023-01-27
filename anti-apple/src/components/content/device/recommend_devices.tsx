@@ -96,7 +96,7 @@ export const RecoDevices = () => {
         <React.Fragment>
           <div className={Styles.main}>
             <div className={Styles.article}>
-              <Container>
+              <Box>
                 <div>
                   <Stack>
                     <VStack marginBlock="40px">
@@ -121,7 +121,7 @@ export const RecoDevices = () => {
                   </Stack>
                   </Stack>
                 </div>
-              </Container>
+              </Box>
             </div>
           </div>
         </React.Fragment>
@@ -133,7 +133,7 @@ export const RecoDevices = () => {
             <Sidebar />
             <div className={Styles.main}>
               <div className={Styles.article}>
-                <Container>
+                <Box>
                   <div>
                     <Stack spacing="10">
                       <HStack marginBlock="40px">
@@ -156,7 +156,7 @@ export const RecoDevices = () => {
                     })()}
                     </Stack>
                   </div>
-                </Container>
+                </Box>
               </div>
             </div>
           </Stack>
