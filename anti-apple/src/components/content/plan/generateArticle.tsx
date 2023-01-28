@@ -46,66 +46,83 @@ const GenerateArticle = (props) => {
     <>
       <MediaQuery query="(max-width: 900px)">
         <React.Fragment>
-        <div>
-          <div className={Styles.flex}>
-            <Heading className={Styles.title}>{props.name}</Heading>
-            <img className={Styles.img} src={props.img} alt="image"/>
-            <Heading size="sm" className={Styles.heading}>概要</Heading>
-            <p>{props.abstract}</p>
-            <Heading size="sm" className={Styles.heading}>プラン</Heading>
-            <TableContainer className={Styles.table}>
-              <Table variant="simple">
-                <TableCaption>月額、料金は税込です</TableCaption>
-                <Thead>
-                  <Tr>
-                    <Th>データ容量</Th>
-                    <Th>料金</Th>
-                    <Th>備考</Th>
-                  </Tr>
-                </Thead>
-                <Tbody>{valuedata}</Tbody>
-              </Table>
-            </TableContainer>
-            <p>{props.value}</p>
-            <Heading size="sm" className={Styles.heading}>オプション</Heading>
-            <TableContainer className={Styles.table}>
-              <Table variant="simple">
-                <TableCaption>月額、料金は税込です</TableCaption>
-                <Thead>
-                  <Tr>
-                    <Th>オプション</Th>
-                    <Th>料金</Th>
-                    <Th>備考</Th>
-                  </Tr>
-                </Thead>
-                <Tbody>{optiondata}</Tbody>
-              </Table>
-            </TableContainer>
-            <p>{props.option}</p>
-            <Heading size="sm" className={Styles.heading}>通信速度</Heading>
-            <p>{props.speed}</p>
-            <Heading size="sm" className={Styles.heading}>まとめ・どんな人におすすめ？</Heading>
-            <p>{props.recommended}</p>
-            <Heading size="sm" className={Styles.heading}>参考文献</Heading>
-            <p>{props.reference}</p>
+          <div>
+            <div className={Styles.flex}>
+              <Heading className={Styles.title}>{props.name}</Heading>
+              <img className={Styles.img} src={props.img} alt="image" />
+              <Heading size="sm" className={Styles.heading}>
+                概要
+              </Heading>
+              <p>{props.abstract}</p>
+              <Heading size="sm" className={Styles.heading}>
+                プラン
+              </Heading>
+              <TableContainer className={Styles.table}>
+                <Table variant="simple">
+                  <TableCaption>月額、料金は税込です</TableCaption>
+                  <Thead>
+                    <Tr>
+                      <Th>データ容量</Th>
+                      <Th>料金</Th>
+                      <Th>備考</Th>
+                    </Tr>
+                  </Thead>
+                  <Tbody>{valuedata}</Tbody>
+                </Table>
+              </TableContainer>
+              <p>{props.value}</p>
+              <Heading size="sm" className={Styles.heading}>
+                オプション
+              </Heading>
+              <TableContainer className={Styles.table}>
+                <Table variant="simple">
+                  <TableCaption>月額、料金は税込です</TableCaption>
+                  <Thead>
+                    <Tr>
+                      <Th>オプション</Th>
+                      <Th>料金</Th>
+                      <Th>備考</Th>
+                    </Tr>
+                  </Thead>
+                  <Tbody>{optiondata}</Tbody>
+                </Table>
+              </TableContainer>
+              <p>{props.option}</p>
+              <Heading size="sm" className={Styles.heading}>
+                通信速度
+              </Heading>
+              <p>{props.speed}</p>
+              <Heading size="sm" className={Styles.heading}>
+                まとめ・どんな人におすすめ？
+              </Heading>
+              <p>{props.recommended}</p>
+              <Heading size="sm" className={Styles.heading}>
+                参考文献
+              </Heading>
+              <p>{props.reference}</p>
+            </div>
           </div>
-        </div>
         </React.Fragment>
       </MediaQuery>
 
       <MediaQuery query="(min-width: 901px)">
         <React.Fragment>
-        <div>
-          <Stack direction='row' spacing="0">
-
-              <Sidebar/>
+          <div>
+            <Stack direction="row" spacing="0">
+              <Sidebar />
               <div className={Styles.flex}>
                 <div className={Styles.article}>
-                  <Heading size="xl" className={Styles.title}>{props.name}</Heading>
-                  <img className={Styles.img} src={props.img} alt="image"/>
-                  <Heading className = {Styles.heading} size="lg">概要</Heading>
+                  <Heading size="xl" className={Styles.title}>
+                    {props.name}
+                  </Heading>
+                  <img className={Styles.img} src={props.img} alt="image" />
+                  <Heading className={Styles.heading} size="lg">
+                    概要
+                  </Heading>
                   <p>{props.abstract}</p>
-                  <Heading className = {Styles.heading} size="lg">プラン</Heading>
+                  <Heading className={Styles.heading} size="lg">
+                    プラン
+                  </Heading>
                   <TableContainer className={Styles.table}>
                     <Table variant="simple">
                       <TableCaption>月額、料金は税込です</TableCaption>
@@ -120,7 +137,9 @@ const GenerateArticle = (props) => {
                     </Table>
                   </TableContainer>
                   <p>{props.value}</p>
-                  <Heading className = {Styles.heading} size="lg">オプション</Heading>
+                  <Heading className={Styles.heading} size="lg">
+                    オプション
+                  </Heading>
                   <TableContainer className={Styles.table}>
                     <Table variant="simple">
                       <TableCaption>月額、料金は税込です</TableCaption>
@@ -135,17 +154,23 @@ const GenerateArticle = (props) => {
                     </Table>
                   </TableContainer>
                   <p>{props.option}</p>
-                  <Heading className = {Styles.heading} size="lg">通信速度</Heading>
+                  <Heading className={Styles.heading} size="lg">
+                    通信速度
+                  </Heading>
                   <p>{props.speed}</p>
-                  <Heading className = {Styles.heading} size="lg">まとめ・どんな人におすすめ？</Heading>
+                  <Heading className={Styles.heading} size="lg">
+                    まとめ・どんな人におすすめ？
+                  </Heading>
                   <p>{props.recommended}</p>
-                  <Heading className = {Styles.heading} size="lg">参考文献</Heading>
+                  <Heading className={Styles.heading} size="lg">
+                    参考文献
+                  </Heading>
                   <p>{props.reference}</p>
                 </div>
               </div>
-          </Stack>
-        </div>
-      </React.Fragment>
+            </Stack>
+          </div>
+        </React.Fragment>
       </MediaQuery>
     </>
   );

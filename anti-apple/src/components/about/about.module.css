@@ -1,0 +1,74 @@
+/*スマホ向け*/
+
+@media screen and (max-width: 900px) {
+    /* 全体 */
+    .flex {
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    .title {
+        border-bottom: 5px solid #c2e4cb;
+        box-sizing: border-box;
+        margin-top: 40px;
+    }
+    .heading {
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
+    .img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+    /* 表 */
+    .table {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/*PC向け*/
+
+@media screen and (min-width: 901px) {
+    /* 全体 */
+    .flex {
+        box-sizing: border-box;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        overflow: hidden;
+    }
+    .article {
+        position: left;
+        text-align: left;
+        width: 90%;
+        box-sizing: border-box;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 30px;
+    }
+    .heading {
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
+    .title {
+        border-bottom: 5px solid #c2e4cb;
+        box-sizing: border-box;
+        margin-top: 40px;
+    }
+    .img {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        height: 40px;
+        box-sizing: border-box;
+    }
+    /* 表 */
+    .table {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+}
