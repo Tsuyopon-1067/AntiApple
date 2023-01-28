@@ -3,7 +3,7 @@ import { Plan, Plans } from "./SimulationComponents/Plans";
 import { SimulationSlider } from "./SimulationComponents/SimulationSlider";
 import { SimulationSelecter } from "./SimulationComponents/SimulationSelecter";
 import { CarrierButtonList } from "./SimulationComponents/CarrierButtonList";
-import { OptionButtonList } from "./SimulationComponents/OptionButtonList ";
+import { OptionButtonList } from "./SimulationComponents/OptionButtonList";
 
 import { Stack, HStack, VStack, Heading } from "@chakra-ui/react";
 
@@ -20,7 +20,7 @@ export const Simulation = (param) => {
     <React.Fragment>
       <>
         <MediaQuery query="(max-width:700px)">
-          <h1>プラン料金シミュレーション</h1>
+          <h1 className={styles.title}>プラン料金シミュレーション</h1>
           <p>
             <CarrierButtonList getCarrier={setCarrier} />
           </p>
@@ -38,7 +38,8 @@ export const Simulation = (param) => {
           </p>
         </MediaQuery>
         <MediaQuery query="(min-width:701px)">
-          <h1>プラン料金シミュレーション</h1>
+          <h1 className={styles.title}>プラン料金シミュレーション</h1>
+          <br />
           <p>
             <CarrierButtonList getCarrier={setCarrier} />
           </p>
