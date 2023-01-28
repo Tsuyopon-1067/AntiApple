@@ -8,7 +8,7 @@ const DeviceParameter = class {
   thickness: string;
   weight: string;
   displaySize: number;
-  resolution: string;ß
+  resolution: string;
   soc: string;
   antutu: number;
   usb: string;
