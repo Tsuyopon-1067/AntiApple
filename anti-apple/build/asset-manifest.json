@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.62a9a55b.css",
-    "main.js": "./static/js/main.2a6648c2.js",
-    "static/media/1.png": "./static/media/1.cd6cf0be31c5b6473b46.png",
+    "main.css": "./static/css/main.9f98b598.css",
+    "main.js": "./static/js/main.d116830e.js",
+    "static/media/1.png": "./static/media/1.d2225df90d3bbaee3d70.png",
     "static/media/404pagenotfound.png": "./static/media/404pagenotfound.0b641e01e013965268d1.png",
+    "static/media/3.png": "./static/media/3.d0f8c346a53d60dce6d2.png",
     "static/media/2.png": "./static/media/2.967e80b799c590ca9530.png",
     "static/media/antiApple.png": "./static/media/antiApple.6d45f9e8dc31ea52192e.png",
-    "static/media/3.png": "./static/media/3.f3ce78f0c535a6bba3cc.png",
     "static/media/slick.svg": "./static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
     "index.html": "./index.html",
-    "main.62a9a55b.css.map": "./static/css/main.62a9a55b.css.map",
-    "main.2a6648c2.js.map": "./static/js/main.2a6648c2.js.map"
+    "main.9f98b598.css.map": "./static/css/main.9f98b598.css.map",
+    "main.d116830e.js.map": "./static/js/main.d116830e.js.map"
   },
   "entrypoints": [
-    "static/css/main.62a9a55b.css",
-    "static/js/main.2a6648c2.js"
+    "static/css/main.9f98b598.css",
+    "static/js/main.d116830e.js"
   ]
 }
